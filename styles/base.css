@@ -6,16 +6,16 @@ body {
     padding: 1em 0;
     max-width: 500px;
     min-width: 470px;
-    /* background-color: #141414; */
 }
 
 #content {
     margin: 0 auto;
+    background-color: #F4F6F3;
 }
 
 header {
     margin: 0 auto;
-    background-color: red;
+    background-color: #2F3E46;
 }
 
 #top-header {
@@ -26,15 +26,17 @@ header {
 }
 
 #picture-me {
-    margin: 0 1em;
-    max-height: 120px;
-    border: none;
-    border-radius: 15px;
+    margin: 0 1em 0 0;
+    max-height: 100px;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
 }
 
 #top-header h1 {
     margin: 0;
-    line-height: 120px;
+    line-height: 106px;
+    color: #FFFFFF;
+    font-family: Century Gothic;
 }
 
 #navbar {
@@ -42,17 +44,30 @@ header {
     margin: 0 auto;
     padding: 1em;
     text-align: center;
+    background-color: #354F52;
 }
 
 nav a {
+    display: block;
     margin: 0 auto;
-    padding: 1em;
+    padding: .5em;
+    color: #CAD2C5;
+    font-family: Ubuntu;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+    transition: .2s;
 }
 
 main {
     display: grid;
     gap: 1em 0;
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: 25px 1fr 25px;
     margin: 0 auto;
     padding: 1em 0;
 }
@@ -62,51 +77,69 @@ main h2 {
     grid-row: 1/2;
     margin: 0 auto;
     text-align: center;
+    font-family: Century Gothic;
+}
+
+section {
+    border: 1px solid #639286;
+    border-radius: 15px;
+}
+
+.card-header {
+    margin: 0 auto;
+    padding: .5em 0;
+    text-align: center;
+    border: none;
+    border-radius: 13px;
+    background-color: #639286;
+    font-family: Century Gothic;
 }
 
 .card-activity {
     grid-column: 2/3;
     grid-row: 2/3;
-    /* margin: 0 auto;
-    max-width: 500px; */
-    background-color: aquamarine;
+    background-color: #DFE4DC;
 }
 
 .card-info {
     grid-column: 2/3;
     grid-row: 3/4;
-    /* margin: 0 auto;
-    max-width: 500px; */
-    background-color: aquamarine;
-}
-
-.card-header {
-    margin: 0 auto;
-    padding: 1em 0;
-    text-align: center;
-    background-color: rgba(0, 0, 255, 0.479);
+    background-color: #DFE4DC;
 }
 
 .card-activity ul {
     margin: 0 auto;
     padding: 1em;
     list-style: none;
+    font-family: Ubuntu;
+}
+
+.card-activity ul a {
+    color: #2F3E46;
+    text-decoration: none;
+}
+
+.card-activity ul a:hover {
+    text-decoration: underline;
 }
 
 .card-info p {
     margin: 0 auto;
     padding: 1em 0;
     text-align: center;
+    font-family: Ubuntu;
 }
 
 footer {
     margin: 0 auto;
     padding: 1em 0;
-    background-color: red;
+    background-color: #2F3E46;
 }
 
 footer p {
     margin: 0 auto;
-    padding: .5em 0;
+    padding: .2em 0;
     text-align: center;
+    font-family: Ubuntu;
+    color: #CAD2C5;
 }

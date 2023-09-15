@@ -28,7 +28,8 @@ header {
 
 #picture-me {
     margin: 0 1em 0 0;
-    max-height: 100px;
+    height: 100px;
+    width: auto;
     border: 3px solid #FFFFFF;
     border-radius: 50%;
 }

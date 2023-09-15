@@ -3,4 +3,4 @@ document.querySelector("#copyrightYear").innerHTML = `@ ${new Date().getFullYear
 
 
 // get last modified date&time
-document.querySelector("#lastModified").innerHTML = document.lastModified;
+document.querySelector("#lastModified").innerHTML = `last modified:<br>${document.lastModified}`;

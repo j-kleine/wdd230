@@ -145,3 +145,8 @@ footer p {
     font-family: Ubuntu;
     color: #CAD2C5;
 }
+
+#lastModified {
+    font-size: .8em;
+    text-transform: uppercase;
+}

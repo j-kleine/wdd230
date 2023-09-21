@@ -15,6 +15,10 @@
     #content {
         max-width: 900px;
     }
+
+    header {
+        filter: drop-shadow(0px 0px 15px #000);
+    }
     
     nav a {
         display: inline-flex;
@@ -22,6 +26,7 @@
     }
     
     main {
+        padding: 2.5em 0;
         gap: 1em 1em;
         grid-template-columns: 25px 1.5fr 1fr 25px;
     }
@@ -33,5 +38,9 @@
     .card-info {
         grid-column: 3/4;
         grid-row: 2/3;
+    }
+
+    footer {
+        filter: drop-shadow(0px 0px 15px #000);
     }
 }

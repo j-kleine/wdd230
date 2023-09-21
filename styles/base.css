@@ -5,7 +5,7 @@ body {
     margin: 0 auto;
     padding: 1em 0;
     max-width: 500px;
-    min-width: 470px;
+    min-width: 350px;
     background-color: #101618;
 }
 
@@ -21,7 +21,6 @@ header {
 
 #top-header {
     display: flex;
-    margin: 0 auto;
     padding: 1em;
     justify-content: center;
 }
@@ -35,24 +34,26 @@ header {
 }
 
 #top-header h1 {
-    margin: 0;
-    line-height: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #FFFFFF;
     font-family: Century Gothic, sans-serif;
 }
 
 #navbar {
-    display: block;
+    display: flex;
     margin: 0 auto;
     padding: 1em;
-    text-align: center;
+    justify-content: center;
     background-color: #354F52;
 }
 
 nav a {
-    display: block;
+    display: flex;
     margin: 0 auto;
     padding: .5em;
+    justify-content: center;
     color: #CAD2C5;
     font-family: Ubuntu, sans-serif;
     text-decoration: none;

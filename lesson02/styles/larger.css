@@ -1,13 +1,13 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
 
     body {
-        max-width: 900px;
-        min-width: 600px;
+        max-width: 1200px;
+        min-width: 900px;
     }
     
     main {
         gap: 1em 1em;
-        grid-template-columns: 5px 1fr 1fr 5px;
+        grid-template-columns: 10px 1fr 1fr 1fr 10px;
     }
     
     .card-proximity {
@@ -21,12 +21,12 @@
     }
     
     .card-contrast {
-        grid-column: 2/4;
-        grid-row: 2/3;
+        grid-column: 4/5;
+        grid-row: 1/2;
     }
     
     section img {
-        max-width: 375px;
+        max-width: 360px;
         width: 90%;
         min-width: 250px;
     }

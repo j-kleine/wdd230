@@ -5,7 +5,7 @@ body {
     margin: 0 auto;
     padding: 1em 0;
     max-width: 400px;
-    min-width: 350px;
+    min-width: 370px;
     background-color: #101618;
 }
 
@@ -106,7 +106,7 @@ section img {
 .card-text-box {
     display: block;
     margin: 0 auto;
-    width: 330px;
+    width: 90%;
 }
 
 .card-text-box p {

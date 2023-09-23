@@ -103,6 +103,10 @@ section img {
     border-radius: 10px;
 }
 
+.text-paragraphs {
+    line-height: 1.5em;
+}
+
 .in-paragraph-links {
     display: inline;
     margin: 0;

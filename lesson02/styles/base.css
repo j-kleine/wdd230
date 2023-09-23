@@ -103,6 +103,11 @@ section img {
     border-radius: 10px;
 }
 
+.in-paragraph-links {
+    display: inline;
+    margin: 0;
+}
+
 .card-text-box {
     display: block;
     margin: 0 auto;

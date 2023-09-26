@@ -111,27 +111,27 @@ section {
     background-color: #DFE4DC;
 }
 
-.card-activity ol {
+.card-activity ul {
     margin: 0 auto;
     padding: 1em 0 1em 2em;
     list-style-type: decimal-leading-zero;
     font-family: Ubuntu, sans-serif;
 }
 
-.card-activity ol li {
+.card-activity ul li {
     padding: .2em 0;
 }
 
-.card-activity ol li::marker {
+.card-activity ul li::marker {
     font-weight: 700;
 }
 
-.card-activity ol a {
+.card-activity ul a {
     color: #2F3E46;
     text-decoration: none;
 }
 
-.card-activity ol a:hover {
+.card-activity ul a:hover {
     text-decoration: underline;
 }
 

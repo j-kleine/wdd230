@@ -118,6 +118,10 @@ section {
     font-family: Ubuntu, sans-serif;
 }
 
+.card-activity ul li {
+    padding: .2em 0;
+}
+
 .card-activity ul a {
     color: #2F3E46;
     text-decoration: none;

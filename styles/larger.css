@@ -19,6 +19,21 @@
     header {
         filter: drop-shadow(0px 0px 15px #000);
     }
+
+    #menubutton {
+        display: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* In case viewport width changes while menu button is clicked */
+    .opennav {
+        display: flex;
+        flex-direction: row;
+    }
+    /* ------ */
     
     nav a {
         display: inline-flex;

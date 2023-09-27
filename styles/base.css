@@ -75,8 +75,8 @@ nav {
 
 /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
 #menubutton.openbutton::before {
-	content: "✕";
-    
+	content: "\1F781";
+    /* alternative: ✕ */
 }
 
 .opennav {

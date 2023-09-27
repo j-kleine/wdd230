@@ -145,15 +145,9 @@ section {
     background-color: #DFE4DC;
 }
 
-.card-info {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    background-color: #DFE4DC;
-}
-
 .card-activity ul {
     margin: 0 auto;
-    padding: 1em 0 1em 2em;
+    padding: 1em 1em 1em 2.5em;
     list-style-type: decimal-leading-zero;
     font-family: Ubuntu, sans-serif;
 }
@@ -175,11 +169,29 @@ section {
     text-decoration: underline;
 }
 
+.card-info {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: #DFE4DC;
+}
+
 .card-info p {
     margin: 0 auto;
     padding: 1em 0;
     text-align: center;
     font-family: Ubuntu, sans-serif;
+}
+
+.card-map {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    height: 20rem;
+    background-color: #639286;
+}
+
+.map {
+    border: none;
+    border-radius: 15px;
 }
 
 footer {

@@ -59,12 +59,12 @@
         transition: .2s;
     }
     
-    .card-info {
+    .card-styleguide {
         grid-column: 3/4;
         grid-row: 2/3;
     }
 
-    .card-map {
+    .card-wireframe {
         grid-column: 2/4;
         grid-row: 3/4;
     }

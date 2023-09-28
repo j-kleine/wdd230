@@ -11,7 +11,7 @@ body {
 
 #content {
     margin: 0 auto;
-    background-color: #F4F6F3;
+    background-color: #FFF;
 }
 
 header {
@@ -131,8 +131,9 @@ main h2 {
 }
 
 section {
-    border: 1px solid #639286;
+    border: 1px solid #014397;
     border-radius: 15px;
+    background-color: #eaf1f9;
 }
 
 .card-header {
@@ -141,14 +142,14 @@ section {
     text-align: center;
     border: none;
     border-radius: 13px;
-    background-color: #639286;
+    background-color: #014397;
+    color: #ffffff;
     font-family: Century Gothic, sans-serif;
 }
 
 .card-overview {
     grid-column: 2/3;
     grid-row: 2/3;
-    background-color: #DFE4DC;
 }
 
 .card-overview h4 {
@@ -185,7 +186,6 @@ section {
 .card-styleguide {
     grid-column: 2/3;
     grid-row: 3/4;
-    background-color: #DFE4DC;
 }
 
 .card-styleguide h4 {
@@ -220,13 +220,11 @@ section {
 .card-styleguide .svg-logo {
     height: 100px;
     padding: 1rem;
-    
 }
 
 .card-wireframe {
     grid-column: 2/3;
     grid-row: 4/5;
-    background-color: #DFE4DC;
 }
 
 footer {

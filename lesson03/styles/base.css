@@ -120,10 +120,10 @@ nav a:hover {
 
 main {
     display: grid;
-    gap: 1rem 0;
+    gap: 1.5rem 0;
     grid-template-columns: 25px 1fr 25px;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 
 main h2 {
@@ -207,7 +207,7 @@ section p {
     display: flex;
     margin: 1rem 1.5rem;
     padding: 0;
-    background-color: #023368;
+    background-color: #014397;
     justify-content: center;
 }
 
@@ -221,16 +221,38 @@ section p {
     grid-row: 4/5;
 }
 
-.wireframe-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+.mobile-view a {
+    display: block;
+    margin: 1.5rem 1rem;
 }
 
-.placeholder {
-    margin: 1rem 1.5rem;
-    height: 100px;
-    width: 100px;
-    background-color: #f6ae2d;
+.mobile-view a img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    border: solid 3px #FFFFFF;
+    border-radius: 10px;
+}
+
+.mobile-view a img:hover {
+    box-shadow: 0 0 0 3px #f6ae2d;
+}
+
+.larger-view a {
+    display: block;
+    margin: 1.5rem 1rem;
+}
+
+.larger-view a img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    border: solid 3px #FFFFFF;
+    border-radius: 10px;
+}
+
+.larger-view a img:hover {
+    box-shadow: 0 0 0 3px #f6ae2d;
 }
 
 footer {

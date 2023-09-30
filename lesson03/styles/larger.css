@@ -43,7 +43,7 @@
     main {
         padding: 2.5em 0;
         gap: 2rem;
-        grid-template-columns: 25px 1.5fr 1fr 25px;
+        grid-template-columns: 25px 1.2fr 1fr 25px;
     }
     
     main h2 {
@@ -62,6 +62,19 @@
     .card-wireframe {
         grid-column: 2/4;
         grid-row: 3/4;
+    }
+
+    .wireframe-container {
+        display: grid;
+        grid-template-columns: 1.4fr 3.6fr;
+    }
+
+    .mobile-view {
+        grid-column: 1/2;
+    }
+
+    .larger-view {
+        grid-column: 2/3;
     }
 
     footer {

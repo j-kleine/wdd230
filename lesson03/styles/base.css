@@ -21,9 +21,21 @@ header {
 }
 
 #top-header {
-    display: flex;
     padding: 1rem;
-    justify-content: center;
+}
+
+#top-header h1 {
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Century Gothic, sans-serif;
+}
+
+#top-header h2 {
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Century Gothic, sans-serif;
 }
 
 #picture-me {

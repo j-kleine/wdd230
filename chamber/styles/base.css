@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@700&family=Gabarito&display=swap');
 
 :root {
+/* --- Colors --- */
     --page-background: #eaf1f9;
-    --text-color: #555;
     --main-color: #023368;
     --secondary-color: #014397;
     --accent-color: #f6ae2d;
+    --text-on-dark: #eaf1f9;
+    --text-on-white: #555;
 
     --headings-font: 'Changa', sans-serif;
     --paragraphs-font: 'Gabarito', cursive;
+
+    --border-radius: .4rem;
 
     --transition-time: .2s;
 }
@@ -30,15 +34,21 @@ header {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
     font-family: var(--headings-font);
 }
 
 p, a {
+    margin: 0;
+    padding: 0;
     font-family: var(--paragraphs-font);
 }
 
 footer {
-    color: #FFFFFF;
+    margin: .5rem 0 0 0;
+    padding: 1rem;
+    color: var(--text-on-dark);
     background-color: var(--main-color);
 }
 
@@ -58,7 +68,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 2rem;
+    padding: .5rem;
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-color);
@@ -72,7 +82,7 @@ footer {
     font-size: 1.5rem;
 	border: none;
 	background-color: transparent;
-	color: var(--page-background);
+	color: var(--text-on-dark);
     transition: var(--transition-time);
 }
 
@@ -82,6 +92,7 @@ footer {
 
 #menubutton:hover {
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 nav {
@@ -99,7 +110,6 @@ nav {
     /* alternative: ✕ */
 }
 
-
 .opennav {
     display: flex;
 }
@@ -116,12 +126,11 @@ nav ul li {
     justify-content: center;
     align-items: center;
     padding: .5rem;
-    
 }
 
 .navlinks {
-    border-bottom: solid 0.2rem var(--secondary-color);
-    color: var(--page-background);
+    border-bottom: solid 0.2rem transparent;
+    color: var(--text-on-dark);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -142,6 +151,101 @@ nav ul li {
 }
 
 /* ------ MAIN ------ */
+main {
+    display: grid;
+    grid-template-columns: .2rem 1fr .2rem;
+    gap: .4rem .2rem;
+}
+
+.hero {
+    position: relative;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.hero-background {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-button-position {
+    padding: .1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.hero-button {
+    margin: .1rem;
+    padding: 1rem;
+    width: 200px;
+    border: none;
+    border-radius: 10rem;
+    background-color: rgb(2, 51, 104, .8);
+    transition: var(--transition-time);
+}
+
+.hero-button:hover {
+    background-color: rgb(2, 51, 104, 1);
+    transition: var(--transition-time);
+}
+
+.hero-button-link {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-family: var(--headings-font);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-transform: uppercase;
+    transition: var(--transition-time);
+}
+
+.hero-button-link:hover {
+    text-decoration-color: var(--accent-color);
+    transition: var(--transition-time);
+}
+
+section {
+    padding: 1.5rem;
+    color: #FFFFFF;
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
+}
+
+.card-header {
+    color: #FFFFFF;
+}
+
+.card-events {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.event {
+    margin: 1rem;
+    padding: .5rem;
+    border-top: solid 1px #f6ae2d;
+    border-bottom: solid 1px #f6ae2d;
+}
+
+.event p {
+    color: var(--text-on-dark);
+}
+
+.card-weather {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.card-spotlights {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
 
 /* ------ FOOTER ------ */
 .social a img {
@@ -151,7 +255,7 @@ nav ul li {
     padding: .1em;
     border: none;
     border-radius: 50%;
-    filter: brightness(10);
+    filter: contrast(0) brightness(2);
     transition: var(--transition-time);
 }
 

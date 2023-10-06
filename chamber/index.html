@@ -19,15 +19,20 @@
     <div id="content">
         <header>
             <div id="top-header">
-                <img src="images/logo.svg" alt="Helsingør Commerce Chamber Logo">
-                <h1>Helsingør Commerce Chamber</h1>
+                <img class="logo" src="images/logo.svg" alt="Helsingør Commerce Chamber Logo">
+                <h1>Helsingør<br>Commerce<br>Chamber</h1>
             </div>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Discover</a>
-                <a href="#">Directory</a>
-                <a href="#">Join</a>
-            </nav>
+            <div id="navbar">
+                <button id="menubutton"></button>
+                <nav>
+                    <ul>
+                        <li><a id="active" class="navlinks" href="#">Home</a></li>
+                        <li><a class="navlinks" href="#">Discover</a></li>
+                        <li><a class="navlinks" href="#">Directory</a></li>
+                        <li><a class="navlinks" href="#">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
             <div class="hero">HERO IMG</div>
@@ -53,6 +58,7 @@
         </footer>
     </div>
 
+    <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/getdates.js"></script>
 
 </body>

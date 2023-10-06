@@ -6,7 +6,7 @@
     --main-color: #023368;
     --secondary-color: #014397;
     --accent-color: #f6ae2d;
-    
+
     --headings-font: 'Changa', sans-serif;
     --paragraphs-font: 'Gabarito', cursive;
 
@@ -17,9 +17,24 @@ body {
     background-color: var(--page-background);
 }
 
+#content {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 350px;
+}
+
 header {
     color: #FFFFFF;
     background-color: var(--main-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--headings-font);
+}
+
+p, a {
+    font-family: var(--paragraphs-font);
 }
 
 footer {
@@ -27,6 +42,108 @@ footer {
     background-color: var(--main-color);
 }
 
+/* ------ HEADER ------ */
+#top-header {
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 6.9rem;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+#menubutton {
+    margin: 1rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+	border: none;
+	background-color: transparent;
+	color: var(--page-background);
+    transition: var(--transition-time);
+}
+
+#menubutton::before {
+	content: "☰";
+}
+
+#menubutton:hover {
+    color: #FFFFFF;
+}
+
+nav {
+    display: none;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+#menubutton.openbutton {
+    transform: rotate(270deg);
+    transition: var(--transition-time);
+}
+
+#menubutton.openbutton::before {
+	content: "\276F";
+    /* alternative: ✕ */
+}
+
+
+.opennav {
+    display: flex;
+}
+/* ------ */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    
+}
+
+.navlinks {
+    border-bottom: solid 0.2rem var(--secondary-color);
+    color: var(--page-background);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: var(--transition-time);
+}
+
+.navlinks:hover {
+    border-bottom: solid 0.2rem #f6ae2d;
+    color: #FFFFFF;
+    font-weight: 800;
+    transition: var(--transition-time);
+}
+
+#active {
+    border-bottom: solid 0.2rem #f6ae2d;
+    font-weight: 800;
+}
+
+/* ------ MAIN ------ */
+
+/* ------ FOOTER ------ */
 .social a img {
     margin: .4em;
     width: 40px;

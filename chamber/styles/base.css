@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@700&family=Gabarito&display=swap');
+
+:root {
+    --page-background: #eaf1f9;
+    --text-color: #555;
+    --main-color: #023368;
+    --secondary-color: #014397;
+    --accent-color: #f6ae2d;
+    
+    --headings-font: 'Changa', sans-serif;
+    --paragraphs-font: 'Gabarito', cursive;
+
+    --transition-time: .2s;
+}
+
+body {
+    background-color: var(--page-background);
+}
+
+header {
+    color: #FFFFFF;
+    background-color: var(--main-color);
+}
+
+footer {
+    color: #FFFFFF;
+    background-color: var(--main-color);
+}
+
+.social a img {
+    margin: .4em;
+    width: 40px;
+    height: auto;
+    padding: .1em;
+    border: none;
+    border-radius: 50%;
+    filter: brightness(10);
+    transition: var(--transition-time);
+}
+
+.social a img:hover {
+    background-color: #FFFFFF;
+    filter: none;
+    transition: var(--transition-time);
+}

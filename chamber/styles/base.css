@@ -187,9 +187,16 @@ main {
 }
 
 .hero-button {
+    display: block;
     margin: .1rem;
-    padding: 1rem;
-    width: 200px;
+    padding: 1.5rem 2rem;
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-family: var(--headings-font);
+    text-decoration: underline;
+    text-decoration-thickness: .2rem;
+    text-decoration-color: var(--accent-color);
+    text-transform: uppercase;
     border: solid .2rem transparent;
     border-radius: 10rem;
     background-color: var(--main-color);
@@ -199,23 +206,6 @@ main {
 .hero-button:hover {
     border: solid .2rem #FFFFFF;
     box-shadow: 0 0 0 .2rem var(--accent-color);
-    transition: var(--transition-time);
-}
-
-.hero-button-link {
-    color: #FFFFFF;
-    font-size: 2rem;
-    font-family: var(--headings-font);
-    text-decoration: underline;
-    /* text-decoration-color: transparent; */
-    text-decoration-thickness: .2rem;
-    text-decoration-color: var(--accent-color);
-    text-transform: uppercase;
-    transition: var(--transition-time);
-}
-
-.hero-button-link:hover {
-    text-decoration-color: var(--accent-color);
     transition: var(--transition-time);
 }
 

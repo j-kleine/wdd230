@@ -63,6 +63,10 @@ footer {
     height: 6.9rem;
 }
 
+#top-header h1 {
+    text-align: center;
+}
+
 #navbar {
     display: flex;
     flex-direction: column;

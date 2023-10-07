@@ -281,7 +281,7 @@ section {
 }
 
 .spotlight .ad-text {
-    display: inline !important;
+    display: block !important;
     margin: 0 0 1rem 0;
     text-align: right;
     color: var(--secondary-color);

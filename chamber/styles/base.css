@@ -318,11 +318,13 @@ footer {
     grid-column: 2/3;
     grid-row: 1/2;
     font-size: 1.5rem;
+    text-align: left;
 }
 
 #top-footer p {
     grid-column: 2/3;
     grid-row: 2/3;
+    text-align: left;
 }
 
 .business-card {

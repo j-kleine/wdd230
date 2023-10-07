@@ -47,6 +47,10 @@
         max-width: 1200px;
     }
 
+    .hero-background {
+        max-width: 1200px;
+    }
+
     .spotlight-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

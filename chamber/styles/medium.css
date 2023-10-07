@@ -14,6 +14,10 @@
         grid-row: 1/2;
         max-width: 800px;
     }
+
+    .hero-background {
+        max-width: 800px;
+    }
     
     .card-events {
         margin-top: 1rem;

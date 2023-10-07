@@ -1,5 +1,42 @@
 @media screen and (min-width: 900px) {
-    
+    /* ------ HEADER ------ */
+    header {
+        display: grid;
+        grid-template-columns: 20rem 1fr;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        background-color: transparent;
+    }
+
+    #menubutton {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: right;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        padding: .5rem 1rem;
+    }
+
+    /* In case viewport width changes while menu button is clicked */
+    .opennav {
+        display: flex;
+        flex-direction: row;
+    }
+    /* ------ */
+
     /* ------ MAIN ------ */ 
     main {
         max-width: 1200px;

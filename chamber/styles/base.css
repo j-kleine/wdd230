@@ -206,6 +206,7 @@ main {
 .hero-button:hover {
     border: solid .2rem #FFFFFF;
     box-shadow: 0 0 0 .2rem var(--accent-color);
+    background-color: var(--secondary-color);
     transition: var(--transition-time);
 }
 

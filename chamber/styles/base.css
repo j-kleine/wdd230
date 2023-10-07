@@ -24,6 +24,7 @@ body {
 #content {
     display: block;
     margin: 0 auto;
+    min-width: 350px;
 }
 
 header {

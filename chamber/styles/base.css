@@ -244,12 +244,13 @@ section {
 }
 
 .event a {
-    text-decoration-color: var(--accent-color);
+    font-weight: 800;
+    text-decoration: underline;
     transition: var(--transition-time);
 }
 
 .event a:hover {
-    text-decoration-color: var(--text-on-dark);
+    color: var(--accent-color);
     transition: var(--transition-time);
 }
 
@@ -300,8 +301,44 @@ footer {
     align-items: center;
 }
 
+#top-footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1em;
+    align-items: center;
+}
+
+#top-footer .logo {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    height: 6.9rem;
+}
+
+#top-footer h1 {
+    font-size: 1.5rem;
+}
+
+.business-card {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    margin: 2rem;
+    text-align: center;
+}
+
+.business-card a {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: var(--transition-time);
+}
+
+.business-card a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    transition: var(--transition-time);
+}
+
 .social a img {
-    margin: .4em;
+    margin: 0 .4em;
     width: 40px;
     height: auto;
     padding: .1em;
@@ -315,6 +352,12 @@ footer {
     background-color: #FFFFFF;
     filter: none;
     transition: var(--transition-time);
+}
+
+.vertical-line {
+    margin: 1.5rem;
+    border-top: solid .05rem var(--text-on-white);
+    width: 100%;
 }
 
 #lastModified {

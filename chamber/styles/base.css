@@ -184,14 +184,15 @@ main {
     margin: .1rem;
     padding: 1rem;
     width: 200px;
-    border: none;
+    border: solid .2rem transparent;
     border-radius: 10rem;
-    background-color: rgb(2, 51, 104, .8);
+    background-color: var(--main-color);
     transition: var(--transition-time);
 }
 
 .hero-button:hover {
-    background-color: rgb(2, 51, 104, 1);
+    border: solid .2rem #FFFFFF;
+    box-shadow: 0 0 0 .2rem var(--accent-color);
     transition: var(--transition-time);
 }
 
@@ -200,7 +201,9 @@ main {
     font-size: 2rem;
     font-family: var(--headings-font);
     text-decoration: underline;
-    text-decoration-color: transparent;
+    /* text-decoration-color: transparent; */
+    text-decoration-thickness: .2rem;
+    text-decoration-color: var(--accent-color);
     text-transform: uppercase;
     transition: var(--transition-time);
 }
@@ -248,7 +251,28 @@ section {
     grid-row: 4/5;
 }
 
+.spotlight {
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+}
+
+.spotlight h3 {
+    color: var(--main-color);
+}
+
+.spotlight p {
+    color: var(--text-on-white);
+}
+
 /* ------ FOOTER ------ */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .social a img {
     margin: .4em;
     width: 40px;
@@ -264,4 +288,11 @@ section {
     background-color: #FFFFFF;
     filter: none;
     transition: var(--transition-time);
+}
+
+#lastModified {
+    margin: 1rem 0 0 0;
+    text-align: center;
+    color: var(--text-on-dark);
+    font-size: .8rem;
 }

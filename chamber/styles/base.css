@@ -282,7 +282,7 @@ section {
     color: var(--text-on-white);
 }
 
-.spotlight .ad-text {
+.spotlight .ad-tex {
     margin: 0 0 1rem 0;
     text-align: right;
     color: var(--secondary-color);

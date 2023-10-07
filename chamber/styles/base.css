@@ -280,16 +280,16 @@ section {
     color: var(--main-color);
 }
 
-.spotlight p {
-    text-align: center;
-    color: var(--text-on-white);
-}
-
 .spotlight .ad-text {
     display: inline !important;
     margin: 0 0 1rem 0;
     text-align: right;
     color: var(--secondary-color);
+}
+
+.spotlight p {
+    text-align: center;
+    color: var(--text-on-white);
 }
 
 /* ------ FOOTER ------ */

@@ -24,8 +24,6 @@ body {
 #content {
     display: block;
     margin: 0 auto;
-    max-width: 500px;
-    min-width: 350px;
 }
 
 header {
@@ -156,6 +154,9 @@ main {
     display: grid;
     grid-template-columns: .2rem 1fr .2rem;
     gap: 2rem .2rem;
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 350px;
 }
 
 .hero {

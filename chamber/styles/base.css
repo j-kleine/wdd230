@@ -373,6 +373,10 @@ footer {
     width: 100%;
 }
 
+#copyrightYear {
+    text-align: center;
+}
+
 #lastModified {
     margin: 1rem 0 0 0;
     text-align: center;

@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 p, a {
     margin: 0;
     padding: 0;
+    color: var(--text-on-dark);
     font-family: var(--paragraphs-font);
 }
 
@@ -241,6 +242,16 @@ section {
     color: var(--text-on-dark);
 }
 
+.event a {
+    text-decoration-color: var(--accent-color);
+    transition: var(--transition-time);
+}
+
+.event a:hover {
+    text-decoration-color: var(--text-on-dark);
+    transition: var(--transition-time);
+}
+
 .card-weather {
     grid-column: 2/3;
     grid-row: 3/4;
@@ -254,7 +265,15 @@ section {
 .spotlight {
     margin: 1rem;
     padding: 1.5rem;
+    border: solid .2rem var(--secondary-color);
+    border-radius: var(--border-radius);
     background-color: #FFFFFF;
+    transition: var(--transition-time);
+}
+
+.spotlight:hover {
+    box-shadow: 0 0 0 .2rem var(--accent-color);
+    transition: var(--transition-time);
 }
 
 .spotlight h3 {
@@ -262,7 +281,14 @@ section {
 }
 
 .spotlight p {
+    text-align: center;
     color: var(--text-on-white);
+}
+
+.spotlight .ad-text {
+    margin: 0 0 1rem 0;
+    text-align: right;
+    color: var(--secondary-color);
 }
 
 /* ------ FOOTER ------ */

@@ -355,7 +355,7 @@ footer {
     margin: 0 .4em;
     width: 40px;
     height: auto;
-    padding: .1em;
+    padding: .2em;
     border: none;
     border-radius: 50%;
     filter: contrast(0) brightness(2);
@@ -365,6 +365,7 @@ footer {
 .social a img:hover {
     background-color: #FFFFFF;
     filter: none;
+    box-shadow: 0 0 0 .2rem var(--accent-color);
     transition: var(--transition-time);
 }
 

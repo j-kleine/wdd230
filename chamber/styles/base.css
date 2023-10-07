@@ -191,7 +191,8 @@ main {
     margin: .1rem;
     padding: 1.5rem 2rem;
     color: #FFFFFF;
-    min-width: 210px;
+    min-width: 145px;
+    text-align: center;
     font-size: 2rem;
     font-family: var(--headings-font);
     text-decoration: underline;

@@ -36,7 +36,11 @@ button.addEventListener('click', function() {
         // console.log(linkBook);
         // console.log(linkChapter);
 
-        a.textContent = input.value;
+        let cleanBookArray = input.value.split('-');
+
+        let cleanBook = cleanBookArray.join(' ');
+
+        a.textContent = cleanBook;
 
         if (inputArray[1] == undefined) {
             inputArray[1] = '';
@@ -49,7 +53,7 @@ button.addEventListener('click', function() {
 
         a.target = '_blank';
         deleteButton.textContent = '❌';
-        deleteButton.ariaLabel = `Remove ${input.value}`;
+        deleteButton.ariaLabel = `Remove ${cleanBook}`;
         li.append(a);
         li.append(deleteButton);
 

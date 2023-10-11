@@ -69,7 +69,7 @@ button.addEventListener('click', function() {
     }
 })
 
-// --- !!! --- Working Core Reqs --- !!! ---
+// --- !!! --- Core Reqs --- !!! ---
 // const input = document.querySelector('#favchap');
 // const button = document.querySelector('button');
 // const list = document.querySelector('#list');

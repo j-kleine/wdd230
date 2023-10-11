@@ -28,6 +28,7 @@ main {
 input,
 button {
 	padding: 0.5rem;
+    text-align: center;
 }
 
 button {
@@ -43,6 +44,15 @@ button {
 	gap: 1rem;
 }
 
+p {
+    margin: 0 .5rem;
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    font-size: .8rem;
+    font-style: italic;
+}
+
 .list {
 	padding: 0.5rem;
 }
@@ -56,6 +66,16 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
 }
 
 @media only screen and (min-width: 32.5em) {

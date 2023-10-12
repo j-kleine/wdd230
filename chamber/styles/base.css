@@ -8,6 +8,7 @@
     --accent-color: #f6ae2d;
     --text-on-dark: #eaf1f9;
     --text-on-white: #555;
+    --spotlight-background: #FFFFFF;
 
     --headings-font: 'Changa', sans-serif;
     --paragraphs-font: 'Gabarito', cursive;
@@ -19,6 +20,7 @@
 
 body {
     background-color: var(--page-background);
+    transition: .4s;
 }
 
 #content {
@@ -55,10 +57,10 @@ footer {
 /* The switch - the box around the slider */
 .switch {
     position: absolute;
-    top: 5px;
+    top: 147.39px;
     right: 5px;
     display: inline-block;
-    width: 50px;
+    width: 40px;
     height: 24px;
 }
 
@@ -104,14 +106,10 @@ input:checked + .slider-round::before {
     background-color: var(--accent-color);
 }
 
-input:focus + .slider-round {
-    box-shadow: 0 0 1px var(--accent-color);
-}
-
 input:checked + .slider-round:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
 }
 
 /* ------ HEADER ------ */
@@ -330,7 +328,7 @@ section {
     padding: 1.5rem;
     border: solid .2rem var(--secondary-color);
     border-radius: var(--border-radius);
-    background-color: #FFFFFF;
+    background-color: var(--spotlight-background);
     transition: var(--transition-time);
 }
 

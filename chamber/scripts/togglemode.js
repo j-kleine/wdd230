@@ -1,5 +1,5 @@
 function toggleDark() {
-    var toggleSwitch = document.querySelector('#togglemode');
+    var toggleSwitch = document.querySelector('#toggledarkmode');
 
     if (toggleSwitch.checked == true) {
         document.documentElement.style.setProperty('--page-background', '#252525');

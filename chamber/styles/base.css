@@ -13,6 +13,9 @@
     --ffffff-background: #FFFFFF;
     --ffffff-text: #FFFFFF;
 
+    --logo-brightness: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    --hero-img-filter: 0;
+
     --headings-font: 'Changa', sans-serif;
     --paragraphs-font: 'Gabarito', cursive;
 
@@ -102,11 +105,11 @@ footer {
 }
 
 input:checked + .slider-round {
-    background-color: #555;
+    background-color: #252525;
 }
 
 input:checked + .slider-round::before {
-    background-color: #f6ae2d;
+    background-color: #C48208;
 }
 
 input:checked + .slider-round:before {
@@ -125,6 +128,7 @@ input:checked + .slider-round:before {
 
 .logo {
     height: 6.9rem;
+    filter: var(--logo-brightness);
 }
 
 #top-header h1 {
@@ -207,7 +211,7 @@ nav ul li {
 
 .navlinks:hover {
     border-bottom: solid 0.2rem var(--accent-color);
-    color: var(--ffffff-text);
+    color: #FFFFFF;
     font-weight: 800;
     transition: var(--transition-time);
 }
@@ -240,6 +244,7 @@ main {
     width: 100%;
     max-width: 500px;
     height: 100%;
+    filter: grayscale(var(--hero-img-filter));
 }
 
 .hero-button-position {
@@ -255,7 +260,7 @@ main {
     display: block;
     margin: .1rem;
     padding: 1.5rem 2rem;
-    color: #FFFFFF;
+    color: var(--ffffff-text);
     min-width: 145px;
     text-align: center;
     font-size: 2rem;
@@ -279,13 +284,13 @@ main {
 
 section {
     padding: 1.5rem;
-    color: #FFFFFF;
+    color: var(--ffffff-text);
     border-radius: var(--border-radius);
     background-color: var(--secondary-color-background);
 }
 
 .card-header {
-    color: #FFFFFF;
+    color: var(--ffffff-text);
 }
 
 .card-events {
@@ -376,7 +381,8 @@ footer {
 #top-footer .logo {
     grid-column: 1/2;
     grid-row: 1/3;
-    height: 6.9rem;
+    height: 6.9rem;    
+    filter: var(--logo-brightness);
 }
 
 #top-footer h1 {
@@ -432,7 +438,7 @@ footer {
     padding: .2em;
     border: none;
     border-radius: 50%;
-    filter: contrast(0) brightness(2);
+    filter: var(--logo-brightness);
     transition: var(--transition-time);
 }
 

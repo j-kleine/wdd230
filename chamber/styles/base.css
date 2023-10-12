@@ -3,12 +3,15 @@
 :root {
 /* --- Colors --- */
     --page-background: #eaf1f9;
-    --main-color: #023368;
-    --secondary-color: #014397;
+    --main-color-background: #023368;
+    --secondary-color-background: #014397;
     --accent-color: #f6ae2d;
+    --main-color-text: #023368;
+    --secondary-color-text: #014397;
     --text-on-dark: #eaf1f9;
     --text-on-white: #555;
-    --spotlight-background: #FFFFFF;
+    --ffffff-background: #FFFFFF;
+    --ffffff-text: #FFFFFF;
 
     --headings-font: 'Changa', sans-serif;
     --paragraphs-font: 'Gabarito', cursive;
@@ -30,8 +33,8 @@ body {
 }
 
 header {
-    color: #FFFFFF;
-    background-color: var(--main-color);
+    color: var(--ffffff-text);
+    background-color: var(--main-color-background);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,7 +54,7 @@ footer {
     margin: 2rem 0 0 0;
     padding: 1rem;
     color: var(--text-on-dark);
-    background-color: var(--main-color);
+    background-color: var(--main-color-background);
 }
 
 /* The switch - the box around the slider */
@@ -79,7 +82,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--page-background);
+    background-color: #eaf1f9;
     border-radius: 34px;
     -webkit-transition: .4s;
     transition: .4s;
@@ -92,18 +95,18 @@ footer {
     width: 16px;
     left: 4px;
     bottom: 4px;
-    background-color: var(--secondary-color);
+    background-color: #014397;
     border-radius: 50%;
     -webkit-transition: .4s;
     transition: .4s;
 }
 
 input:checked + .slider-round {
-    background-color: var(--text-on-white);
+    background-color: #555;
 }
 
 input:checked + .slider-round::before {
-    background-color: var(--accent-color);
+    background-color: #f6ae2d;
 }
 
 input:checked + .slider-round:before {
@@ -135,7 +138,7 @@ input:checked + .slider-round:before {
     padding: .5rem;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color-background);
 }
 
 #menubutton {
@@ -203,14 +206,14 @@ nav ul li {
 }
 
 .navlinks:hover {
-    border-bottom: solid 0.2rem #f6ae2d;
-    color: #FFFFFF;
+    border-bottom: solid 0.2rem var(--accent-color);
+    color: var(--ffffff-text);
     font-weight: 800;
     transition: var(--transition-time);
 }
 
 #active {
-    border-bottom: solid 0.2rem #f6ae2d;
+    border-bottom: solid 0.2rem var(--accent-color);
     font-weight: 800;
 }
 
@@ -263,14 +266,14 @@ main {
     text-transform: uppercase;
     border: solid .2rem transparent;
     border-radius: 10rem;
-    background-color: var(--main-color);
+    background-color: var(--main-color-background);
     transition: var(--transition-time);
 }
 
 .hero-button:hover {
     border: solid .2rem #FFFFFF;
     box-shadow: 0 0 0 .2rem var(--accent-color);
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color-background);
     transition: var(--transition-time);
 }
 
@@ -278,7 +281,7 @@ section {
     padding: 1.5rem;
     color: #FFFFFF;
     border-radius: var(--border-radius);
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color-background);
 }
 
 .card-header {
@@ -326,9 +329,9 @@ section {
 .spotlight {
     margin: 1rem;
     padding: 1.5rem;
-    border: solid .2rem var(--secondary-color);
+    border: solid .2rem var(--secondary-color-background);
     border-radius: var(--border-radius);
-    background-color: var(--spotlight-background);
+    background-color: var(--ffffff-background);
     transition: var(--transition-time);
 }
 
@@ -338,14 +341,14 @@ section {
 }
 
 .spotlight h3 {
-    color: var(--main-color);
+    color: var(--main-color-background);
 }
 
 .spotlight .ad-text {
     display: block !important;
     margin: 0 0 1rem 0;
     text-align: right;
-    color: var(--secondary-color);
+    color: var(--secondary-color-text);
 }
 
 .spotlight p {

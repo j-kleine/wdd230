@@ -128,6 +128,7 @@ input:checked + .slider-round:before {
 
 .logo {
     height: 6.9rem;
+    width: 6.9rem;
     filter: var(--logo-brightness);
 }
 
@@ -381,7 +382,8 @@ footer {
 #top-footer .logo {
     grid-column: 1/2;
     grid-row: 1/3;
-    height: 6.9rem;    
+    height: 6.9rem;
+    width: 6.9rem;
     filter: var(--logo-brightness);
 }
 

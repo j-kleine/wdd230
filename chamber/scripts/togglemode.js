@@ -6,8 +6,8 @@ function toggleDark() {
         document.documentElement.style.setProperty('--main-color-background', '#030303');
         document.documentElement.style.setProperty('--secondary-color-background', '#1B1B1B');
         document.documentElement.style.setProperty('--accent-color', '#C48208');
-        document.documentElement.style.setProperty('--main-color-text', '#030303');
-        document.documentElement.style.setProperty('--secondary-color-text', '#C48208');
+        document.documentElement.style.setProperty('--main-color-text', '#D7D7D7');
+        document.documentElement.style.setProperty('--secondary-color-text', '#f6ae2d');
         document.documentElement.style.setProperty('--text-on-dark', '#D7D7D7');
         document.documentElement.style.setProperty('--text-on-white', '#D7D7D7');
         document.documentElement.style.setProperty('--ffffff-background', '#303030');

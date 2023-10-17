@@ -434,7 +434,7 @@ footer {
 .social a img {
     margin: 0 .4em;
     width: 40px;
-    height: auto;
+    height: 100%;
     padding: .2em;
     border: none;
     border-radius: 50%;

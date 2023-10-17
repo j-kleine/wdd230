@@ -41,7 +41,11 @@
         </header>
         <main>
             <div class="hero">
-                <img class="hero-background" src="images/hero.png" alt="">
+                <picture>
+                    <source media="(max-width: 599px)" srcset="images/small.webp">
+                    <source media="(max-width: 899px)" srcset="images/medium.webp">
+                    <img class="hero-background" src="images/large.webp" alt="hero image">
+                </picture>
                 <div class="hero-button-position">
                     <a class="hero-button" href="#">Join Now</a>
                 </div>

@@ -59,12 +59,7 @@
         max-width: 900px;
     }
 
-    /* .temple-label {
-        top: 40%;
-        left: 5%;
-    } */
-
-    .temple-label h2 {
+    .temple-label {
         font-size: 2.5rem;
         padding: 1.5rem;
     }

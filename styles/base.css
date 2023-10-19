@@ -117,7 +117,7 @@ main {
     padding: 0 0 1.5em 0;
 }
 
-picture {
+.hero {
     grid-column: 1/4;
     grid-row: 1/2;
     position: relative;
@@ -131,11 +131,17 @@ picture {
     max-width: 500px;
     height: 100%;
     filter: contrast(110%) grayscale(50%);
-    transition: .4s;
+    transition: filter .4s;
 }
 
 .hero-img:hover {
     filter: contrast(110%) grayscale(0%) saturate(150%);
+}
+
+.temple-label {
+    position: absolute;
+    top: 20%;
+    left: 5%;
 }
 
 main h2 {

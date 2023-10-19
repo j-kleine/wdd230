@@ -139,6 +139,7 @@ section {
     border-radius: 13px;
     background-color: #639286;
     font-family: Century Gothic, sans-serif;
+    font-size: 1.25rem;
 }
 
 .card-activity {
@@ -155,7 +156,7 @@ section {
 }
 
 .card-activity ul li {
-    padding: .2em 0;
+    padding: .4em 0;
 }
 
 .card-activity ul li::marker {

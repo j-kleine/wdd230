@@ -11,7 +11,7 @@ body {
 
 #content {
     margin: 0 auto;
-    background-color: #F4F6F3;
+    background-color: #DFE4DC;
 }
 
 header {
@@ -111,10 +111,10 @@ nav a:hover {
 
 main {
     display: grid;
-    gap: 1em 0;
+    gap: 1.5em 0;
     grid-template-columns: 25px 1fr 25px;
     margin: 0 auto;
-    padding: 1em 0;
+    padding: 1.5em 0;
 }
 
 main h2 {
@@ -127,13 +127,13 @@ main h2 {
 }
 
 section {
-    border: 1px solid #639286;
+    border: transparent;
     border-radius: 15px;
 }
 
 .card-header {
     margin: 0 auto;
-    padding: .5em 0;
+    padding: 1em 0;
     text-align: center;
     border: none;
     border-radius: 13px;
@@ -144,7 +144,7 @@ section {
 .card-activity {
     grid-column: 2/3;
     grid-row: 2/3;
-    background-color: #DFE4DC;
+    background-color: #FFFFFF;
 }
 
 .card-activity ul {
@@ -174,7 +174,7 @@ section {
 .card-info {
     grid-column: 2/3;
     grid-row: 3/4;
-    background-color: #DFE4DC;
+    background-color: #FFFFFF;
 }
 
 .card-info p {

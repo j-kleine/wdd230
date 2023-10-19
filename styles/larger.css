@@ -20,6 +20,10 @@
         filter: drop-shadow(0px 0px 15px #000);
     }
 
+    #navbar {
+        height: 48px;
+    }
+
     #menubutton {
         display: none;
     }
@@ -41,13 +45,23 @@
     }
     
     main {
-        padding: 2.5em 0;
-        gap: 1em 1em;
+        padding: 0 0 2.5em 0;
+        gap: 1.5em 1em;
         grid-template-columns: 25px 1.5fr 1fr 25px;
+    }
+
+    picture {
+        grid-column: 1/5;
+        max-width: 900px;
+    }
+
+    .hero-img {
+        max-width: 900px;
     }
     
     main h2 {
         grid-column: 1/5;
+        grid-row: 2/3;
     }
 
     section {
@@ -58,15 +72,20 @@
         filter: drop-shadow(0px 0px 3px #354F52);
         transition: .2s;
     }
+
+    .card-activity {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
     
     .card-info {
         grid-column: 3/4;
-        grid-row: 2/3;
+        grid-row: 3/4;
     }
 
     .card-map {
         grid-column: 2/4;
-        grid-row: 3/4;
+        grid-row: 4/5;
     }
 
     footer {

@@ -327,6 +327,42 @@ section {
     grid-row: 3/4;
 }
 
+.temperature {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.temp-value {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.windchill {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.chill-value {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.windspeed {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.speed-value {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
 .card-spotlights {
     grid-column: 2/3;
     grid-row: 4/5;

@@ -130,7 +130,7 @@ main {
 .hero-img {
     width: 100%;
     max-width: 500px;
-    height: 100%;
+    height: auto;
     filter: contrast(110%);
     transition: filter .4s;
 }

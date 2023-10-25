@@ -13,10 +13,15 @@ picture {
     background-color: black;
     width: 400px;
     height: 600px;
+    border: transparent;
+    border-radius: 15px;
+    margin: 0 0 .5rem 0;
 }
 
 img {
     animation: fade 10s;
+    border: transparent;
+    border-radius: 15px;
 }
 
 @keyframes fade {

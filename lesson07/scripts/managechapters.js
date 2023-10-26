@@ -28,6 +28,7 @@ function displayList(item) {
       input.focus(); // set the focus back to the input
     });
     console.log('As long as I understand it, I like to copy code instead of typing it out myself.');
+    console.log(':D');
   }
 
 function setChapterList() {

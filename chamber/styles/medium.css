@@ -65,7 +65,7 @@
     }
 
     .discover-img {
-        transition: var(--transition-time);
+        transition: .8s ease;
     }
 
     .discover-img:hover {

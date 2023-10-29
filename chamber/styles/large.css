@@ -79,6 +79,10 @@
         max-width: 710.41px;
     }
 
+    figure:hover figcaption {
+        padding-left: 10rem;
+    }
+
     /* ------ FOOTER ------ */
     #top-footer {
         grid-template-columns: auto auto 30vw auto;

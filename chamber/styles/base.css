@@ -610,9 +610,20 @@ section {
     height: auto;
 }
 
+figure {
+    margin: 0 0 1rem 0;
+}
+
 .discover-img {
     width: 100%;
     height: auto;
     border-radius: var(--border-radius);
     filter: grayscale(var(--dm-img-filter));
+}
+
+figcaption {
+    padding: 0 0 .5rem 1rem;
+    color: var(--text-on-white);
+    font-family: var(--paragraphs-font);
+    transition: .8s ease;
 }

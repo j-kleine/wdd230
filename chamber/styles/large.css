@@ -49,7 +49,7 @@
     /* ------ */
 
     /* ------ MAIN ------ */ 
-    main {
+    .home-main {
         max-width: 1200px;
         min-width: 800px;
     }
@@ -65,6 +65,18 @@
     .spotlight-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Page 2 DISCOVER */
+
+    .discover-main {
+        max-width: 1200px;
+        min-width: 800px;
+    }
+
+    .discover-images {
+        grid-row: 2/4;
+        max-width: 710.41px;
     }
 
     /* ------ FOOTER ------ */

@@ -1,7 +1,7 @@
 @media screen and (min-width: 600px) {
 
     /* ------ MAIN ------ */
-    main {
+    .home-main {
         grid-template-columns: 3fr 2fr;
         gap: 1rem 1rem;
         max-width: 800px;
@@ -18,7 +18,7 @@
         max-width: 800px;
     }
     
-    .card-events {
+    .card-next-event {
         margin-top: 1rem;
         margin-left: .2rem;
         grid-column: 1/2;
@@ -41,5 +41,26 @@
     .spotlight-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    /* Page 2 DISCOVER */
+
+    .discover-main {
+        grid-template-columns: 2fr 3fr;
+        gap: 1rem 1rem;
+        max-width: 800px;
+        min-width: 500px;
+    }
+
+    aside {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        gap: 1rem 0;
+    }
+
+    .discover-images {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        max-width: 470.41px;
     }
 }

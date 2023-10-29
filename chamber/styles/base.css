@@ -14,7 +14,7 @@
     --ffffff-text: #FFFFFF;
 
     --logo-brightness: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
-    --hero-img-filter: 0;
+    --dm-img-filter: 0;
 
     --headings-font: 'Changa', sans-serif;
     --paragraphs-font: 'Gabarito', cursive;
@@ -351,7 +351,7 @@ footer {
     width: 100%;
     max-width: 500px;
     height: 100%;
-    filter: grayscale(var(--hero-img-filter));
+    filter: grayscale(var(--dm-img-filter));
 }
 
 .hero-button-position {
@@ -594,4 +594,5 @@ aside {
     width: 100%;
     height: auto;
     border-radius: var(--border-radius);
+    filter: grayscale(var(--dm-img-filter));
 }

@@ -524,7 +524,7 @@ section {
     min-width: 350px;
 }
 
-aside {
+.sidebar {
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
@@ -536,10 +536,14 @@ aside {
 
 .card-welcome {
     grid-row: 1/2;
+    margin: 0 .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--main-color-background);
+    border: solid .2rem var(--page-background);
+    border-radius: 60% 40% 70% 30% / 60% 40% 60% 40%;
+    box-shadow: 0 0 0 .2rem var(--accent-color);
 }
 
 .welcome-message {
@@ -548,7 +552,6 @@ aside {
     font-weight: bold;
     line-height: 2rem;
     text-align: center;
-    
 }
 
 .card-events {

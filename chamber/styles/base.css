@@ -534,12 +534,29 @@ aside {
     margin: 0 auto;
 }
 
-.card-events {
+.card-welcome {
     grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color-background);
+}
+
+.welcome-message {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+    text-align: center;
+    
+}
+
+.card-events {
+    grid-row: 2/3;
 }
 
 .card-services {
-    grid-row: 2/3;
+    grid-row: 3/4;
 }
 
 .card-services > ul {
@@ -561,7 +578,7 @@ aside {
 }
 
 .card-attractions {
-    grid-row: 3/4;
+    grid-row: 4/5;
 }
 
 .card-attractions > ul {

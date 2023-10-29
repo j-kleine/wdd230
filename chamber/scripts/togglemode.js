@@ -25,7 +25,7 @@ function toggleDark() {
         document.documentElement.style.setProperty('--ffffff-background', '#303030');
         document.documentElement.style.setProperty('--ffffff-text', '#D7D7D7');
         document.documentElement.style.setProperty('--logo-brightness', 'brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7489%) hue-rotate(188deg) brightness(118%) contrast(69%)');
-        document.documentElement.style.setProperty('--hero-img-filter', '.5');
+        document.documentElement.style.setProperty('--dm-img-filter', '.5');
         localStorage.setItem('isDarkMode', isDarkMode);
         
     } else {
@@ -43,7 +43,7 @@ function toggleDark() {
         document.documentElement.style.setProperty('--ffffff-background', '#FFF');
         document.documentElement.style.setProperty('--ffffff-text', '#FFF');
         document.documentElement.style.setProperty('--logo-brightness', 'brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%)');
-        document.documentElement.style.setProperty('--hero-img-filter', '0');
+        document.documentElement.style.setProperty('--dm-img-filter', '0');
         localStorage.setItem('isDarkMode', isDarkMode);
     }
 }

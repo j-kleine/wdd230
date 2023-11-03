@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Ubuntu:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+body {
+    display: block;
+    margin: 0 auto;
+    padding: 1em 0;
+    max-width: 900px;
+    width: 95%;
+    min-width: 350px;
+    background-color: #101618;
+}
+
+#content {
+    margin: 0 auto;
+    background-color: #DFE4DC;
+}
+
+
+
+/* ------ HEADER ------ */
+header {
+    margin: 0 auto;
+    background-color: #2F3E46;
+}
+
+#top-header {
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+}
+
+#picture-me {
+    margin: 0 1em 0 0;
+    height: 100px;
+    width: 100px;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+#top-header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: "Century Gothic", sans-serif;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1em;
+    justify-content: center;
+    background-color: #354F52;
+}
+
+#menubutton {
+    margin: 0 auto;
+    width: 3rem;
+    height: 3rem;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+	border: none;
+	background-color: transparent;
+	color: #CAD2C5;
+}
+
+#menubutton:hover {
+    color: #FFFFFF;
+}
+
+#menubutton::before {
+	content: "☰";
+}
+
+nav {
+    display: none;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+#menubutton.openbutton::before {
+	content: "\1F781";
+    /* alternative: ✕ */
+}
+
+.opennav {
+    display: flex;
+    flex-direction: column;
+}
+/* ------ */
+
+nav a {
+    display: flex;
+    margin: 0 auto;
+    padding: .5em;
+    justify-content: center;
+    color: #CAD2C5;
+    font-family: Ubuntu, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: .2s;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+    transition: .2s;
+}
+
+#active {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+
+
+/* ------ MAIN ------ */
+main {
+    display: grid;
+    gap: 1.5em 0;
+    grid-template-columns: 25px 1fr 25px;
+    margin: 0 auto;
+    padding: 0 0 1.5em 0;
+}
+
+main h2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+    font-family: Century Gothic, sans-serif;
+}
+
+form {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+
+
+/* ------ RECORD PAGE MESSAGE ------  */
+.record-msg {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+}
+
+.main-msg {
+    font-family: "Century Gothic", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.note-msg {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+}
+
+.welcome-msg {
+    font-family: "Century Gothic", sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+
+
+/* ------ FOOTER ------ */
+footer {
+    margin: 0 auto;
+    padding: 1em 0;
+    background-color: #2F3E46;
+}
+
+footer p {
+    margin: 0 auto;
+    padding: .2em 0;
+    text-align: center;
+    font-family: Ubuntu, sans-serif;
+    color: #CAD2C5;
+}
+
+#lastModified {
+    font-size: .8em;
+    text-transform: uppercase;
+}

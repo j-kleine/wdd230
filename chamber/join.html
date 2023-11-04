@@ -42,38 +42,51 @@
         <main class="join-main">
             <form method="get" action="thankyou.html">
                 <fieldset>
-                    <legend>Create Your Account</legend>
-                    <label class="top">Username <input type="text" name="uname" id="username" title="Please enter a username" placeholder="Enter username" required></label>
-                    <label class="top pw1">Password <input type="password" name="password" id="password" minlength="8" pattern="[a-zA-Z0-9]+" title="Please enter a password &#010; Min. 8 characters long &#010; Numbers and letters only" placeholder="Enter password" required></label>
-                    <label class="top pw2">Password <input type="password" name="password" id="password2" minlength="8" pattern="[a-zA-Z0-9]+" title="Please repeat password &#010; Min. 8 characters long &#010; Numbers and letters only" placeholder="Re-enter password" required></label>
-                    <div id="match-msg">❗Passwords DO NOT MATCH❗</div>
-                    <label class="top">Email <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="EPlease enter a valid '@byui.edu' email address" placeholder="Enter '@byui.edu' address" required></label>
-                    <label class="top">Rating<br>
-                        <span id="rangevalue">1</span>
-                        <input type="range" name="r" id="ratingRange" min="1" max="10" value="1" step="1" list="rangevalues">
-                        <datalist id="rangevalues">
-                            <option value="1"></option>
-                            <option value="2"></option>
-                            <option value="3"></option>
-                            <option value="4"></option>
-                            <option value="5"></option>
-                            <option value="6"></option>
-                            <option value="7"></option>
-                            <option value="8"></option>
-                            <option value="9"></option>
-                            <option value="10"></option>
-                        </datalist>
+                    <legend>Join Us</legend>
+                    <div class="required">Required Fields</div>
+                    <label class="top required">First Name:
+                        <input type="text" name="fname" id="firstName" title="Please enter your first name" placeholder="Enter first name" required>
                     </label>
+
+                    <label class="top required">Last Name:
+                        <input type="text" name="lname" id="lastName" title="Please enter your last name" placeholder="Enter last name" required>
+                    </label>
+
+                    <label class="top">Title/Position:
+                        <input type="text" name="titleposition" id="titlePosition" title="Please enter the title or position you hold in your company" placeholder="Enter title or position">
+                    </label>
+
+                    <label class="top required">Email:
+                        <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter your email address" placeholder="example@helsingor.dk" required>
+                    </label>
+
+                    <label class="top required">Mobile Number:
+                        <input type="tel" name="mobiletel" id="mobileTel" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter your mobile number" placeholder="+45 00 00 00 00" required>
+                    </label>
+
+                    <label class="top required">Business/Organization Name:
+                        <input type="text" name="bname" id="businessName" title="Please enter your business or organization's name" placeholder="Enter business/organization's name" required>
+                    </label>
+
+                    <label class="top required">Membership Level: 
+                        <select name="memberlvl" id="memberLvl" required>
+                            <option value="">Please select...</option>
+                            <option value="NP">NP Membership</option>
+                            <option value="Bronze">Bronze Membership</option>
+                            <option value="Silver">Silver Membership</option>
+                            <option value="Gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label for="timestamp">
+                        <input type="hidden" name="timestamp" id="timestamp" value="">
+                    </label>
+
+
+
                 </fieldset>
-                <input class="submitButton" type="submit" value="Sign In">
+                <input class="submitButton" type="submit" value="Send My Application">
             </form>
-
-
-
-
-
-
-
         </main>
         <footer>
             <div id="top-footer">

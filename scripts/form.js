@@ -5,15 +5,16 @@ const message = document.querySelector("#match-msg");
 
 pw1.addEventListener("focusout", checkSame);
 pw2.addEventListener("focusout", checkSame);
+pw2.addEventListener("input", checkSame);
 
 function checkSame() {
 	if (pw1.value !== pw2.value) {
-		message.style.visibility = "visible";
+		message.style.opacity = "1";
 		pw2.style.backgroundColor = "#fff0f3";
-		pw2.value = "";
+		// pw2.value = "";
 	} else {
-		message.style.visibility = "hidden";
-		pw2.style.backgroundColor = "#FFFFFF";
+		message.style.opacity = "0";
+		pw2.style.backgroundColor = "#0000001a";
 		pw2.style.color = "#555";
 	}
 }

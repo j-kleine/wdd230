@@ -42,6 +42,7 @@
                     <label class="top">Username <input type="text" name="uname" id="username" title="Please enter a username" placeholder="Enter username" required></label>
                     <label class="top pw1">Password <input type="password" name="password" id="password" minlength="8" pattern="[a-zA-Z0-9]+" title="Min. 8 characters long &#013Numbers and letters only" placeholder="Enter password" required></label>
                     <label class="top pw2">Password <input type="password" name="password" id="password2" minlength="8" pattern="[a-zA-Z0-9]+" title="Repeat password &#013Min. 8 characters long &#013Numbers and letters only" placeholder="Re-enter password" required></label>
+                    <div id="match-msg">❗Passwords DO NOT MATCH❗</div>
                     <label class="top">Email <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Enter a valid '@byui.edu' email address" placeholder="Enter '@byui.edu' address" required></label>
                     <label class="top">Rating
                         <div id="rangevalue">1</div>
@@ -61,11 +62,7 @@
                     </label>
                 </fieldset>
                 <input class="submitButton" type="submit" value="Sign In">
-                <div id="match-msg">❗Passwords DO NOT MATCH❗</div>
-            </form>
-
-
-            
+            </form>            
         </main>
         <footer>
             <p id="copyrightYear">@[CURRENT YEAR]</p>

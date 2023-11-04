@@ -53,15 +53,15 @@
                     </label>
 
                     <label class="top">Title/Position:
-                        <input type="text" name="titleposition" id="titlePosition" title="Please enter the title or position you hold in your company" placeholder="Enter title or position">
+                        <input type="text" name="titleposition" id="titlePosition" pattern="[A-Za-z\\s-]{7,} title="Please enter the title or position you hold in your company" placeholder="Enter title or position">
                     </label>
 
                     <label class="top required">Email:
-                        <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter your email address" placeholder="example@helsingor.dk" required>
+                        <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@\.dk$" title="Please enter your email address" placeholder="example@helsingor.dk" required>
                     </label>
 
                     <label class="top required">Mobile Number:
-                        <input type="tel" name="mobiletel" id="mobileTel" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter your mobile number" placeholder="+45 00 00 00 00" required>
+                        <input type="tel" name="mobiletel" id="mobileTel"  title="Please enter your mobile number" placeholder="+45 00 00 00 00" required>
                     </label>
 
                     <label class="top required">Business/Organization Name:
@@ -69,13 +69,17 @@
                     </label>
 
                     <label class="top required">Membership Level: 
-                        <select name="memberlvl" id="memberLvl" required>
+                        <select name="memberlvl" id="memberLvl">
                             <option value="">Please select...</option>
                             <option value="NP">NP Membership</option>
                             <option value="Bronze">Bronze Membership</option>
                             <option value="Silver">Silver Membership</option>
                             <option value="Gold">Gold Membership</option>
                         </select>
+                    </label>
+
+                    <label class="top">Business/Organization Description:
+                        <textarea name="description" id="boDescription" cols="30" rows="3"></textarea>
                     </label>
 
                     <label for="timestamp">

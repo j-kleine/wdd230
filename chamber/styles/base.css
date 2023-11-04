@@ -653,6 +653,15 @@ figcaption {
 
 /* ------ PAGE 4 ------ */
 /* ------ JOIN - MAIN ------ */
+.join-main {
+    display: grid;
+    grid-template-columns: .2rem 1fr .2rem;
+    gap: 2rem .2rem;
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 350px;
+}
+
 form {
     grid-column: 2/3;
     grid-row: 3/4;
@@ -783,22 +792,38 @@ form input.submitButton:active {
 .record-msg {
     grid-column: 2/3;
     grid-row: 2/3;
+    padding: 2rem .5rem;
     text-align: center;
 }
 
 .main-msg {
+    padding: 2rem 0 4rem 0;
     font-family: var(--headings-font);
     font-weight: 800;
     font-size: 1.5rem;
+    color: var(--main-color-text);
 }
 
 .note-msg {
     font-family: var(--paragraphs-font);
     font-size: 1rem;
+    color: var(--main-color-text);
+}
+
+.note-msg a {
+    color: var(--main-color-text);
 }
 
 .welcome-msg {
+    padding: 4rem 0 0 0;
     font-family: var(--headings-font);
     font-weight: 800;
     font-size: 1.2rem;
+    color: var(--main-color-text);
+}
+
+.hp-return {
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: var(--main-color-text);
 }

@@ -9,7 +9,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.visitcopenhagen.de/sites/visitcopenhagen.com/files/2019-09/Helsing%C3%B8r_Thomas%20H%C3%B8yrup%20Christensen.JPG">
     <meta property="og:url" content="https://j-kleine.github.io/wdd230/chamber/index.html">
-    <title>Chamber of Commerce | JK WDD230</title>
+    <title>Join - Chamber of Commerce | JK WDD230</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -31,75 +31,29 @@
                 <button id="menubutton" aria-label="expand and close navigation menu"></button>
                 <nav>
                     <ul>
-                        <li><a id="active" class="navlinks" href="#">Home</a></li>
+                        <li><a class="navlinks" href="index.html">Home</a></li>
                         <li><a class="navlinks" href="discover.html">Discover</a></li>
                         <li><a class="navlinks" href="">Directory</a></li>
-                        <li><a class="navlinks" href="">Join</a></li>
+                        <li><a id="active" class="navlinks" href="join.html">Join</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <main class="home-main">
-            <div class="hero">
-                <picture>
-                    <source media="(max-width: 599px)" srcset="images/small.webp">
-                    <source media="(max-width: 899px)" srcset="images/medium.webp">
-                    <img class="hero-background" src="images/large.webp" alt="hero image">
-                </picture>
-                <!-- <picture>
-                    <source media="(max-width: 599px)" srcset="images/eg-small.webp">
-                    <source media="(max-width: 899px)" srcset="images/eg-medium.webp">
-                    <img class="hero-background" src="images/eg-large.webp" alt="hero image">
-                </picture> -->
-                <div class="hero-button-position">
-                    <a class="hero-button" href="join.html">Join Now</a>
-                </div>
-                
+        <main class="join-main">
+            <div class="record-msg">
+                <p class="main-msg">Your account has been successfully created!</p>
+                <p class="note-msg">You will get a confirmation email in the next five minutes.</p>
+                <p class="note-msg">If you encounter any questions or problems, feel free to send us an email <a href="#">here</a>!</p>
+                <p class="welcome-msg">Great to have you with us!</p>
+                <a class="hp-return" href="index.html">Return to Home Page</a>
             </div>
-            <section class="card-next-event">
-                <h2 class="card-header">Next Event</h2>
-                <section class="event">
-                    <h3>Ribbon Cutting</h3>
-                    <p>Join us for the grand opening of <a href="#">The Diamond Shack</a>, Thursday, 01.01.2011, at 13:00.</p>
-                </section>
-            </section>
-            <section class="card-weather">
-                <h2 class="card-header">Weather</h2>
-                <div>
-                    <p class="temperature">Temperature</p>
-                    <p class="temp-value"><span id="temp-var">6</span>°C</p>
-                    <p class="windchill">Feels Like</p>
-                    <p class="chill-value"><span id="chill-var"></span>°C</p>
-                    <p class="windspeed">Wind Speed</p>
-                    <p class="speed-value"><span id="speed-var">5</span>km/h</p>
-                </div>
-            </section>
-            <section class="card-spotlights">
-                <h2 class="card-header">Member Spotlights</h2>
-                <div class="spotlight-grid">
-                    <section class="spotlight">
-                        <h3>🚛 Thankful Transport</h3>
-                        <p class="ad-text">"We get it there for you!"</p>
-                        <p>hello@thankfultransport.com</p>
-                        <p>+999-9999-9999</p>
-                        <p>Website</p>
-                    </section>
-                    <section class="spotlight">
-                        <h3>👨🏽‍💻 Code Primera</h3>
-                        <p class="ad-text">After school coding!</p>
-                        <p>contact@codeprimera.com</p>
-                        <p>+999-9999-9999</p>
-                        <p>Website</p>
-                    </section>
-                    <section class="spotlight">
-                        <h3>🌳 Build A Treefort</h3>
-                        <p class="ad-text">Over 1000 Plans!</p>
-                        <p>builda@treefort.com</p>
-                        <p>+888-8888-8888</p>
-                        <p>Website</p>
-                    </section>
-                </div>
-            </section>
+
+
+
+
+
+
+
         </main>
         <footer>
             <div id="top-footer">
@@ -126,7 +80,7 @@
 
     <script src="scripts/togglemode.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/joinform.js"></script>
     <script src="scripts/getdates.js"></script>
 
 </body>

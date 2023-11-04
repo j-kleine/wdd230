@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
 
 :root {
-    /* ------ FONTS ------ */
+/* ------ FONTS ------ */
     --CenturyGothic: "Century Gothic", sans-serif;
     --Ubuntu: "Ubuntu", sans-serif;
 
-    /* ------ COLORS ------ */
+/* ------ COLORS ------ */
     --valid: green;
     --invalid: red;
     --shadow-color: #2F3E46B6;
 
-    /* ------ BORDER RADIUS ------ */
+/* ------ BORDER RADIUS ------ */
     --radius: 2rem;
 }
 

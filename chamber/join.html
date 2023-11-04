@@ -4,38 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Joschua Kleine">
-    <meta name="description" content="The course assignment portal of Joschua Kleine for the WDD 230 - Web Frontend Development course at BYU-Idaho.">
-    <meta property="og:title" content="Joschua Kleine - WDD 230 - Web Frontend Development">
+    <meta name="description" content="A fictional chamber of commerce website, an assignment of Joschua Kleine for the WDD 230 - Web Frontend Development course at BYU-Idaho.">
+    <meta property="og:title" content="Chamber of Commerce | JK WDD230">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.voucherwonderland.com/reisemagazin/wp-content/uploads/2018/03/Schleswig-Holsteinisches-Wattenmeer.jpg">
-    <meta property="og:url" content="https://j-kleine.github.io/wdd230/">
-    <title>Form | Joschua Kleine - WDD 230 - Web Frontend Development</title>
+    <meta property="og:image" content="https://www.visitcopenhagen.de/sites/visitcopenhagen.com/files/2019-09/Helsing%C3%B8r_Thomas%20H%C3%B8yrup%20Christensen.JPG">
+    <meta property="og:url" content="https://j-kleine.github.io/wdd230/chamber/index.html">
+    <title>Join - Chamber of Commerce | JK WDD230</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/form.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
     <div id="content">
+        <label class="switch" for="toggledarkmode">
+            <input type="checkbox" name="toggledarkmode" aria-label="toggledarkmode" id="toggledarkmode" onclick="toggleDark()">
+            <span class="slider-round"></span>
+        </label>
         <header>
             <div id="top-header">
-                <img id="picture-me" src="images/me.webp" alt="Joschua Kleine">
-                <h1>Joschua Kleine</h1>
+                <img class="logo" src="images/logo.svg" alt="Helsingør Commerce Chamber Logo">
+                <h1>Helsingør<br>Chamber of<br>Commerce</h1>
             </div>
             <div id="navbar">
                 <button id="menubutton" aria-label="expand and close navigation menu"></button>
                 <nav>
-                    <a href="index.html">Home</a>
-                    <a href="lesson03/chamber-site-plan.html">Site Plan</a>
-                    <a href="chamber/index.html" target="_blank">Chamber</a>
-                    <a id="active" href="#">Form</a>
-                    <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
-                    <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/9?lang=eng&id=p26-p27#p26" target="_blank">Scripture</a>
+                    <ul>
+                        <li><a class="navlinks" href="index.html">Home</a></li>
+                        <li><a class="navlinks" href="discover.html">Discover</a></li>
+                        <li><a class="navlinks" href="">Directory</a></li>
+                        <li><a id="active" class="navlinks" href="#">Join</a></li>
+                    </ul>
                 </nav>
-            </div>                
+            </div>
         </header>
-        <main>                    
-            <h2>WDD 230: Web Frontend Development</h2>
+        <main class="join-main">
             <form method="get" action="record.html">
                 <fieldset>
                     <legend>Create Your Account</legend>
@@ -63,17 +67,41 @@
                 </fieldset>
                 <input class="submitButton" type="submit" value="Sign In">
             </form>
+
+
+
+
+
+
+
         </main>
         <footer>
+            <div id="top-footer">
+                <img class="logo" src="images/logo.svg" alt="Helsingør Commerce Chamber Logo">
+                <h2>Helsingør<br>Commerce Chamber</h2>
+                <p>10 Rue De La Paix<br>Helsingør, Denmark</p>
+                <div class="business-card">
+                    <p>info@helsingorcc.org</p>
+                    <p>+(223) 2070-2300</p>
+                    <p>📍<a href="https://www.google.com/maps/place/3000+Helsing%C3%B8r,+Denmark/@56.0344377,12.4572092,12z/data=!3m1!4b1!4m6!3m5!1s0x465231112f400bb3:0xf3e36e3c5817f767!8m2!3d56.030787!4d12.592127!16zL20vMDJreG0?entry=ttu" target="_blank">Location Map</a></p>
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/"><img src="images/icon-ig.webp" alt="Logo Instagram"></a>
+                    <a href="https://www.facebook.com/"><img src="images/icon-fb.webp" alt="Logo Facebook"></a>
+                </div>
+            </div>
+            <div class="vertical-line"></div>
             <p id="copyrightYear">@[CURRENT YEAR]</p>
             <p>Joschua Kleine</p>
-            <p>S.H. - Germany</p>
+            <p>WDD 230 Project</p>
             <p id="lastModified">[DATE LAST MODIFIED]</p>
         </footer>
     </div>
-    
+
+    <script src="scripts/togglemode.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
-    <script src="scripts/form.js"></script>
+    <script src="scripts/joinform.js"></script>
     <script src="scripts/getdates.js"></script>
+
 </body>
 </html>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@700&family=Gabarito&display=swap');
 
 :root {
-/* --- Colors --- */
+/* ------ COLORS ------ */
     --page-background: #eaf1f9;
     --main-color-background: #023368;
     --secondary-color-background: #014397;
@@ -13,16 +13,28 @@
     --ffffff-background: #FFFFFF;
     --ffffff-text: #FFFFFF;
 
-    --logo-brightness: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
-    --dm-img-filter: 0;
+    --valid: green;
+    --invalid: red;
+    --shadow-color: #2F3E46B6;
 
+/* ------ FONTS ------ */
     --headings-font: 'Changa', sans-serif;
     --paragraphs-font: 'Gabarito', cursive;
 
+/* ------ BORDER RADIUS ------ */
     --border-radius: .4rem;
+    --form-radius: 2rem;
+
+/* ------ IMG FILTERS ------ */
+    --logo-brightness: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    --dm-img-filter: 0;
+
+
 
     --transition-time: .2s;
 }
+
+
 
 body {
     background-color: var(--page-background);
@@ -117,6 +129,8 @@ input:checked + .slider-round:before {
     -ms-transform: translateX(16px);
     transform: translateX(16px);
 }
+
+
 
 /* ------ HEADER ------ */
 #top-header {
@@ -221,6 +235,8 @@ nav ul li {
     border-bottom: solid 0.2rem var(--accent-color);
     font-weight: 800;
 }
+
+
 
 /* ------ FOOTER ------ */
 footer {
@@ -327,6 +343,9 @@ footer {
     color: var(--text-on-dark);
     font-size: .8rem;
 }
+
+
+
 /* ------ PAGE 1 ------ */
 /* ------ HOME - MAIN ------ */
 .home-main {
@@ -513,6 +532,8 @@ section {
     color: var(--text-on-white);
 }
 
+
+
 /* ------ PAGE 2 ------ */
 /* ------ DISCOVER - MAIN ------ */
 .discover-main {
@@ -626,4 +647,158 @@ figcaption {
     color: var(--text-on-white);
     font-family: var(--paragraphs-font);
     transition: .8s ease;
+}
+
+
+
+/* ------ PAGE 4 ------ */
+/* ------ JOIN - MAIN ------ */
+form {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form fieldset {
+    margin:  0 0 1rem 0;
+    border: solid 2px #354F52;
+    border-radius: var(--radius);
+    padding: .5rem 2rem 1rem 2rem;
+    width: 70%;
+    max-width: 20rem;
+    background-color: #FFFFFF;
+    box-shadow: inset 0 0 10px var(--shadow-color);
+}
+
+form legend {
+    border: solid 2px #2F3E46;
+    border-radius: var(--radius);
+    padding: .5rem 1.5rem;
+    background-color: #2F3E46;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: var(--headings-font);
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: -1px;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1.5rem;
+    color: #354F52;
+    font-family: var(--paragraphs-font);
+    font-size: 1rem;
+}
+
+form label.top input {
+    display: block;
+    border: solid 1px #999;
+    border-radius: var(--radius);
+    padding: .75rem;
+    width: 90%;
+    max-width: 20rem;
+    color: #555;
+    font-size: 1rem;
+    background-color: #0000001a;
+}
+
+form label.top input:required {
+    border-left: solid 6px var(--invalid);
+}
+
+form label.top input:required:valid {
+    border-left: solid 6px var(--valid);
+}
+
+form label.top input:focus {
+    background-color: #FFFFFF;
+}
+
+form label.top input:focus-visible {
+    outline: -webkit-focus-ring-color auto 1px;
+    outline-color: var(--invalid);
+}
+
+form label.top input:focus-visible:valid {
+    outline: -webkit-focus-ring-color auto 1px;
+    outline-color: var(--valid);
+}
+
+#rangevalue {
+    padding: 0 0 0 1rem;
+	font-size: 2rem;
+	color: #354F52;
+}
+
+#ratingRange {
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#match-msg {
+    border-radius: var(--radius);
+    padding: 0;
+    text-align: center;
+    font-family: var(--paragraphs-font);
+    font-weight: bold;
+    opacity: 0;
+    transition: .2s ease-out;
+}
+
+form input.submitButton {
+    margin: 0 0 2rem 2%;
+    border: none;
+    border-radius: var(--radius);
+    padding: 1rem;
+    width: 60%;
+    max-width: 20rem;
+    min-width: 15rem;
+    color: #ffffffe6;
+    font-family: var(--paragraphs-font);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #C53030;
+    transition: .2s ease-in;
+}
+
+form input.submitButton:hover {
+    transform: scale(.99);
+    box-shadow: inset 0 5px 10px var(--shadow-color);
+    color: #FFFFFF;
+}
+
+form input.submitButton:active {
+    background-color: #8d2020;
+}
+
+
+
+/* ------ RECORD MESSAGE PAGE ------  */
+.record-msg {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+}
+
+.main-msg {
+    font-family: var(--headings-font);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.note-msg {
+    font-family: var(--paragraphs-font);
+    font-size: 1rem;
+}
+
+.welcome-msg {
+    font-family: var(--headings-font);
+    font-weight: 800;
+    font-size: 1.2rem;
 }

@@ -13,6 +13,7 @@
     --ffffff-background: #FFFFFF;
     --ffffff-text: #FFFFFF;
 
+/* ------ FORM COLORS ------ */
     --valid: green;
     --invalid: red;
     --shadow-color: #2F3E46B6;
@@ -675,7 +676,7 @@ form {
 form fieldset {
     margin:  0 0 1rem 0;
     border: solid 2px #354F52;
-    border-radius: var(--radius);
+    border-radius: var(--form-radius);
     padding: .5rem 2rem 1rem 2rem;
     width: 70%;
     max-width: 20rem;
@@ -685,7 +686,7 @@ form fieldset {
 
 form legend {
     border: solid 2px #2F3E46;
-    border-radius: var(--radius);
+    border-radius: var(--form-radius);
     padding: .5rem 1.5rem;
     background-color: #2F3E46;
     color: #FFFFFF;
@@ -707,7 +708,7 @@ form label.top {
 form label.top input {
     display: block;
     border: solid 1px #999;
-    border-radius: var(--radius);
+    border-radius: var(--form-radius);
     padding: .75rem;
     width: 90%;
     max-width: 20rem;
@@ -750,7 +751,7 @@ form label.top input:focus-visible:valid {
 }
 
 #match-msg {
-    border-radius: var(--radius);
+    border-radius: var(--form-radius);
     padding: 0;
     text-align: center;
     font-family: var(--paragraphs-font);
@@ -762,7 +763,7 @@ form label.top input:focus-visible:valid {
 form input.submitButton {
     margin: 0 0 2rem 2%;
     border: none;
-    border-radius: var(--radius);
+    border-radius: var(--form-radius);
     padding: 1rem;
     width: 60%;
     max-width: 20rem;
@@ -797,14 +798,15 @@ form input.submitButton:active {
 }
 
 .main-msg {
-    padding: 2rem 0 4rem 0;
+    padding: 2rem 0 2rem 0;
     font-family: var(--headings-font);
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: var(--main-color-text);
 }
 
 .note-msg {
+    padding: .5rem;
     font-family: var(--paragraphs-font);
     font-size: 1rem;
     color: var(--main-color-text);
@@ -815,10 +817,10 @@ form input.submitButton:active {
 }
 
 .welcome-msg {
-    padding: 4rem 0 0 0;
+    padding: 2rem 0 0 0;
     font-family: var(--headings-font);
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--main-color-text);
 }
 

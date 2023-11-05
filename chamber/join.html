@@ -45,19 +45,22 @@
                     <legend>Join Us</legend>
                     <div class="required">Required Fields</div>
                     <label class="top required">First Name:
-                        <input type="text" name="fname" id="firstName" title="Please enter your first name" placeholder="Enter first name" required>
+                        <input type="text" name="fname" id="firstName" pattern="\w{2,}" title="Please enter your first name (min. 2 characters)" placeholder="Enter first name" required>
+                        <section class="pattern">min. 2 characters</section>
                     </label>
 
                     <label class="top required">Last Name:
-                        <input type="text" name="lname" id="lastName" title="Please enter your last name" placeholder="Enter last name" required>
+                        <input type="text" name="lname" id="lastName" pattern="\w{2,}" title="Please enter your last name (min. 2 characters)" placeholder="Enter last name" required>
+                        <section class="pattern">min. 2 characters</section>
                     </label>
 
                     <label class="top">Title/Position:
-                        <input type="text" name="titleposition" id="titlePosition" pattern="[A-Za-z\\s-]{7,} title="Please enter the title or position you hold in your company" placeholder="Enter title or position">
+                        <input type="text" name="titleposition" id="titlePosition" pattern="[A-Za-z\s]{7,}" title="Please enter the title or position you hold in your company" placeholder="Enter title or position">
+                        <section class="pattern">min. 7 characters</section>
                     </label>
 
                     <label class="top required">Email:
-                        <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@\.dk$" title="Please enter your email address" placeholder="example@helsingor.dk" required>
+                        <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@$\.dk" title="Please enter your email address" placeholder="example@helsingor.dk" required>
                     </label>
 
                     <label class="top required">Mobile Number:
@@ -82,7 +85,7 @@
                         <textarea name="description" id="boDescription" cols="30" rows="3"></textarea>
                     </label>
 
-                    <label for="timestamp">
+                    <label id="timestamp">
                         <input type="hidden" name="timestamp" id="timestamp" value="">
                     </label>
 
@@ -117,7 +120,6 @@
 
     <script src="scripts/togglemode.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
-    <script src="scripts/joinform.js"></script>
     <script src="scripts/getdates.js"></script>
 
 </body>

@@ -730,6 +730,7 @@ form label.top input {
 }
 
 form label.top .pattern {
+    display: block;
     padding: 0 1rem;
     color: var(--text-on-dark);
     text-align: right;

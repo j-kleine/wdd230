@@ -864,7 +864,7 @@ form input.submitButton:active {
 }
 
 #membershipInfo section:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
     box-shadow: 0 0 0 .2rem var(--accent-color);
 }
 

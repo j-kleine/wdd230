@@ -772,9 +772,30 @@ form label select {
     background-color: var(--ffffff-background);
 }
 
+form label select:hover {
+    outline: -webkit-focus-ring-color auto 1px;
+    outline-color: var(--valid);
+}
+
 form label select:focus {
     outline: -webkit-focus-ring-color auto 1px;
     outline-color: var(--valid);
+    box-shadow: inset 0 0 20px var(--shadow-color);
+}
+
+form label a {
+    display: block;
+    padding: 0 1rem;
+    color: var(--text-on-dark);
+    text-align: right;
+    font-family: var(--paragraphs-font);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: var(--transition-time);
+}
+
+form label a:hover {
+    color: var(--accent-color);
 }
 
 form label textarea {
@@ -819,6 +840,34 @@ form input.submitButton:hover {
 
 form input.submitButton:active {
     background-color: #8d2020;
+}
+
+#membershipInfo {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+#membershipInfo h2{
+    padding-bottom: 1rem;
+}
+
+#membershipInfo section{
+    margin: 1rem;
+    padding: 1.5rem;
+    border: solid .2rem var(--secondary-color-background);
+    border-radius: var(--border-radius);
+    background-color: var(--ffffff-background);
+    transition: var(--transition-time);
+}
+
+#membershipInfo h3{
+    color: var(--main-color-text);
+    word-spacing: 3rem;
+}
+
+#membershipInfo p{
+    padding-left: 2rem;
+    color: var(--text-on-white);
 }
 
 

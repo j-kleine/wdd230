@@ -45,17 +45,17 @@
                     <legend>Join Us</legend>
                     <div class="required">Required Fields</div>
                     <label class="top required">First Name:
-                        <input type="text" name="fname" id="firstName" pattern="\w{2,}" title="Please enter your first name (min. 2 characters)" placeholder="Enter first name" required>
+                        <input type="text" name="fname" id="firstName" pattern="\w{2,}" title="(min. 2 characters) Please enter your first name" placeholder="Enter first name" required>
                         <section class="pattern">min. 2 characters</section>
                     </label>
 
                     <label class="top required">Last Name:
-                        <input type="text" name="lname" id="lastName" pattern="\w{2,}" title="Please enter your last name (min. 2 characters)" placeholder="Enter last name" required>
+                        <input type="text" name="lname" id="lastName" pattern="\w{2,}" title="(min. 2 characters) Please enter your last name" placeholder="Enter last name" required>
                         <section class="pattern">min. 2 characters</section>
                     </label>
 
                     <label class="top">Title/Position:
-                        <input type="text" name="titleposition" id="titlePosition" pattern="[A-Za-z\s]{7,}" title="Please enter the title or position you hold in your company" placeholder="Enter title or position">
+                        <input type="text" name="titleposition" id="titlePosition" pattern="[A-Za-z\s\-]{7,}" title="(min. 7 characters) Please enter the title or position you hold in your company" placeholder="Enter title or position">
                         <section class="pattern">min. 7 characters</section>
                     </label>
 
@@ -71,14 +71,15 @@
                         <input type="text" name="bname" id="businessName" title="Please enter your business or organization's name" placeholder="Enter business/organization's name" required>
                     </label>
 
-                    <label class="top required">Membership Level: 
+                    <label class="top">Membership Level:
                         <select name="memberlvl" id="memberLvl">
-                            <option value="">Please select...</option>
-                            <option value="NP">💠 NP Membership</option>
-                            <option value="Bronze">🥉 Bronze Membership</option>
-                            <option value="Silver">🥈 Silver Membership</option>
-                            <option value="Gold">🥇 Gold Membership</option>
+                            <option value="">Please select Membership...</option>
+                            <option value="NP"> 💠 Non-Profit</option>
+                            <option value="Gold"> 🥇 Gold</option>
+                            <option value="Silver"> 🥈 Silver</option>
+                            <option value="Bronze"> 🥉 Bronze</option>
                         </select>
+                        <a href="#membershipInfo">learn more...</a>
                     </label>
 
                     <label class="top">Business/Organization Description:
@@ -94,6 +95,26 @@
                 </fieldset>
                 <input class="submitButton" type="submit" value="Send My Application">
             </form>
+
+            <section id="membershipInfo">
+                <h2>Membership Info</h2>
+                <section>
+                    <h3>💠Non-Profit - 0dkr</h3>
+                    <p>These membership levels have increasing costs as well as increased benefits per level. Benefits might include special events, training, advertising (like spotlight positions on the home page), event discounts, etc.</p>
+                </section>
+                <section>
+                    <h3>🥇Gold - 999dkr</h3>
+                    <p>These membership levels have increasing costs as well as increased benefits per level. Benefits might include special events, training, advertising (like spotlight positions on the home page), event discounts, etc.</p>
+                </section>
+                <section>
+                    <h3>🥈Silver - 555dkr</h3>
+                    <p>These membership levels have increasing costs as well as increased benefits per level. Benefits might include special events, training, advertising (like spotlight positions on the home page), event discounts, etc.</p>
+                </section>
+                <section>
+                    <h3>🥉Bronze - 111dkr</h3>
+                    <p>These membership levels have increasing costs as well as increased benefits per level. Benefits might include special events, training, advertising (like spotlight positions on the home page), event discounts, etc.</p>
+                </section>
+            </section>
         </main>
         <footer>
             <div id="top-footer">

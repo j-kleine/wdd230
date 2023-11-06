@@ -757,12 +757,19 @@ form label.top input:focus:invalid {
     outline: -webkit-focus-ring-color auto 1px;
     outline-color: var(--invalid);
 }
+ form label:nth-child(5) input {
+    padding-left: 22px;
+ }
 
 form label select {
     display: block;
-    padding: 1rem;
-    width: 90%;
+    border: none;
+    border-radius: var(--form-radius);
+    padding: 1rem 2rem 1rem 22px;
+    width: 100%;
     max-width: 20rem;
+    color: var(--text-on-white);
+    background-color: var(--ffffff-background);
 }
 
 form label select:focus {
@@ -771,11 +778,14 @@ form label select:focus {
 }
 
 form label textarea {
+    border: none;
     border-radius: var(--form-radius);
     padding: 1rem;
     padding-left: 22px;
     width: 90%;
     max-width: 20rem;
+    color: var(--text-on-white);
+    background-color: var(--ffffff-background);
 }
 
 form label textarea:focus {

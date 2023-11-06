@@ -103,6 +103,11 @@
         margin: auto;
     }
 
+    /* Page 4 JOIN RECORD MESSAGE PAGE */
+    .record-msg {
+        grid-column: 1/3;
+    }
+
     /* ------ FOOTER ------ */
     #top-footer {
         grid-template-columns: auto auto 30vw auto;
@@ -118,4 +123,6 @@
         grid-column: 3/4;
         grid-row: 1/3;
     }
+
+    
 }

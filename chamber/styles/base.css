@@ -845,6 +845,7 @@ form input.submitButton:active {
 #membershipInfo {
     grid-column: 2/3;
     grid-row: 4/5;
+    margin-top: 1rem;
 }
 
 #membershipInfo h2{
@@ -862,7 +863,7 @@ form input.submitButton:active {
 
 #membershipInfo h3{
     color: var(--main-color-text);
-    word-spacing: 3rem;
+    word-spacing: 1rem;
 }
 
 #membershipInfo p{

@@ -680,14 +680,15 @@ form fieldset {
     padding: .5rem 2rem 2rem 2rem;
     width: 70%;
     max-width: 20rem;
-    background-color: var(--secondary-color-background);
+    background-color: var(--main-color-background);
 }
 
 form legend {
+    box-shadow: 0 0 0 5px var(--accent-color);
     border: solid 5px var(--page-background);
     border-radius: var(--form-radius);
     padding: 1rem 3rem;
-    background-color: var(--main-color-background);
+    background-color: var(--secondary-color-background);
     color: var(--ffffff-text);
     text-align: left;
     font-family: var(--headings-font);
@@ -734,6 +735,7 @@ form label.top .pattern {
     text-align: right;
     font-family: var(--paragraphs-font);
     font-size: .8rem;
+    background-color: var(--main-color-background);
 }
 
 form label.top input:required {
@@ -861,14 +863,29 @@ form input.submitButton:active {
     transition: var(--transition-time);
 }
 
+#membershipInfo section:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 .2rem var(--accent-color);
+}
+
 #membershipInfo h3{
     color: var(--main-color-text);
     word-spacing: 1rem;
 }
 
+#membershipInfo span{
+    border: none;
+    border-radius: var(--form-radius);
+    padding: .25rem 1rem;
+    color: var(--accent-color);
+    word-spacing: normal;
+    background-color: var(--secondary-color-background);
+}
+
 #membershipInfo p{
-    padding-left: 2rem;
+    padding: 1rem 0 0 2rem;
     color: var(--text-on-white);
+    line-height: 1.5rem;
 }
 
 

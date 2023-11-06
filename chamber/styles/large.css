@@ -82,6 +82,26 @@
     figure:hover figcaption {
         padding-left: 10rem;
     }
+    
+    /* Page 4 JOIN */
+
+    .join-main {
+        grid-template-columns: 3fr 4fr;
+        gap: 1rem 1rem;
+        max-width: 1200px;
+        min-width: 800px;
+    }
+
+    form {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #membershipInfo {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin: auto;
+    }
 
     /* ------ FOOTER ------ */
     #top-footer {

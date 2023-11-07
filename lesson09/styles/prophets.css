@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@700&family=Gabarito&display=swap');
+
+:root {
+    --font-header: Changa, Arial, Helvetica, sans-serif;
+    --font-p: Gabarito, Arial, Helvetica, sans-serif;
+    
+    --letter-spacing: -2px;
+
+    --cards-min-width: 300px;
+
+    --page-background: #FFFFFF;
+    --container-background: #DDDDDD;
+    --card-background: #B9B9CC;
+    --text-color: #4D4D96;
+    --border-color: var(--text-color);
+
+
+    --border-radius: 1rem;
+    --box-shadow: 0 0 30px #777;
+
+    --transition: .4s ease;
+}
+
+body {
+    margin: 2rem;
+  font-size: 16px;
+  font-family: var(--font-p);
+}
+
+header,
+main,
+footer {
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+footer {
+    margin: 1rem;
+}
+
+h1 {
+    margin: 2rem 0 0 0;
+    text-align: center;
+    color: var(--text-color);
+    font-family: var(--font-header);
+    font-size: 2.5rem;
+    letter-spacing: var(--letter-spacing);
+}
+
+h2 {
+    margin: 1rem auto;
+    color: var(--text-color);
+    font-size: 2rem;
+    letter-spacing: var(--letter-spacing);
+    text-align: center;
+    line-height: 2rem;
+    transition: var(--transition);
+}
+
+p {
+    margin: 0 auto;
+    font-family: var(--font-p);
+    transition: var(--transition);
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--cards-min-width), 1fr));
+    min-width: var(--cards-min-width);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    padding: .5rem;
+    background-color: var(--container-background);
+}
+
+section {
+    margin: 0.5rem;
+    padding: 0.35rem;
+    background-color: var(--card-background);
+    border: 1px solid var(--text-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:hover h2, section:hover p  {
+    transform: scale(.9) translateY(150%);
+    opacity: 0;
+}
+
+section:hover img {
+    transform: scale(1.5) translateY(-18%);
+}
+
+img {
+    margin: 1rem auto .5rem auto;
+    width: auto;
+	max-width: 325px;
+    box-shadow: var(--box-shadow);
+    height: 200px;
+    border-radius: var(--border-radius);
+    transition: .4s ease;
+}

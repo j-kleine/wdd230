@@ -96,10 +96,7 @@ section:hover img {
 
 img {
     margin: 1rem auto .5rem auto;
-    width: auto;
-	max-width: 325px;
     box-shadow: var(--box-shadow);
-    height: 200px;
     border-radius: var(--border-radius);
     transition: .4s ease;
 }

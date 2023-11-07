@@ -1,0 +1,23 @@
+{
+    "familyName": "Müller",
+    "dateMove": "01/01/1967",
+    "numRecords": "3",
+    "visited": true,
+    "familyMembers": [
+        {
+            "name": "Gerd",
+            "gender": "M",
+            "birthdate": "03/11/1945"
+        },
+        {
+            "name": "Ursula",
+            "gender": "F",
+            "birthdate": "02/02/1949"
+        },
+        {
+            "name": "Nicole",
+            "gender": "F",
+            "birthdate": "03/03/1971"
+        }
+    ]
+}

@@ -691,14 +691,22 @@ figcaption {
 
 .m-logo {
     margin: .5rem auto;
+    border-radius: var(--border-radius);
     max-height: 120px;
     max-width: 200px;
+    transition: var(--transition-time);
+}
+
+.member-card:nth-child(4) .m-logo{
+    padding: .2rem 0;
     background-color: #E97601;
 }
 
 .m-address {
-    margin-top: 1rem;
+    margin: 1rem;
+    text-align: center;
     color: var(--text-on-white);
+    transition: var(--transition-time);
 }
 
 .m-phone {

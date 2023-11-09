@@ -9,7 +9,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.visitcopenhagen.de/sites/visitcopenhagen.com/files/2019-09/Helsing%C3%B8r_Thomas%20H%C3%B8yrup%20Christensen.JPG">
     <meta property="og:url" content="https://j-kleine.github.io/wdd230/chamber/index.html">
-    <title>Join - Chamber of Commerce | JK WDD230</title>
+    <title>Directory - Chamber of Commerce | JK WDD230</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -33,69 +33,13 @@
                     <ul>
                         <li><a class="navlinks" href="index.html">Home</a></li>
                         <li><a class="navlinks" href="discover.html">Discover</a></li>
-                        <li><a class="navlinks" href="directory.html">Directory</a></li>
-                        <li><a id="active" class="navlinks" href="#">Join</a></li>
+                        <li><a id="active" class="navlinks" href="#">Directory</a></li>
+                        <li><a class="navlinks" href="join.html">Join</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main class="join-main">
-            <form method="get" action="thankyou.html">
-                <fieldset>
-                    <legend>Join Us</legend>
-                    <div class="required">Required Fields</div>
-                    <label class="top required">First Name:
-                        <input type="text" name="fname" id="firstName" pattern="\w{2,}" title="(min. 2 characters) Please enter your first name" placeholder="Enter first name" required>
-                        <span class="pattern">min. 2 characters</span>
-                    </label>
-
-                    <label class="top required">Last Name:
-                        <input type="text" name="lname" id="lastName" pattern="\w{2,}" title="(min. 2 characters) Please enter your last name" placeholder="Enter last name" required>
-                        <span class="pattern">min. 2 characters</span>
-                    </label>
-
-                    <label class="top">Title/Position:
-                        <input type="text" name="titleposition" id="titlePosition" pattern="[A-Za-z\s\-]{7,}" title="(min. 7 characters) Please enter the title or position you hold in your company" placeholder="Enter title or position">
-                        <span class="pattern">min. 7 characters</span>
-                    </label>
-
-                    <label class="top required">Email:
-                        <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@$\.dk" title="Please enter your email address" placeholder="example@helsingor.dk" required>
-                    </label>
-
-                    <label class="top required">Mobile Number:
-                        <input type="tel" name="mobiletel" id="mobileTel"  title="Please enter your mobile number" placeholder="+45 00 00 00 00" required>
-                    </label>
-
-                    <label class="top required">Business/Organization Name:
-                        <input type="text" name="bname" id="businessName" title="Please enter your business or organization's name" placeholder="Enter business/organization's name" required>
-                    </label>
-
-                    <label class="top">Membership Level:
-                        <select name="memberlvl" id="memberLvl">
-                            <option value="">Please select Membership...</option>
-                            <option value="NP"> 💠 Non-Profit</option>
-                            <option value="Gold"> 🥇 Gold</option>
-                            <option value="Silver"> 🥈 Silver</option>
-                            <option value="Bronze"> 🥉 Bronze</option>
-                        </select>
-                        <a href="#membershipInfo">learn more...</a>
-                    </label>
-
-                    <label class="top">Business/Organization Description:
-                        <textarea name="description" id="boDescription" cols="30" rows="3"></textarea>
-                    </label>
-
-                    <label>
-                        <input type="hidden" name="timestamp" id="timestamp" value="0">
-                    </label>
-
-
-
-                </fieldset>
-                <input class="submitButton" type="submit" value="Send My Application">
-            </form>
-
             <section id="membershipInfo">
                 <h2>Membership Info</h2>
                 <section>

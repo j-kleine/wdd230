@@ -1,6 +1,6 @@
 const getMembersURL = "https://j-kleine.github.io/wdd230/chamber/data/members.json";
 
-const directoryContainer = document.querySelector('#directory-container');
+const directoryContainer = document.querySelector('.directory-grid');
 
 async function getMembers() {
     const response = await fetch(getMembersURL);

@@ -671,7 +671,7 @@ figcaption {
     color: var(--main-color-text);
 }
 
-#directory-container {
+.directory-grid {
     grid-column: 2/3;
     grid-row: 3/4;
 }
@@ -693,7 +693,7 @@ figcaption {
     margin: .5rem auto;
     border-radius: var(--border-radius);
     max-height: 120px;
-    max-width: 200px;
+    max-width: 250px;
     transition: var(--transition-time);
 }
 

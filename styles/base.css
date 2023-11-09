@@ -215,6 +215,11 @@ section {
     text-decoration: underline;
 }
 
+.card-activity ul span {
+    color: #000000;
+    font-weight: bold;
+}
+
 .card-info {
     grid-column: 2/3;
     grid-row: 4/5;

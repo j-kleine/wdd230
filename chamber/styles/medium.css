@@ -94,9 +94,14 @@
         grid-row: 2/3;
     }
 
-    .directory-grid {
+    .viewmenu {
         grid-column: 1/2;
         grid-row: 3/4;
+    }
+
+    .directory-grid {
+        grid-column: 1/2;
+        grid-row: 4/5;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }

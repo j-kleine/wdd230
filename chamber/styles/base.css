@@ -663,10 +663,27 @@ figcaption {
     min-width: 350px;
 }
 
+.viewmenu {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewmenu button {
+    margin: 1rem;
+    padding: .5rem;
+    border: var(--page-background);
+    border-radius: var(--border-radius);
+    color: var(--text-on-dark);
+    background-color: var(--main-color-background);
+}
+
 .directory-main h1 {
     grid-column: 2/3;
     grid-row: 2/3;
-    padding: 1rem;
+    padding: 1rem 0 0 0;
     text-align: center;
     color: var(--main-color-text);
 }
@@ -679,7 +696,7 @@ article {
 
 .directory-grid {
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 4/5;
 }
 
 .member-card {

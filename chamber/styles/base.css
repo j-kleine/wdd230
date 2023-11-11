@@ -663,6 +663,14 @@ figcaption {
     min-width: 350px;
 }
 
+.directory-main h1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 1rem 0 0 0;
+    text-align: center;
+    color: var(--main-color-text);
+}
+
 .viewmenu {
     grid-column: 2/3;
     grid-row: 3/4;
@@ -673,38 +681,35 @@ figcaption {
 
 .viewmenu button {
     margin: 1rem;
+    margin-bottom: -1rem;
     padding: .5rem;
-    border: var(--page-background);
+    width: 44px;
+    height: 44px;
+    border: solid .2rem var(--page-background);
     border-radius: var(--border-radius);
     color: var(--text-on-dark);
     background-color: var(--main-color-background);
 }
 
-.directory-main h1 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    padding: 1rem 0 0 0;
-    text-align: center;
-    color: var(--main-color-text);
+.viewmenu button:hover {
+    cursor: pointer;
 }
 
-article {
-    padding: 1.5rem;
+/* DIRECTORY GRID */
+.directory-grid {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    padding: 1rem;
     border-radius: var(--border-radius);
     background-color: var(--secondary-color-background);
 }
 
-.directory-grid {
-    grid-column: 2/3;
-    grid-row: 4/5;
-}
-
-.member-card {
+.directory-grid .member-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
+    margin: .5rem;
     padding: 1.5rem;
     border: solid .2rem var(--secondary-color-background);
     border-radius: var(--border-radius);
@@ -712,7 +717,15 @@ article {
     transition: var(--transition-time);
 }
 
-.m-logo {
+.directory-grid .m-name {
+    display: none;
+    margin: 1rem;
+    text-align: center;
+    color: var(--text-on-white);
+    transition: var(--transition-time);
+}
+
+.directory-grid .m-logo {
     margin: .5rem auto;
     border-radius: var(--border-radius);
     max-height: 120px;
@@ -720,38 +733,105 @@ article {
     transition: var(--transition-time);
 }
 
-.member-card:nth-child(4) .m-logo{
+.directory-grid .member-card:nth-child(4) .m-logo{
     padding: .2rem 0;
     background-color: #E97601;
 }
 
-.m-address {
+.directory-grid .m-address {
     margin: 1rem;
     text-align: center;
     color: var(--text-on-white);
     transition: var(--transition-time);
 }
 
-.m-phone {
+.directory-grid .m-phone {
     margin-top: .5rem;
     color: var(--text-on-white);
     transition: var(--transition-time);
 }
 
-.m-phone:hover {
+.directory-grid .m-phone:hover {
     color: var(--secondary-color-text);
     font-weight: bold;
     text-decoration-color: var(--accent-color);
 }
 
-.m-url {
+.directory-grid .m-url {
     margin-top: .5rem;
     color: var(--text-on-white);
     transition: var(--transition-time);
 }
 
-.m-url:hover {
+.directory-grid .m-url:hover {
     color: var(--secondary-color-text);
+    font-weight: bold;
+    text-decoration-color: var(--accent-color);
+}
+
+/* DIRECTORY LIST */
+.directory-list {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.directory-list .member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    margin: .1rem 0;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition-time);
+}
+
+.directory-list .member-card:nth-child(odd) {
+    background-color: var(--main-color-background);
+}
+
+.directory-list .m-name {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5rem;
+    text-align: left;
+    font-size: 1.2rem;
+    color: var(--ffffff-text);
+    transition: var(--transition-time);
+}
+
+.directory-list .m-logo {
+    display: none;
+    margin: .5rem auto;
+    border-radius: var(--border-radius);
+    max-height: 120px;
+    max-width: 250px;
+    transition: var(--transition-time);
+}
+
+.directory-list .m-address {
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.directory-list .m-phone {
+    line-height: 1.5rem;
+    text-align: left;
+    transition: var(--transition-time);
+}
+
+.directory-list .m-phone:hover {
+    font-weight: bold;
+    text-decoration-color: var(--accent-color);
+}
+
+.directory-list .m-url {
+    line-height: 1.5rem;
+    text-align: left;
+    transition: var(--transition-time);
+}
+
+.directory-list .m-url:hover {
     font-weight: bold;
     text-decoration-color: var(--accent-color);
 }

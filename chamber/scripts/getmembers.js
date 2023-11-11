@@ -14,6 +14,7 @@ async function getMembers() {
 const displayMembers = (companies) => {
     companies.forEach((company) => {
         let mCard = document.createElement('section');
+        let mName = document.createElement('h2');
         let mAddress = document.createElement('p');
         let mPhone = document.createElement('a');
         let mURL = document.createElement('a');
@@ -21,6 +22,9 @@ const displayMembers = (companies) => {
         let mMembership = document.createElement('p');
         
         mCard.setAttribute('class', 'member-card');
+
+        mName.setAttribute('class', 'm-name');
+        mName.textContent = company.name;
 
         mAddress.setAttribute('class', 'm-address');
         mAddress.textContent = company.address;
@@ -44,6 +48,7 @@ const displayMembers = (companies) => {
 
 
 
+        mCard.appendChild(mName);
         mCard.appendChild(mLogo);
         mCard.appendChild(mAddress);
         mCard.appendChild(mPhone);

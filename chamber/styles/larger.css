@@ -95,6 +95,12 @@
         max-width: 1200px;
         min-width: 800px;
     }
+
+    /* LIST VIEW */
+    .directory-list .m-name {
+        min-width: 250px;
+        width: auto;
+    }
     
     
     /* Page 4 JOIN */

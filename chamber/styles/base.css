@@ -682,7 +682,7 @@ figcaption {
 .viewmenu button {
     margin: 1rem;
     margin-bottom: -.8rem;
-    padding: auto;
+    padding: 7.5px;
     width: 44px;
     height: 44px;
     border: solid .2rem var(--page-background);
@@ -693,6 +693,11 @@ figcaption {
 
 .viewmenu button:hover {
     cursor: pointer;
+}
+
+.viewmenu button i {
+    margin: 0;
+    padding: 0;
 }
 
 /* DIRECTORY LIST */

@@ -681,7 +681,7 @@ figcaption {
 
 .viewmenu button {
     margin: 1rem;
-    margin-bottom: -1rem;
+    margin-bottom: -.8rem;
     padding: .5rem;
     width: 44px;
     height: 44px;
@@ -733,7 +733,7 @@ figcaption {
     transition: var(--transition-time);
 }
 
-.directory-grid .member-card:nth-child(4) .m-logo{
+.directory-grid .member-card:nth-child(6) .m-logo{
     padding: .2rem 0;
     background-color: #E97601;
 }

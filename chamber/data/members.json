@@ -1,20 +1,12 @@
 {
     "companies": [
         {
-            "name": "Idaho Websites",
-            "address": "2115 S Vista Avenue Boise ID 83705",
-            "phone": "(208) 342-9386",
-            "url": "idahowebsites.com",
-            "logo": "https://idahowebsites.com/wp-content/uploads/2022/10/Asset-1idweb.svg",
+            "name": "Flash Technical Services",
+            "address": "Star ID 83669",
+            "phone": "(208) 488-5810",
+            "url": "flashtechnicalservices.com",
+            "logo": "https://flashtechnicalservices.com/wp-content/uploads/2021/01/Flash-Tech-Logo_Updated-1.png",
             "membershipLvl": "Silver"
-        },
-        {
-            "name": "Surge Webdesign",
-            "address": "4072 E Arch Drive Meridian ID 83648",
-            "phone": "(208) 631-0640",
-            "url": "surgewebdesign.com",
-            "logo": "https://02f0a56ef46d93f03c90-22ac5f107621879d5667e0d7ed595bdb.ssl.cf2.rackcdn.com/sites/26472/logo_images/119675_original.png?1596723766",
-            "membershipLvl": "Gold"
         },
         {
             "name": "Graphic Zen",
@@ -25,21 +17,13 @@
             "membershipLvl": "Bronze"
         },
         {
-            "name": "Peppershock Media",
-            "address": "1215 3rd Street Nampa ID 83651",
-            "phone": "(208) 461-5070",
-            "url": "peppershock.com",
-            "logo": "https://peppershock.com/wp-content/uploads/2023/05/PPSK-Logo-2017-HorizontalWhite-1-1.png.webp",
+            "name": "Idaho Websites",
+            "address": "2115 S Vista Avenue Boise ID 83705",
+            "phone": "(208) 342-9386",
+            "url": "idahowebsites.com",
+            "logo": "https://idahowebsites.com/wp-content/uploads/2022/10/Asset-1idweb.svg",
             "membershipLvl": "Silver"
-        },
-        {
-            "name": "Flash Technical Services",
-            "address": "Star ID 83669",
-            "phone": "(208) 488-5810",
-            "url": "flashtechnicalservices.com",
-            "logo": "https://flashtechnicalservices.com/wp-content/uploads/2021/01/Flash-Tech-Logo_Updated-1.png",
-            "membershipLvl": "Silver"
-        },
+        },        
         {
             "name": "Metro Express Carwash",
             "address": "1725 E Overland Road Meridian ID 83642",
@@ -54,6 +38,22 @@
             "phone": "(+49) 170 410-454-1",
             "url": "mplusdesign.com",
             "logo": "https://mplusdesign.com/2019/wp-content/uploads/2019/08/MLogo_klein.png",
+            "membershipLvl": "Gold"
+        },
+        {
+            "name": "Peppershock Media",
+            "address": "1215 3rd Street Nampa ID 83651",
+            "phone": "(208) 461-5070",
+            "url": "peppershock.com",
+            "logo": "https://peppershock.com/wp-content/uploads/2023/05/PPSK-Logo-2017-HorizontalWhite-1-1.png.webp",
+            "membershipLvl": "Silver"
+        },
+        {
+            "name": "Surge Webdesign",
+            "address": "4072 E Arch Drive Meridian ID 83648",
+            "phone": "(208) 631-0640",
+            "url": "surgewebdesign.com",
+            "logo": "https://02f0a56ef46d93f03c90-22ac5f107621879d5667e0d7ed595bdb.ssl.cf2.rackcdn.com/sites/26472/logo_images/119675_original.png?1596723766",
             "membershipLvl": "Gold"
         }
     ]

@@ -233,6 +233,24 @@ section {
     font-family: Ubuntu, sans-serif;
 }
 
+.weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+}
+
+#current-temp {
+    margin-right: .5rem;
+    font-weight: bold;
+}
+
+#weather-desc {
+    margin-left: .5rem;
+}
+
 .card-map {
     grid-column: 2/3;
     grid-row: 5/6;

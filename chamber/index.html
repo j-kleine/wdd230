@@ -57,21 +57,23 @@
                 
             </div>
             <section class="card-next-event">
-                <h2 class="card-header">Next Event</h2>
+                <h2 class="card-header">Next Events</h2>
                 <section class="event">
                     <h3>Ribbon Cutting</h3>
                     <p>Join us for the grand opening of <a href="#">The Diamond Shack</a>, Thursday, 01.01.2011, at 13:00.</p>
                 </section>
+                <section class="event">
+                    <h3>Golden Shovel</h3>
+                    <p><a href="#">East Playground</a> opens! Celebrate with us on Saturday, 02.02.2022, at 15:00.</p>
+                </section>
             </section>
             <section class="card-weather">
                 <h2 class="card-header">Weather</h2>
-                <div>
-                    <p class="temperature">Temperature</p>
-                    <p class="temp-value"><span id="temp-var">6</span>°C</p>
-                    <p class="windchill">Feels Like</p>
-                    <p class="chill-value"><span id="chill-var"></span>°C</p>
-                    <p class="windspeed">Wind Speed</p>
-                    <p class="speed-value"><span id="speed-var">5</span>km/h</p>
+                <div class="weather">
+                    <img id="weather-icon" src="" alt="">
+                    <span id="current-temp"></span>
+                    <!-- <span>-</span> -->
+                    <span id="weather-desc"></span>
                 </div>
             </section>
             <section class="card-spotlights">
@@ -126,7 +128,7 @@
 
     <script src="scripts/togglemode.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
     <script src="scripts/getdates.js"></script>
 
 </body>

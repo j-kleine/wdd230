@@ -460,6 +460,8 @@ section {
 .card-weather {
     grid-column: 2/3;
     grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
     padding: 0 0 1.5rem 0;
     background-color: var(--ffffff-background);
 }
@@ -470,48 +472,24 @@ section {
     background-color: var(--secondary-color-background);
 }
 
-.card-weather div p:nth-child(odd) {
-    color: var(--secondary-color-text);
-}
-
-.card-weather div p:nth-child(even) {
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     color: var(--main-color-text);
+    font-family: var(--paragraphs-font);
+    font-weight: bold;
 }
 
-.temperature {
-    text-align: center;
-    padding-top: 1rem;
-    font-size: 1rem;
-    text-transform: uppercase;
-}
-
-.temp-value {
-    text-align: center;
+#current-temp {
     font-size: 3rem;
+    font-weight: bold;
 }
 
-.windchill {
-    text-align: center;
-    padding-top: 1rem;
-    font-size: .75rem;
-    text-transform: uppercase;
-}
-
-.chill-value {
-    text-align: center;
-    font-size: 1.75rem;
-}
-
-.windspeed {
-    text-align: center;
-    padding-top: 1rem;
-    font-size: .75rem;
-    text-transform: uppercase;
-}
-
-.speed-value {
-    text-align: center;
-    font-size: 1.75rem;
+#weather-desc {
+    margin-left: .5rem;
 }
 
 .card-spotlights {

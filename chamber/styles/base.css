@@ -460,6 +460,22 @@ section {
 .card-weather {
     grid-column: 2/3;
     grid-row: 3/4;
+    padding: 0 0 1.5rem 0;
+    background-color: var(--ffffff-background);
+}
+
+.card-weather h2 {
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    background-color: var(--secondary-color-background);
+}
+
+.card-weather div p:nth-child(odd) {
+    color: var(--secondary-color-text);
+}
+
+.card-weather div p:nth-child(even) {
+    color: var(--main-color-text);
 }
 
 .temperature {

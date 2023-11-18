@@ -477,19 +477,87 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0 3rem 0;
     height: 100%;
     color: var(--main-color-text);
     font-family: var(--paragraphs-font);
     font-weight: bold;
 }
 
+#weather-icon {
+    -webkit-filter: drop-shadow(1px 1px 0 var(--text-on-white))
+                    drop-shadow(-1px 1px 0 var(--text-on-white))
+                    drop-shadow(1px -1px 0 var(--text-on-white))
+                    drop-shadow(-1px -1px 0 var(--text-on-white));
+
+    filter: drop-shadow(1px 1px 0 var(--text-on-white))
+            drop-shadow(-1px 1px 0 var(--text-on-white))
+            drop-shadow(1px -1px 0 var(--text-on-white))
+            drop-shadow(-1px -1px 0 var(--text-on-white));
+}
+
 #current-temp {
+    font-family: var(--headings-font);
     font-size: 3rem;
     font-weight: bold;
 }
 
 #weather-desc {
     margin-left: .5rem;
+    color: var(--text-on-white);
+}
+
+.weather-forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    background-color: var(--accent-color);
+}
+
+.forecast-day {
+    padding: 1rem;
+    border: 1px solid var(--ffffff-background);
+    text-align: center;
+    background-color: var(--ffffff-background);
+    transition: var(--transition-time);
+}
+
+/* .forecast-day:hover {
+    transform: scale(98%);
+    border: 1px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    box-shadow: inset 0 0 5px var(--text-on-white);
+} */
+
+.forecast-day p {
+    color: var(--text-on-white);
+}
+
+.forecast-day p:nth-child(1) {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.forecast-day img {
+    -webkit-filter: drop-shadow(1px 1px 0 var(--text-on-white))
+                    drop-shadow(-1px 1px 0 var(--text-on-white))
+                    drop-shadow(1px -1px 0 var(--text-on-white))
+                    drop-shadow(-1px -1px 0 var(--text-on-white));
+
+    filter: drop-shadow(1px 1px 0 var(--text-on-white))
+            drop-shadow(-1px 1px 0 var(--text-on-white))
+            drop-shadow(1px -1px 0 var(--text-on-white))
+            drop-shadow(-1px -1px 0 var(--text-on-white));
+}
+
+.forecast-day p:nth-child(3) {
+    font-family: var(--headings-font);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.forecast-day p:nth-child(4) {
+    font-size: .8rem;
 }
 
 .card-spotlights {

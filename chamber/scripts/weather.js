@@ -2,7 +2,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const weatherDesc = document.querySelector('#weather-desc');
 
-56.030983691299966, 12.591925095217084
+// 56.030983691299966, 12.591925095217084
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=56.03&lon=12.59&units=metric&appid=6973a4b17cded0bc4a99143605f5a7e7';
 

@@ -6,7 +6,7 @@ async function getMembers() {
     const response = await fetch(getMembersURL);
     const data = await response.json();
     
-    console.log(data.companies);
+    // console.log(data.companies);
 
     displayMembers(data.companies);
 }

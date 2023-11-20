@@ -445,7 +445,10 @@ footer {
 #close-banner:hover {
     cursor: pointer;
     color: var(--text-on-dark);
-    transform: scale(95%);
+}
+
+#close-banner:active {
+    transform: scale(75%);
 }
 
 #banner p {

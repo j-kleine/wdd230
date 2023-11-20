@@ -507,14 +507,41 @@ section {
     color: var(--text-on-white);
 }
 
-.weather-forecast {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1px;
-    background-color: var(--accent-color);
+#weather-forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.forecast-day {
+/* #forecast-dropdown::before {
+    content: "\276F";
+}
+
+#forecast-dropdown {
+    rotate: 90deg;
+    margin: 1rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+	border: none;
+	background-color: transparent;
+	color: var(--main-color-text);
+    transition: var(--transition-time);
+}
+
+#forecast-dropdown:hover {
+    color: var(--accent-color);
+    cursor: pointer;
+    transform: scale(105%);
+} */
+
+#forecast-event {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
     padding: 1rem;
     border: 1px solid var(--ffffff-background);
     text-align: center;
@@ -522,41 +549,31 @@ section {
     transition: var(--transition-time);
 }
 
-/* .forecast-day:hover {
-    transform: scale(98%);
-    border: 1px solid var(--accent-color);
-    border-radius: var(--border-radius);
-    box-shadow: inset 0 0 5px var(--text-on-white);
-} */
+#forecast-event:nth-child(odd) {
+    background-color: var(--text-on-dark);
+}
 
-.forecast-day p {
+#forecast-event p {
     color: var(--text-on-white);
 }
 
-.forecast-day p:nth-child(1) {
+#forecast-event p:nth-child(1) {
     font-size: 1.1rem;
     font-weight: bold;
 }
 
-.forecast-day img {
-    -webkit-filter: drop-shadow(1px 1px 0 var(--text-on-white))
-                    drop-shadow(-1px 1px 0 var(--text-on-white))
-                    drop-shadow(1px -1px 0 var(--text-on-white))
-                    drop-shadow(-1px -1px 0 var(--text-on-white));
-
-    filter: drop-shadow(1px 1px 0 var(--text-on-white))
-            drop-shadow(-1px 1px 0 var(--text-on-white))
-            drop-shadow(1px -1px 0 var(--text-on-white))
-            drop-shadow(-1px -1px 0 var(--text-on-white));
+#forecast-event p:nth-child(2) {
+    font-size: 1rem;
 }
 
-.forecast-day p:nth-child(3) {
+#forecast-event p:nth-child(3) {
     font-family: var(--headings-font);
     font-size: 1rem;
     font-weight: bold;
 }
 
-.forecast-day p:nth-child(4) {
+#forecast-event p:nth-child(5) {
+    width: 20%;
     font-size: .8rem;
 }
 

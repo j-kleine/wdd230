@@ -423,8 +423,11 @@ footer {
     border-radius: var(--border-radius);
     padding: 3rem 0 6rem 0;
     width: 90%;
+    height: 80%;
     max-width: 1100px;
-    background-color: #C53030;
+    backdrop-filter: blur(20px) saturate(200%);
+    -webkit-backdrop-filter: blur(20px) saturate(200%);
+    background-color: rgba(1, 66, 152, 0.8);
 }
 
 #close-banner::before {
@@ -432,20 +435,19 @@ footer {
 }
 
 #close-banner {
-    position: absolute;
-    top: 5px;
-    right: 5px;
+    margin: 1rem;
+    border: none;
     color: #FFFFFF;
+    font-family: var(--headings-font);
     font-size: 3rem;
     font-weight: bold;
-    border: none;
     background-color: transparent;
     transition: var(--transition-time);
 }
 
 #close-banner:hover {
     cursor: pointer;
-    color: var(--text-on-dark);
+    color: #C53030;
 }
 
 #close-banner:active {
@@ -453,10 +455,14 @@ footer {
 }
 
 #banner p {
-    margin: .5rem 0;
+    margin: .25rem 0;
+    border-radius: var(--border-radius);
+    padding: .5rem 1rem;
     color: #FFFFFF;
     font-family: var(--headings-font);
     font-size: 2.5rem;
+    background-color: #C53030;
+    box-shadow: 0 0 20px var(--shadow-color);
 }
 
 section {

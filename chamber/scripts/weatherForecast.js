@@ -26,13 +26,13 @@ function displayForecast(data) {
     const timeOptions = {
         hour: "2-digit",
         minute: "2-digit",
-        hour12: false
+        hour12: false,
+       timeZone: "UTC"
     };
-    
-    let i = 0;
-    let number = 10;
-    while (i < number) {
-        data.list.forEach((timestamp) => {
+
+    data.list.forEach((timestamp) => {
+        if (timestamp.dt_txt.includes("12:00:00")) {
+
             let forecastEvent = document.createElement('div');
             forecastEvent.setAttribute('id', 'forecast-event');
 
@@ -66,8 +66,6 @@ function displayForecast(data) {
             });
 
             weatherForecast.appendChild(forecastEvent);
-            i++;
-            console.log(i, number);
-        });
-    };
+        }
+    })   
 }

@@ -23,12 +23,12 @@ function displayForecast(data) {
         weekday: "short",
         // day: "numeric"
     };
-    const timeOptions = {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: false,
-       timeZone: "UTC"
-    };
+    // const timeOptions = {
+    //     hour: "2-digit",
+    //     minute: "2-digit",
+    //     hour12: false,
+    //    timeZone: "UTC"
+    // };
 
     data.list.forEach((timestamp) => {
         if (timestamp.dt_txt.includes("12:00:00")) {
@@ -41,14 +41,14 @@ function displayForecast(data) {
             day.innerHTML = `${new Date((timestamp.dt)*1000).toLocaleDateString('en-DK', dayOptions)}`;;
             forecastEvent.appendChild(day);
 
-            let time = document.createElement('p');
-            time.setAttribute('id', 'forecast-time');
-            time.innerHTML = `${new Date((timestamp.dt)*1000).toLocaleTimeString('en', timeOptions)}`;;
-            forecastEvent.appendChild(time);
+            // let time = document.createElement('p');
+            // time.setAttribute('id', 'forecast-time');
+            // time.innerHTML = `${new Date((timestamp.dt)*1000).toLocaleTimeString('en', timeOptions)}`;;
+            // forecastEvent.appendChild(time);
 
             let temp = document.createElement('p');
             temp.setAttribute('id', 'forecast-temp');
-            temp.innerHTML = `${timestamp.main.temp.toFixed(0)}°C`;
+            temp.innerHTML = `${timestamp.main.temp.toFixed(1)}°C`;
             forecastEvent.appendChild(temp);
 
             timestamp.weather.forEach((event) => {

@@ -28,40 +28,46 @@ function displayForecast(data) {
         minute: "2-digit",
         hour12: false
     };
+    
+    let i = 0;
+    let number = 10;
+    while (i < number) {
+        data.list.forEach((timestamp) => {
+            let forecastEvent = document.createElement('div');
+            forecastEvent.setAttribute('id', 'forecast-event');
 
-    data.list.forEach((timestamp) => {
-        let forecastEvent = document.createElement('div');
-        forecastEvent.setAttribute('id', 'forecast-event');
+            let day = document.createElement('p');
+            day.setAttribute('id', 'forecast-day');
+            day.innerHTML = `${new Date((timestamp.dt)*1000).toLocaleDateString('en-DK', dayOptions)}`;;
+            forecastEvent.appendChild(day);
 
-        let day = document.createElement('p');
-        day.setAttribute('id', 'forecast-day');
-        day.innerHTML = `${new Date((timestamp.dt)*1000).toLocaleDateString('en-DK', dayOptions)}`;;
-        forecastEvent.appendChild(day);
+            let time = document.createElement('p');
+            time.setAttribute('id', 'forecast-time');
+            time.innerHTML = `${new Date((timestamp.dt)*1000).toLocaleTimeString('en', timeOptions)}`;;
+            forecastEvent.appendChild(time);
 
-        let time = document.createElement('p');
-        time.setAttribute('id', 'forecast-time');
-        time.innerHTML = `${new Date((timestamp.dt)*1000).toLocaleTimeString('en', timeOptions)}`;;
-        forecastEvent.appendChild(time);
+            let temp = document.createElement('p');
+            temp.setAttribute('id', 'forecast-temp');
+            temp.innerHTML = `${timestamp.main.temp.toFixed(0)}°C`;
+            forecastEvent.appendChild(temp);
 
-        let temp = document.createElement('p');
-        temp.setAttribute('id', 'forecast-temp');
-        temp.innerHTML = `${timestamp.main.temp.toFixed(0)}°C`;
-        forecastEvent.appendChild(temp);
+            timestamp.weather.forEach((event) => {
+                let icon = document.createElement('img');
+                icon.setAttribute('id', 'forecast-icon');
+                let iconsrc = `https://openweathermap.org/img/wn/${event.icon}.png`;
+                icon.setAttribute('src', iconsrc);
+                icon.setAttribute('alt', `weather icon ${event.description}`);
+                forecastEvent.appendChild(icon);
 
-        timestamp.weather.forEach((event) => {
-            let icon = document.createElement('img');
-            icon.setAttribute('id', 'forecast-icon');
-            let iconsrc = `https://openweathermap.org/img/wn/${event.icon}.png`;
-            icon.setAttribute('src', iconsrc);
-            icon.setAttribute('alt', `weather icon ${event.description}`);
-            forecastEvent.appendChild(icon);
+                let desc = document.createElement('p');
+                desc.setAttribute('id', 'forecast-desc');
+                desc.textContent = `${event.description}`;
+                forecastEvent.appendChild(desc);
+            });
 
-            let desc = document.createElement('p');
-            desc.setAttribute('id', 'forecast-desc');
-            desc.textContent = `${event.description}`;
-            forecastEvent.appendChild(desc);
+            weatherForecast.appendChild(forecastEvent);
+            i++;
+            console.log(i, number);
         });
-
-        weatherForecast.appendChild(forecastEvent);
-    })   
+    };
 }

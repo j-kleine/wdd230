@@ -591,18 +591,20 @@ section {
     font-weight: bold;
 }
 
-#forecast-event p:nth-child(2) {
+/* #forecast-event p:nth-child(2) {
     font-size: 1rem;
-}
+} */
 
-#forecast-event p:nth-child(3) {
+#forecast-event p:nth-child(2) {
     font-family: var(--headings-font);
     font-size: 1rem;
     font-weight: bold;
 }
 
-#forecast-event p:nth-child(5) {
-    width: 20%;
+#forecast-event p:nth-child(4) {
+    display: flex;
+    align-items: center;
+    height: 30px;
     font-size: .8rem;
 }
 

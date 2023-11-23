@@ -48,7 +48,11 @@ function displayForecast(data) {
 
             let temp = document.createElement('p');
             temp.setAttribute('id', 'forecast-temp');
-            temp.innerHTML = `${timestamp.main.temp.toFixed(1)}°C`;
+            let roundedTemp = timestamp.main.temp.toFixed(0);
+            if (roundedTemp == -0) {
+                roundedTemp = 0;
+            }
+            temp.innerHTML = `${roundedTemp}°C`;
             forecastEvent.appendChild(temp);
 
             timestamp.weather.forEach((event) => {

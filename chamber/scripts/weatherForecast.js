@@ -1,6 +1,8 @@
 const weatherForecast = document.querySelector('#weather-forecast')
 const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=56.03&lon=12.59&units=metric&appid=6973a4b17cded0bc4a99143605f5a7e7'
 
+let counter = 0;
+
 async function apiFetch() {
     try {
         const response = await fetch(forecastURL);
@@ -31,7 +33,7 @@ function displayForecast(data) {
     // };
 
     data.list.forEach((timestamp) => {
-        if (timestamp.dt_txt.includes("12:00:00")) {
+        if (timestamp.dt_txt.includes("12:00:00") && counter < 3) {
 
             let forecastEvent = document.createElement('div');
             forecastEvent.setAttribute('id', 'forecast-event');
@@ -70,6 +72,7 @@ function displayForecast(data) {
             });
 
             weatherForecast.appendChild(forecastEvent);
+            counter++;
         }
     })   
 }

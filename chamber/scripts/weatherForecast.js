@@ -54,7 +54,7 @@ function displayForecast(data) {
             if (roundedTemp == -0) {
                 roundedTemp = 0;
             }
-            temp.innerHTML = `${roundedTemp}°C`;
+            temp.innerHTML = `${roundedTemp}&deg;C`;
             forecastEvent.appendChild(temp);
 
             timestamp.weather.forEach((event) => {

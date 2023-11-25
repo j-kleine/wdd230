@@ -24,7 +24,11 @@ async function apiFetch() {
 apiFetch();
 
 function displayWeather(data) {
-    currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;C`;
+    let roundedTemp = data.main.temp.toFixed(0);
+    if (roundedTemp == -0) {
+        roundedTemp = 0;
+    }
+    currentTemp.innerHTML = `${roundedTemp}&deg;C`;
     data.weather.forEach((event) => {
         const iconsrc = `https://openweathermap.org/img/wn/${event.icon}@2x.png`;
         let desc = event.description;

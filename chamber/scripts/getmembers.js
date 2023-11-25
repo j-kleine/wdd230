@@ -14,6 +14,7 @@ async function getMembers() {
 const displayMembers = (companies) => {
     companies.forEach((company) => {
         let mCard = document.createElement('section');
+        let mLvl = document.createElement('p')
         let mName = document.createElement('h2');
         let mAddress = document.createElement('p');
         let mPhone = document.createElement('a');
@@ -22,6 +23,17 @@ const displayMembers = (companies) => {
         let mMembership = document.createElement('p');
         
         mCard.setAttribute('class', 'member-card');
+
+        mLvl.setAttribute('class', 'm-lvl');
+        if (company.membershipLvl == 'Bronze') {
+            mLvl.textContent = '🥉';
+        } else if (company.membershipLvl == 'Silver') {
+            mLvl.textContent = '🥈';
+        } else if (company.membershipLvl == 'Gold') {
+            mLvl.textContent = '🥇';
+        } else {
+            mLvl.textContent = '💠';
+        };
 
         mName.setAttribute('class', 'm-name');
         mName.textContent = company.name;
@@ -48,6 +60,7 @@ const displayMembers = (companies) => {
 
 
 
+        mCard.appendChild(mLvl);
         mCard.appendChild(mName);
         mCard.appendChild(mLogo);
         mCard.appendChild(mAddress);

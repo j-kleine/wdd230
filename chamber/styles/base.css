@@ -795,6 +795,27 @@ figcaption {
     justify-content: center;
 }
 
+.membership-info {
+    padding-top: .5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.membership-info-link {
+    line-height: 1.5rem;
+    text-align: center;
+    color: var(--main-color-text);
+    font-family: var(--headings-font);
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: var(--transition-time);
+}
+
+.membership-info-link:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 5px var(--ffffff-background);
+}
+
 .viewmenu button {
     margin: 1rem;
     margin-bottom: -.8rem;
@@ -814,17 +835,6 @@ figcaption {
 .viewmenu button i {
     margin: 0;
     padding: 0;
-}
-
-.membership-info-link {
-    padding-top: .5rem;
-    width: 100%;
-    line-height: 1.5rem;
-    text-align: center;
-    color: var(--main-color-text);
-    font-family: var(--headings-font);
-    font-size: 1.2rem;
-    text-decoration: none;
 }
 
 /* DIRECTORY LIST */

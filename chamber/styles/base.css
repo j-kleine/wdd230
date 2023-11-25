@@ -822,6 +822,7 @@ figcaption {
 }
 
 .directory-list .member-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -836,9 +837,16 @@ figcaption {
     background-color: var(--main-color-background);
 }
 
+.directory-list .m-lvl {
+    position: absolute;
+    top: .5rem;
+    left: 5px;
+    font-size: 2rem;
+}
+
 .directory-list .m-name {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 1.5rem;
     line-height: 1.5rem;
     text-align: left;
     font-size: 1.2rem;
@@ -892,6 +900,7 @@ figcaption {
 }
 
 .directory-grid .member-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -902,6 +911,13 @@ figcaption {
     border-radius: var(--border-radius);
     background-color: var(--ffffff-background);
     transition: var(--transition-time);
+}
+
+.directory-grid .m-lvl {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 3rem;
 }
 
 .directory-grid .m-name {

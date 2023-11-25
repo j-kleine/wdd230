@@ -790,6 +790,7 @@ figcaption {
     grid-column: 2/3;
     grid-row: 3/4;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -813,6 +814,17 @@ figcaption {
 .viewmenu button i {
     margin: 0;
     padding: 0;
+}
+
+.membership-info-link {
+    padding-top: .5rem;
+    width: 100%;
+    line-height: 1.5rem;
+    text-align: center;
+    color: var(--main-color-text);
+    font-family: var(--headings-font);
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 /* DIRECTORY LIST */

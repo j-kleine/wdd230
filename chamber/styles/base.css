@@ -1219,7 +1219,7 @@ form input.submitButton:active {
 
 #membershipInfo h3{
     color: var(--main-color-text);
-    word-spacing: 1rem;
+    word-spacing: .9rem;
 }
 
 #membershipInfo span{

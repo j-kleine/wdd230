@@ -312,7 +312,7 @@ footer {
 
 .social a img {
     margin: 0 .4em;
-    width: 40px;
+    width: 45px;
     height: 100%;
     padding: .2em;
     border: none;
@@ -704,17 +704,19 @@ section {
 }
 
 .card-services > ul > li {
-    padding: .5rem;
+    padding: .8rem;
     color: var(--text-on-dark);
     font-family: var(--paragraphs-font);
 }
 
 .card-services > ul > li > a {
+    padding: .8rem;
     text-decoration: none;
 }
 
 .card-services > ul > li > a:hover {
     text-decoration: underline;
+    text-decoration-color: var(--accent-color);
 }
 
 .card-attractions {
@@ -726,17 +728,19 @@ section {
 }
 
 .card-attractions > ul > li {
-    padding: .5rem;
+    padding: .8rem;
     color: var(--text-on-dark);
     font-family: var(--paragraphs-font);
 }
 
 .card-attractions > ul > li > a {
+    padding: .8rem;
     text-decoration: none;
 }
 
 .card-attractions > ul > li > a:hover {
     text-decoration: underline;
+    text-decoration-color: var(--accent-color);
 }
 
 .discover-images {

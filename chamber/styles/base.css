@@ -619,6 +619,9 @@ section {
 }
 
 .spotlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 1rem;
     padding: 1.5rem;
     border: solid .2rem var(--secondary-color-background);
@@ -633,19 +636,30 @@ section {
 }
 
 .spotlight h3 {
+    margin-bottom: .5rem;
+    width: 100%;
     color: var(--main-color-text);
 }
 
-.spotlight .ad-text {
-    display: block !important;
-    margin: 0 0 1rem 0;
+.spotlight p {
+    display: block;
+    margin-bottom: 1.5rem;
+    width: 100%;
     text-align: right;
     color: var(--secondary-color-text);
 }
 
-.spotlight p {
+.spotlight a {
+    padding: .5rem;
+    width: fit-content;
     text-align: center;
     color: var(--text-on-white);
+    transition: var(--transition-time);
+}
+
+.spotlight a:hover {
+    font-weight: bold;
+    text-decoration-color: var(--secondary-color-text);
 }
 
 

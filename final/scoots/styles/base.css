@@ -1,9 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Gabarito:wght@400;800&family=Poiret+One&display=swap');
+
+:root {
+    /* --- FONTS --- */
+    --font-scoots: 'Comfortaa', sans-serif;
+    --font-rentals: 'Poiret One', sans-serif;
+    --font-text: 'Gabarito', sans-serif;
+
+    /* --- COLORS Background--- */
+    --background-black: #161A1D;
+    --background-grey: #F5F5F5;
+    --background-white: #FFFFFF;
+    --background-green: #99B88E;
+    --background-orange: #F58514;
+
+    /* --- COLORS Text--- */
+    --text-black: #161A1D;
+    --text-grey: #F5F5F5;
+    --text-white: #FFFFFF;
+    --text-green: #99B88E;
+    --text-orange: #F58514;
+
+    /* --- COLORS Shadow --- */
+
+    /* --- BORDERS Radius --- */
+    --radius-corner: .4rem;
+    --radius-round: 50%;
+    
+    /* --- TRANSITIONS Time --- */
+    --transition-time: .4s;
+}
+
+/* 
+#template {
+    content: ;
+
+    --- display stuff
+    grid-positioning: ;
+    display: ;
+    flex-basis: ;
+    flex-direction: ;
+    grid-template: ;
+
+    ---positioning stuff
+    position: ;
+    top: ;
+    right: ;
+    bottom: ;
+    left: ;
+    z-index: ;
+    
+    --- box model stuff
+    margin: ;
+    border: ;
+    border-radius: ;
+    padding: ;
+    width: ;
+    min-width: ;
+    max-width: ;
+    height: ;
+    min-height: ;
+    max-height: ;
+    background-color: ;
+
+    --- typography
+    color: ;
+    text-align: ;
+    font-family: ;
+    font-size: ;
+    font-weight: ;
+
+    --- manipulation
+    transform: ;
+    filter: ;
+    opacity: ;
+}
+*/
+
+body {
+    font-size: 16px;
+    background-color: var(--background-grey);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-scoots);
+    letter-spacing: -3px;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: var(--font-text);
+}
+
 .placeholder {
     margin: 1rem;
-    border: 2px solid blue;
+    border: 2px solid var(--background-orange);
     padding: 1rem;
     color: red;
     text-align: center;
     font-family: 'Century Gothic', sans-serif;
-    background-color: blanchedalmond;
+    background-color: var(--background-white);
 }

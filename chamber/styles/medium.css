@@ -1,5 +1,17 @@
 @media screen and (min-width: 600px) {
 
+    #banner {
+        padding: 5rem 1rem 2rem 1rem;
+    width: 50%;
+    min-width: 400px;
+    height: 25%;
+    max-width: 600px;
+    }
+
+    #banner p {
+        font-size: 2.5rem;
+    }
+
     /* ------ MAIN ------ */
     .home-main {
         grid-template-columns: 3fr 2fr;

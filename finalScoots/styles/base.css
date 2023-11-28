@@ -1,5 +1,9 @@
 .placeholder {
+    margin: 1rem;
     border: 2px solid blue;
+    padding: 1rem;
     color: red;
+    text-align: center;
+    font-family: 'Century Gothic', sans-serif;
     background-color: blanchedalmond;
 }

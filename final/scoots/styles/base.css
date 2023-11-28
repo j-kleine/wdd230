@@ -90,13 +90,3 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: var(--font-text);
 }
-
-.placeholder {
-    margin: 1rem;
-    border: 2px solid var(--background-orange);
-    padding: 1rem;
-    color: red;
-    text-align: center;
-    font-family: 'Century Gothic', sans-serif;
-    background-color: var(--background-white);
-}

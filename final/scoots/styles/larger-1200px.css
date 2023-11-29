@@ -1,18 +1,41 @@
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
     /* --- HEADER --- */
-    /* --- LOGO & NAME --- */
-    #branding-header {
-        width: 100%;
+    header {
+        flex-direction: row;
     }
-    
+
     /* --- NAVIGATION --- */
     nav {
-        margin: 0 0 0 auto;
-        width: 850px;
-        max-width: 1000px;
+        align-items: center;
+        min-width: 850px;
+        max-width: 2000px;
     }
 
     nav ul {
+        flex-direction: row;
         justify-content: space-between;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    #active {
+        margin: 0;
+        border: none;
+        border-top: .2rem solid var(--background-orange);
+    }
+
+    .navlinks {
+        border: none;
+        border-top: .2rem solid transparent;
+        padding: 0;
+    }
+
+    .navlinks:hover {
+        margin: 0;
+        border: none;
+        border-top: .2rem solid var(--background-orange);
+        padding: 0;
     }
 }

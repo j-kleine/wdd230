@@ -83,14 +83,16 @@
 
 /* --- GENERAL --- */
 body {
-    font-size: 16px;
-
+    min-width: 350px;
+    
     /* --- BACKGROUND SVG --- */
     background-image: url( '/final/scoots/images/pattern.svg' );
     background-attachment: fixed;
     background-position: right 0 bottom 0;
     background-size: cover;
     background-repeat: no-repeat;
+    
+    font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -102,7 +104,6 @@ p, a {
 }
 
 #content {
-    padding: 1rem;
     min-height: 100vh;
     text-align: center;
     backdrop-filter: blur(25px) saturate(200%);
@@ -114,7 +115,6 @@ p, a {
 
 /* --- HEADER --- */
 header {
-    margin: 0 -1rem;
     padding: 1rem;
     background-color: var(--background-black);
 }
@@ -123,7 +123,7 @@ header {
 #branding-header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     margin-bottom: 1rem;
 }
@@ -169,18 +169,18 @@ nav ul {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    min-width: 250px;
+    width: 100%;
     list-style: none;
 }
 
 nav ul li {
     padding: .5rem;
-    text-align: left;
+    text-align: right;
 }
 
 #active {
-    margin-left: 1rem;
-    border-left: .2rem solid var(--background-orange);
+    margin-right: 1rem;
+    border-right: .2rem solid var(--background-orange);
     text-shadow:
     -.25px -.25px 0 var(--text-white),
     .25px -.25px 0 var(--text-white),
@@ -189,8 +189,8 @@ nav ul li {
 }
 
 .navlinks {
-    border-left: .2rem solid transparent;
-    padding-left: .5rem;
+    border-right: .2rem solid transparent;
+    padding-right: .5rem;
     color: var(--text-grey);
     font-size: 1.5rem;
     font-weight: 400;
@@ -203,8 +203,8 @@ nav ul li {
 }
 
 .navlinks:hover {
-    margin-left: 1rem;
-    border-left: .2rem solid var(--background-orange);
+    margin-right: 1rem;
+    border-right: .2rem solid var(--background-orange);
     color: var(--text-white);
     text-shadow:
     -.25px -.25px 0 var(--text-white),
@@ -217,7 +217,7 @@ nav ul li {
 
 /* --- FOOTER --- */
 footer {
-    margin: 0 -1rem;
+    margin: 0;
     padding: 1rem;
     background-color: var(--background-black);
 }
@@ -226,7 +226,11 @@ footer {
 
 /* ------ Page 1 - HOME ------ */
 #alert-container {
+    display: none;
+    position: absolute;
     margin: 1rem;
+    padding: 1rem;
+    width: 0;
     backdrop-filter: blur(25px) saturate(200%);
     -webkit-backdrop-filter: blur(25px) saturate(200%);
     background-color: rgba(255, 255, 255, 0.5);
@@ -235,6 +239,55 @@ footer {
 }
 
 main {
-    padding: 1rem;
     min-height: 100vh;
+}
+
+#hero-image {
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    height: 300px;
+}
+
+#hero-actioncall {
+    margin-top: -.3rem;
+    padding: 1rem 0;
+    width: 100%;
+    background-color: var(--background-orange);
+}
+
+#hero-actioncall p {
+    margin: 0;
+    padding: 0;
+    color: var(--text-black);
+    font-family: var(--font-rentals);
+    font-size: 8vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: var(--transition-time);
+}
+
+#hero-actioncall-link {
+    border-bottom: .5vw solid transparent;
+    color: var(--text-black);
+    font-family: var(--font-rentals);
+    font-size: 8vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: var(--transition-time);
+}
+
+#hero-container:hover #hero-actioncall-link {
+    border-bottom: 1vw solid var(--background-black);
+    text-shadow:
+    -.25px -.25px 0 var(--text-black),
+    .25px -.25px 0 var(--text-black),
+    -.25px .25px 0 var(--text-black),
+    .25px .25px 0 var(--text-black);
+}
+
+#hero-actioncall:hover #hero-actioncall-link::after {
+	content: " \276F";
 }

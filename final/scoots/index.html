@@ -41,10 +41,18 @@
         </div>
 
 
-        <main class=" ">
-            <div class=" ">HERO
-                <div class="">HERO IMAGE
-                    <button>"Rent Your Adventure Here"</button>
+        <main>
+            <div id="hero-container">
+                <div id="hero-image-container">
+                    <picture >
+                        <source media="(max-width: 599px)" srcset="images/hero-small.webp">
+                        <!-- <source media="(max-width: 899px)" srcset="images/medium.webp"> -->
+                        <img id="hero-image" src="images/hero-large.webp" alt="Scoots Rentals hero image, people walking behind a jeep through the forest">
+                    </picture>
+                </div>
+                <div id="hero-actioncall">
+                    <p>Start Your Adventure</p>
+                    <p><a id="hero-actioncall-link" href="#">Here</a></p>
                 </div>
             </div>
             <div class="">CONTACT INFORMATION

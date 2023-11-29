@@ -1,0 +1,46 @@
+/* ------------------------------------------------
+#template {
+    content: ;
+
+    --- display stuff ---
+    grid-positioning: ;
+    display: ;
+    flex-basis: ;
+    flex-direction: ;
+    grid-template: ;
+
+    --- positioning stuff ---
+    position: ;
+    top: ;
+    right: ;
+    bottom: ;
+    left: ;
+    z-index: ;
+    
+    --- box model stuff ---
+    margin: ;
+    border: ;
+    border-radius: ;
+    padding: ;
+    width: ;
+    min-width: ;
+    max-width: ;
+    height: ;
+    min-height: ;
+    max-height: ;
+    background-color: ;
+
+    --- typography ---
+    color: ;
+    text-align: ;
+    font-family: ;
+    font-size: ;
+    line-height: ;
+    font-weight: ;
+
+    --- manipulation ---
+    transform: ;
+    filter: ;
+    opacity: ;
+}
+------------------------------------------------ */

@@ -282,10 +282,10 @@ main {
 #hero-container:hover #hero-actioncall-link {
     border-bottom: 1vw solid var(--background-black);
     text-shadow:
-    -.25px -.25px 0 var(--text-black),
-    .25px -.25px 0 var(--text-black),
-    -.25px .25px 0 var(--text-black),
-    .25px .25px 0 var(--text-black);
+    -.5px -.5px 0 var(--text-black),
+    .5px -.5px 0 var(--text-black),
+    -.5px .5px 0 var(--text-black),
+    .5px .5px 0 var(--text-black);
 }
 
 #hero-actioncall:hover #hero-actioncall-link::after {

@@ -1,0 +1,18 @@
+@media screen and (min-width: 900px) {
+    /* --- HEADER --- */
+    /* --- LOGO & NAME --- */
+    #branding-header {
+        width: 100%;
+    }
+    
+    /* --- NAVIGATION --- */
+    nav {
+        margin: 0 0 0 auto;
+        width: 850px;
+        max-width: 1000px;
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+}

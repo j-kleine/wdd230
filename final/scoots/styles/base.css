@@ -86,7 +86,7 @@ body {
     min-width: 350px;
     
     /* --- BACKGROUND SVG --- */
-    background-image: url( '/final/scoots/images/pattern.svg' );
+    background-image: url( '/final/scoots/images/pattern3.svg' );
     background-attachment: fixed;
     background-position: right 0 bottom 0;
     background-size: cover;
@@ -106,8 +106,8 @@ p, a {
 #content {
     min-height: 100vh;
     text-align: center;
-    backdrop-filter: blur(25px) saturate(200%);
-    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    backdrop-filter: blur(25px) saturate(100%);
+    -webkit-backdrop-filter: blur(25px) saturate(100%);
     /* background-color: rgba(255, 255, 255, 0.5); */
 }
 

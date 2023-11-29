@@ -4,6 +4,8 @@
     /* --- FONTS --- */
     --font-scoots: 'Comfortaa', sans-serif;
     --font-rentals: 'Poiret One', sans-serif;
+
+    --font-header: 'Comfortaa', sans-serif;
     --font-text: 'Gabarito', sans-serif;
 
     /* --- COLORS Background--- */
@@ -27,21 +29,21 @@
     --radius-round: 50%;
     
     /* --- TRANSITIONS Time --- */
-    --transition-time: .4s;
+    --transition-time: .25s;
 }
 
-/* 
+/* ------------------------------------------------
 #template {
     content: ;
 
-    --- display stuff
+    --- display stuff ---
     grid-positioning: ;
     display: ;
     flex-basis: ;
     flex-direction: ;
     grid-template: ;
 
-    ---positioning stuff
+    --- positioning stuff ---
     position: ;
     top: ;
     right: ;
@@ -49,7 +51,7 @@
     left: ;
     z-index: ;
     
-    --- box model stuff
+    --- box model stuff ---
     margin: ;
     border: ;
     border-radius: ;
@@ -62,31 +64,165 @@
     max-height: ;
     background-color: ;
 
-    --- typography
+    --- typography ---
     color: ;
     text-align: ;
     font-family: ;
     font-size: ;
+    line-height: ;
     font-weight: ;
 
-    --- manipulation
+    --- manipulation ---
     transform: ;
     filter: ;
     opacity: ;
 }
-*/
+------------------------------------------------ */
 
+
+
+/* --- GENERAL --- */
 body {
     font-size: 16px;
-    background-color: var(--background-grey);
+
+    /* --- BACKGROUND SVG --- */
+    background-image: url( '/final/scoots/images/pattern.svg' );
+    background-attachment: fixed;
+    background-position: right 0 bottom 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header);
+}
+
+p, a {
+    font-family: var(--font-text);
+}
+
+#content {
+    padding: 1rem;
+    min-height: 100vh;
+    text-align: center;
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    /* background-color: rgba(255, 255, 255, 0.5); */
+}
+
+
+
+/* --- HEADER --- */
+header {
+    margin: 0 -1rem;
+    padding: 1rem;
+    background-color: var(--background-black);
+}
+
+/* --- LOGO & NAME --- */
+#branding-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#logo-header {
+    width: 5rem;
+    height: auto;
+}
+
+
+#branding-header h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: var(--text-grey);
+    text-align: center;
+}
+
+#title-scoots {
     font-family: var(--font-scoots);
-    letter-spacing: -3px;
+    font-size: 3rem;
+    line-height: 2rem;
+    letter-spacing: -.75rem;
     text-transform: uppercase;
 }
 
-p {
-    font-family: var(--font-text);
+#title-rentals {
+    padding-left: .625rem;
+    font-family: var(--font-rentals);
+    font-size: 3rem;
+    line-height: 2rem;
+    letter-spacing: .125rem;
+    text-transform: lowercase;
+}
+
+/* --- NAVIGATION --- */
+nav ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    padding: .5rem;
+}
+
+#active {
+    border-bottom: .2rem solid var(--background-orange);
+}
+
+.navlinks {
+    border-bottom: .2rem solid transparent;
+    padding-top: .5rem;
+    color: var(--text-grey);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: all var(--transition-time);
+    -moz-transition: all var(--transition-time);
+    -o-transition: all var(--transition-time);
+    transition: all var(--transition-time);
+}
+
+.navlinks:hover {
+    border-bottom: .2rem solid var(--background-orange);
+    color: var(--text-white);
+    text-shadow:
+    -.25px -.25px 0 var(--text-white),
+    .25px -.25px 0 var(--text-white),
+    -.25px .25px 0 var(--text-white),
+    .25px .25px 0 var(--text-white);
+}
+
+
+
+
+
+/* --- FOOTER --- */
+footer {
+    margin: 0 -1rem;
+    padding: 1rem;
+    background-color: var(--background-black);
+}
+
+
+
+/* ------ Page 1 - HOME ------ */
+#alert-container {
+    margin: 1rem;
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 0, 0, 0.3)
+}
+
+main {
+    padding: 1rem;
 }

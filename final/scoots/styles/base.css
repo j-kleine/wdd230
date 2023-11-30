@@ -384,18 +384,31 @@ main {
     min-height: 100vh;
 }
 
-/* #hero-image {
-    object-fit: cover;
-    object-position: bottom;
+#hero-container {
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.5);
+}
+
+#hero-image-container {
+    position: absolute;
+    right: 8vw;
+    width: 50vw;
+    max-width: 512px;
+    height: 50vw;
+    max-height: 512px;
+    margin-top: 3vw;
+}
+
+#hero-image {
     width: 100%;
-    height: 300px;
-} */
+    height: auto;
+}
 
 #hero-actioncall {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    margin-top: 1rem;
     padding: 1rem;
     /* background-color: var(--background-purple); */
 }
@@ -450,8 +463,9 @@ main {
     .5px .5px 0 var(--text-black);
 }
 
-#hero-actioncall:hover #hero-actioncall-link::after {
+#hero-actioncall-link:hover::after {
 	content: " \276F";
+    transition: var(--transition-time);
 }
 
 #card-grid {

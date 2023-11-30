@@ -67,6 +67,10 @@
 
 
     /* ------ Page 1 - HOME ------ */
+    #hero-actioncall {
+        padding-left: 10vw;
+    }
+
     #card-contact {
         grid-column: 1/2;
         grid-row: 1/2;

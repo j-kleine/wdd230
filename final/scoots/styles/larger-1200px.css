@@ -51,8 +51,12 @@
 
 
     /* ------ Page 1 - HOME ------ */
-    #hero-image {
-        object-position: bottom;
-        height: 55vh;
+    #hero-image-container {
+        right: 15vw;
+        margin-top: 5vw;
+    }
+
+    #hero-actioncall {
+        padding-left: 20vw;
     }
 }

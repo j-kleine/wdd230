@@ -11,4 +11,10 @@
     nav {
         margin-top: 1rem;
     }
+
+    #site-info {
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 500px;
+    }
 }

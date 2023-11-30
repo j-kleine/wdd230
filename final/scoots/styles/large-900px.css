@@ -15,4 +15,8 @@
     nav ul {
         justify-content: space-between;
     }
+
+    #footer-animal {
+        bottom: .5rem;
+    }
 }

@@ -2,12 +2,13 @@
     /* --- HEADER --- */
     header {
         flex-direction: row;
+        padding: 1rem 5vw;
     }
 
     /* --- NAVIGATION --- */
     nav {
         align-items: center;
-        min-width: 850px;
+        min-width: 800px;
         max-width: 2000px;
     }
 
@@ -44,7 +45,9 @@
 
 
     /* --- FOOTER --- */
-
+    #footer-animal {
+        left: 15vw;
+    }
 
 
     /* ------ Page 1 - HOME ------ */

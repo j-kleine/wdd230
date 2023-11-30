@@ -254,7 +254,7 @@ footer {
 }
 
 
-#branding-footer h1 {
+#branding-footer h2 {
     display: flex;
     flex-direction: column;
     justify-content: left;

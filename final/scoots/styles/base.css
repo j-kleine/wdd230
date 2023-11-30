@@ -11,7 +11,7 @@
     /* --- COLORS Background--- */
     --background-black: #161A1D;
     --background-darkgrey: #423D4E;
-    --background-grey: #F5F5F5;
+    --background-lightgrey: #F5F5F5;
     --background-white: #FFFFFF;
     --background-purple: #7337BA;
     --background-yellow: #F6B41E;
@@ -19,7 +19,7 @@
     /* --- COLORS Text--- */
     --text-black: #161A1D;
     --text-darkgrey: #423D4E;
-    --text-grey: #F5F5F5;
+    --text-lightgrey: #F5F5F5;
     --text-white: #FFFFFF;
     --text-purple: #7337BA;
     --text-yellow: #F6B41E;
@@ -123,8 +123,8 @@ p, a {
 /* --- HEADER --- */
 header {
     padding: 1rem;
-    backdrop-filter: blur(16px) saturate(200%);
-    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
     background-color: rgba(17, 25, 40, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
@@ -148,7 +148,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    color: var(--text-grey);
+    color: var(--text-lightgrey);
     text-align: center;
 }
 
@@ -190,7 +190,7 @@ nav ul li {
 
 #active {
     margin-right: 1rem;
-    border-right: .2rem solid var(--background-yellow);
+    border-right: .25rem solid var(--background-yellow);
     text-shadow:
     -.25px -.25px 0 var(--text-white),
     .25px -.25px 0 var(--text-white),
@@ -199,9 +199,11 @@ nav ul li {
 }
 
 .navlinks {
-    border-right: .2rem solid transparent;
+    border-right: .25rem solid transparent;
+    padding-top: .25rem;
     padding-right: .5rem;
-    color: var(--text-grey);
+    color: var(--text-lightgrey);
+    font-family: var(--font-scoots);
     font-size: 1.5rem;
     font-weight: 400;
     text-transform: uppercase;
@@ -214,8 +216,9 @@ nav ul li {
 
 .navlinks:hover {
     margin-right: 1rem;
-    border-right: .2rem solid var(--background-yellow);
+    border-right: .25rem solid var(--background-yellow);
     color: var(--text-white);
+
     text-shadow:
     -.25px -.25px 0 var(--text-white),
     .25px -.25px 0 var(--text-white),
@@ -227,9 +230,11 @@ nav ul li {
 
 /* --- FOOTER --- */
 footer {
-    margin: 0;
     padding: 1rem;
-    background-color: var(--background-black);
+    backdrop-filter: blur(25px) saturate(100%);
+    -webkit-backdrop-filter: blur(25px) saturate(100%);
+    background-color: rgba(17, 25, 40, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 
@@ -241,6 +246,7 @@ footer {
     margin: 1rem;
     padding: 1rem;
     width: 0;
+
     backdrop-filter: blur(25px) saturate(200%);
     -webkit-backdrop-filter: blur(25px) saturate(200%);
     background-color: rgba(255, 255, 255, 0.5);
@@ -300,4 +306,66 @@ main {
 
 #hero-actioncall:hover #hero-actioncall-link::after {
 	content: " \276F";
+}
+
+#card-grid {
+    display: grid;
+    gap: 3rem;
+    margin: 3rem 1rem;
+}
+
+.card {
+    padding: 1rem;
+
+    backdrop-filter: blur(50px) saturate(200%);
+    -webkit-backdrop-filter: blur(50px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+    transition:
+        scale var(--transition-time) ease,
+        saturate var(--transition-time) ease;
+}
+
+.card:hover {
+    transform: scale(1.005);
+
+    backdrop-filter: blur(50px) saturate(100%);
+    -webkit-backdrop-filter: blur(50px) saturate(100%);
+}
+
+.card-header {
+    margin: 2rem 1rem;
+    padding: 0 3rem;
+    padding-bottom: .25rem;
+    color: var(--text-yellow);
+    text-align: left;
+    font-family: var(--font-rentals);
+    font-size: 2.5rem;
+    text-transform: lowercase;
+
+    text-shadow:
+    -.5px -.5px 0 var(--text-yellow),
+    .5px -.5px 0 var(--text-yellow),
+    -.5px .5px 0 var(--text-yellow),
+    .5px .5px 0 var(--text-yellow);
+
+    background-image:
+    linear-gradient(var(--background-yellow), var(--background-yellow)),
+    linear-gradient(var(--background-purple), var(--background-purple));
+    background-size: 0% 0.1em, 100% 0.1em;
+    background-position-x: 0%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    transition: var(--transition-time) ease-in-out;
+}
+
+.card:hover .card-header {
+    background-size: 100% 0.1em, 100% 0.1em;
+}
+
+.card p, .card p a {
+    color: var(--text-lightgrey);
+    font-size: 1.25rem;
 }

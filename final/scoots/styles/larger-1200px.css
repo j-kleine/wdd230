@@ -30,6 +30,7 @@
         border: none;
         border-top: .2rem solid transparent;
         padding: 0;
+        padding-top: .25rem;
     }
 
     .navlinks:hover {
@@ -37,6 +38,7 @@
         border: none;
         border-top: .2rem solid var(--background-yellow);
         padding: 0;
+        padding-top: .25rem;
     }
 
 

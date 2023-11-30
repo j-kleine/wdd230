@@ -55,17 +55,4 @@
         object-position: bottom;
         height: 55vh;
     }
-
-    #hero-actioncall p {
-        font-size: 6vw;
-    }
-    
-    #hero-actioncall-link {
-        border-bottom: .1vw solid transparent;
-        font-size: 6vw;
-    }
-
-    #hero-container:hover #hero-actioncall-link {
-        border-bottom: .5vw solid var(--background-black);
-    }
 }

@@ -384,24 +384,27 @@ main {
     min-height: 100vh;
 }
 
-#hero-image {
+/* #hero-image {
     object-fit: cover;
     object-position: bottom;
     width: 100%;
     height: 300px;
-}
+} */
 
 #hero-actioncall {
-    margin-top: -.3rem;
-    padding: 1rem 0;
-    width: 100%;
-    background-color: var(--background-yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 1rem;
+    padding: 1rem;
+    /* background-color: var(--background-purple); */
 }
 
-#hero-actioncall p {
+#hero-actioncall span {
     margin: 0;
     padding: 0;
-    color: var(--text-black);
+    color: var(--text-yellow);
+    text-align: left;
     font-family: var(--font-rentals);
     font-size: 8vw;
     font-weight: bold;
@@ -411,18 +414,35 @@ main {
 }
 
 #hero-actioncall-link {
-    border-bottom: .5vw solid transparent;
+    border-bottom: 0 solid transparent;
     color: var(--text-black);
     font-family: var(--font-rentals);
-    font-size: 8vw;
+    font-size: 15vw;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    transition: var(--transition-time);
+    
+    background-image:
+    linear-gradient(var(--background-yellow), var(--background-yellow)),
+    linear-gradient(transparent, transparent);
+    background-size: 0% 1vw, 100% 1vw;
+    background-position-x: 0%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    transition: var(--transition-time) ease-in-out;
+}
+
+#hero-actioncall span:nth-child(1) {
+    letter-spacing: 2.5vw;
+}
+
+#hero-actioncall span:nth-child(2) {
+    font-size: 10vw;
+    letter-spacing: 2vw;
 }
 
 #hero-container:hover #hero-actioncall-link {
-    border-bottom: 1vw solid var(--background-black);
+    background-size: 100% 1vw, 100% 1vw;
     text-shadow:
     -.5px -.5px 0 var(--text-black),
     .5px -.5px 0 var(--text-black),

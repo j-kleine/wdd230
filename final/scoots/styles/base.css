@@ -153,6 +153,7 @@ header {
 }
 
 #title-scoots {
+    color: var(--text-white);
     font-family: var(--font-scoots);
     font-size: 3rem;
     line-height: 2rem;
@@ -162,6 +163,7 @@ header {
 
 #title-rentals {
     padding-left: .625rem;
+    color: var(--text-yellow);
     font-family: var(--font-rentals);
     font-size: 3rem;
     line-height: 2rem;

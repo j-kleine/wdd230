@@ -10,17 +10,17 @@
 
     /* --- COLORS Background--- */
     --background-black: #161A1D;
+    --background-darkgrey: #423D4E;
     --background-grey: #F5F5F5;
     --background-white: #FFFFFF;
-    --background-green: #99B88E;
-    --background-orange: #F58514;
+    --background-yellow: #F6B41E;
 
     /* --- COLORS Text--- */
     --text-black: #161A1D;
+    --text-darkgrey: #423D4E;
     --text-grey: #F5F5F5;
     --text-white: #FFFFFF;
-    --text-green: #99B88E;
-    --text-orange: #F58514;
+    --text-yellow: #F6B41E;
 
     /* --- COLORS Shadow --- */
 
@@ -87,11 +87,13 @@ body {
     
     /* --- BACKGROUND SVG --- */
     /* background-image: url( '../../images/pattern3.svg' ); */
-    background-image: url( '../images/pattern3.svg' );
+    background-image: url( '../images/pattern.svg' );
     background-attachment: fixed;
     background-position: right 0 bottom 0;
     background-size: cover;
     background-repeat: no-repeat;
+
+    background-color: var(--background-darkgrey);
     
     font-size: 16px;
 }
@@ -107,8 +109,8 @@ p, a {
 #content {
     min-height: 100vh;
     text-align: center;
-    backdrop-filter: blur(25px) saturate(100%);
-    -webkit-backdrop-filter: blur(25px) saturate(100%);
+    /* backdrop-filter: blur(25px) saturate(100%); */
+    /* -webkit-backdrop-filter: blur(25px) saturate(100%); */
     /* background-color: rgba(255, 255, 255, 0.5); */
 }
 
@@ -117,7 +119,10 @@ p, a {
 /* --- HEADER --- */
 header {
     padding: 1rem;
-    background-color: var(--background-black);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 /* --- LOGO & NAME --- */
@@ -181,7 +186,7 @@ nav ul li {
 
 #active {
     margin-right: 1rem;
-    border-right: .2rem solid var(--background-orange);
+    border-right: .2rem solid var(--background-yellow);
     text-shadow:
     -.25px -.25px 0 var(--text-white),
     .25px -.25px 0 var(--text-white),
@@ -205,7 +210,7 @@ nav ul li {
 
 .navlinks:hover {
     margin-right: 1rem;
-    border-right: .2rem solid var(--background-orange);
+    border-right: .2rem solid var(--background-yellow);
     color: var(--text-white);
     text-shadow:
     -.25px -.25px 0 var(--text-white),
@@ -254,7 +259,7 @@ main {
     margin-top: -.3rem;
     padding: 1rem 0;
     width: 100%;
-    background-color: var(--background-orange);
+    background-color: var(--background-yellow);
 }
 
 #hero-actioncall p {

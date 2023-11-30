@@ -23,7 +23,7 @@
     #active {
         margin: 0;
         border: none;
-        border-top: .2rem solid var(--background-orange);
+        border-top: .2rem solid var(--background-yellow);
     }
 
     .navlinks {
@@ -35,7 +35,7 @@
     .navlinks:hover {
         margin: 0;
         border: none;
-        border-top: .2rem solid var(--background-orange);
+        border-top: .2rem solid var(--background-yellow);
         padding: 0;
     }
 

@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="150px" width="300px">
+  <defs>
+    <radialGradient id="0" gradientTransform="translate(-1 0) scale(2, 2)">
+      <stop offset="0%" stop-color="#161a1d"/>
+      <stop offset="60%" stop-color="#7337ba"/>
+      <stop offset="100%" stop-color="#161a1d"/>
+    </radialGradient>
+    <radialGradient id="1" gradientTransform="translate(-1 -0.55) scale(2, 1.09)">
+      <stop offset="1%" stop-color="rgba(22, 26, 29, 0)"/>
+      <stop offset="8.8%" stop-color="rgba(29, 33, 38, 0.14)"/>
+      <stop offset="16.6%" stop-color="rgba(37, 40, 47, 0.28)"/>
+      <stop offset="24.4%" stop-color="rgba(45, 47, 59, 0.43)"/>
+      <stop offset="40%" stop-color="rgba(66, 61, 77, 0.71)"/>
+      <stop offset="52%" stop-color="rgba(66, 61, 77, 0.57)"/>
+      <stop offset="64%" stop-color="rgba(66, 61, 77, 0.43)"/>
+      <stop offset="76%" stop-color="rgba(66, 61, 77, 0.28)"/>
+      <stop offset="100%" stop-color="rgba(66, 61, 77, 0)"/>
+    </radialGradient>
+    <radialGradient id="2" gradientTransform="translate(0.33 -0.91) scale(0.65, 2)">
+      <stop offset="0%" stop-color="rgba(66, 61, 77, 0.72)"/>
+      <stop offset="100%" stop-color="rgba(66, 61, 77, 0)"/>
+    </radialGradient>
+  </defs>
+  <rect fill="url(#0)" height="100%" width="100%"/>
+  <rect fill="url(#1)" height="100%" width="100%"/>
+  <rect fill="url(#2)" height="100%" width="100%"/>
+</svg>

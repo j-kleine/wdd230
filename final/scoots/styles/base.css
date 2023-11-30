@@ -13,6 +13,7 @@
     --background-darkgrey: #423D4E;
     --background-grey: #F5F5F5;
     --background-white: #FFFFFF;
+    --background-purple: #7337BA;
     --background-yellow: #F6B41E;
 
     /* --- COLORS Text--- */
@@ -20,6 +21,7 @@
     --text-darkgrey: #423D4E;
     --text-grey: #F5F5F5;
     --text-white: #FFFFFF;
+    --text-purple: #7337BA;
     --text-yellow: #F6B41E;
 
     /* --- COLORS Shadow --- */
@@ -87,7 +89,9 @@ body {
     
     /* --- BACKGROUND SVG --- */
     /* background-image: url( '../../images/pattern3.svg' ); */
-    background-image: url( '../images/pattern.svg' );
+    background-image:
+        url( '../images/pattern.svg' ),
+        url( '../images/gradient.svg' );
     background-attachment: fixed;
     background-position: right 0 bottom 0;
     background-size: cover;
@@ -119,9 +123,9 @@ p, a {
 /* --- HEADER --- */
 header {
     padding: 1rem;
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.75);
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
 

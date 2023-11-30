@@ -139,8 +139,12 @@ header {
 }
 
 #logo-header {
+    border-radius: 50%;
     width: 5rem;
     height: auto;
+    box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
 }
 
 
@@ -233,8 +237,8 @@ nav ul li {
 /* --- FOOTER --- */
 footer {
     padding: 1rem;
-    backdrop-filter: blur(25px) saturate(100%);
-    -webkit-backdrop-filter: blur(25px) saturate(100%);
+    backdrop-filter: blur(50px) saturate(100%);
+    -webkit-backdrop-filter: blur(50px) saturate(100%);
     background-color: rgba(17, 25, 40, 0.5);
     border-top: 1px solid rgba(255, 255, 255, 0.125);
 }
@@ -249,8 +253,12 @@ footer {
 }
 
 #logo-footer {
+    border-radius: 50%;
     width: 9rem;
     height: auto;
+    box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
 }
 
 
@@ -279,6 +287,36 @@ footer {
     line-height: 2rem;
     letter-spacing: .125rem;
     text-transform: lowercase;
+}
+
+#contact-footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link {
+    margin-right: 1rem;
+    margin-left: auto;
+    border-right: .25rem solid transparent;
+    padding: .875rem;
+    color: var(--text-lightgrey);
+    text-align: right;
+    font-family: var(--font-scoots);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: var(--transition-time);
+}
+
+.footer-link:hover {
+    margin-right: 2rem;
+    border-right: .25rem solid var(--background-yellow);
+    color: var(--text-white);
+
+    text-shadow:
+    -.25px -.25px 0 var(--text-white),
+    .25px -.25px 0 var(--text-white),
+    -.25px .25px 0 var(--text-white),
+    .25px .25px 0 var(--text-white);
 }
 
 
@@ -361,11 +399,15 @@ main {
 .card {
     padding: 1rem;
 
-    backdrop-filter: blur(50px) saturate(200%);
-    -webkit-backdrop-filter: blur(50px) saturate(200%);
+    backdrop-filter: blur(75px) saturate(100%);
+    -webkit-backdrop-filter: blur(75px) saturate(100%);
     background-color: rgba(17, 25, 40, 0.5);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
+
+    box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
 
     transition:
         scale var(--transition-time) ease,
@@ -375,9 +417,8 @@ main {
 .card:hover {
     transform: scale(1.005);
 
-    backdrop-filter: blur(50px) saturate(100%);
-    -webkit-backdrop-filter: blur(50px) saturate(100%);
-}
+    backdrop-filter: blur(75px) saturate(150%);
+    -webkit-backdrop-filter: blur(75px) saturate(150%)75}
 
 .card-header {
     margin: 2rem 1rem;

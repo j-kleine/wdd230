@@ -20,7 +20,7 @@
 
     /* ------ Page 1 - HOME ------ */
     #hero-image {
-        max-width: none;
-        max-height: none;
+        max-width: 50rem;
+        max-height: 50rem;
     }
 }

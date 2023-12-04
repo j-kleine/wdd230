@@ -12,4 +12,8 @@
 
 
     /* ------ Page 1 - HOME ------ */
+    #hero-image {
+        max-width: 37.5rem;
+        max-height: 37.5rem;
+    }
 }

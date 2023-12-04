@@ -11,6 +11,8 @@
     nav ul {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        height: 100%;
     }
 
     nav ul li {
@@ -59,9 +61,7 @@
     }
 
     #hero-image {
-        width: 50vw;
         max-width: 28.125rem;
-        height: 50vw;
         max-height: 28.125rem;
     }
 

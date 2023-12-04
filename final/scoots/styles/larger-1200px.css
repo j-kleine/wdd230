@@ -1,45 +1,12 @@
 @media screen and (min-width: 1200px) {
     /* --- HEADER --- */
-    header {
-        flex-direction: row;
-        padding: 1rem 5vw;
-    }
-
+    /* --- LOGO & NAME --- */
     /* --- NAVIGATION --- */
     nav {
-        align-items: center;
-        min-width: 800px;
+        grid-row: 1/2;
+        grid-column: 2/3;
+        min-width: 850px;
         max-width: 2000px;
-    }
-
-    nav ul {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    nav ul li {
-        text-align: center;
-    }
-
-    #active {
-        margin: 0;
-        border: none;
-        border-top: .2rem solid var(--background-yellow);
-    }
-
-    .navlinks {
-        border: none;
-        border-top: .2rem solid transparent;
-        padding: 0;
-        padding-top: .25rem;
-    }
-
-    .navlinks:hover {
-        margin: 0;
-        border: none;
-        border-top: .2rem solid var(--background-yellow);
-        padding: 0;
-        padding-top: .25rem;
     }
 
 
@@ -50,13 +17,10 @@
     }
 
 
-    /* ------ Page 1 - HOME ------ */
-    #hero-image-container {
-        right: 15vw;
-        margin-top: 5vw;
-    }
 
-    #hero-actioncall {
-        padding-left: 20vw;
+    /* ------ Page 1 - HOME ------ */
+    #hero-image {
+        max-width: none;
+        max-height: none;
     }
 }

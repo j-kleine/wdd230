@@ -92,8 +92,8 @@ body {
     /* --- BACKGROUND SVG --- */
     /* background-image: url( '../../images/pattern3.svg' ); */
     background-image:
-        url( '../images/dm-pattern.svg' ),
-        url( '../images/dm-gradient.svg' );
+        url( '../images/darkmode/dm-pattern.svg' ),
+        url( '../images/darkmode/dm-gradient.svg' );
     background-attachment: fixed;
     background-position: right 0 bottom 0;
     background-size: cover;
@@ -434,9 +434,9 @@ main {
 }
 
 #hero-image {
-    width: 50vw;
+    width: 45vw;
     max-width: 16.5rem;
-    height: 50vw;
+    height: 45vw;
     max-height: 16.5rem;
 }
 

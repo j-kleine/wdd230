@@ -142,6 +142,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: left;
+    height: 107px;
     align-items: center;
 }
 
@@ -153,7 +154,6 @@ header {
     -moz-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
 }
-
 
 #header-branding h1 {
     display: flex;
@@ -301,7 +301,7 @@ footer {
 }
 
 #footer-social-media-container {
-    margin: 1rem auto;
+    margin-top: 1rem;
 }
 
 #footer-social-media-container a {
@@ -358,7 +358,6 @@ main {
 
 #hero-container {
     display: grid;
-    gap: 1rem;
     padding: 1rem;
     -webkit-backdrop-filter: blur(25px) saturate(200%);
     backdrop-filter: blur(25px) saturate(200%);

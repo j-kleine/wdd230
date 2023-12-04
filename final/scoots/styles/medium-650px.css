@@ -1,16 +1,10 @@
 @media screen and (min-width: 650px) {
     /* --- HEADER --- */
-    header {
-        flex-direction: column;
-    }
-
     /* --- LOGO & NAME --- */
-    #branding-header {
-        margin: 0;
-    }
-
     /* --- NAVIGATION --- */
     nav {
+        grid-row: 2/3;
+        grid-column: 1/2;
         margin: 0;
     }
 
@@ -23,13 +17,6 @@
         text-align: center;
     }
 
-    #active {
-        margin: 0;
-        border: none;
-        border-top: .25rem solid var(--background-yellow);
-        padding-top: .25rem;
-    }
-
     .navlinks {
         border: none;
         border-top: .25rem solid transparent;
@@ -37,7 +24,7 @@
         padding-top: .25rem;
     }
 
-    .navlinks:hover {
+    .navlinks:hover, #active {
         margin: 0;
         border: none;
         border-top: .25rem solid var(--background-yellow);
@@ -54,9 +41,9 @@
         left: 5vw;
         display: block;
         width: 40vw;
-        max-width: 512px;
+        max-width: 360px;
         height: 40vw;
-        max-height: 512px;
+        max-height: 360px;
     }
 
     #footer-animal img {
@@ -67,8 +54,20 @@
 
 
     /* ------ Page 1 - HOME ------ */
-    #hero-actioncall {
-        padding-left: 10vw;
+    #hero-container {
+        padding: 1rem 10vw;
+    }
+
+    #hero-image {
+        width: 50vw;
+        max-width: 28.125rem;
+        height: 50vw;
+        max-height: 28.125rem;
+    }
+
+    #card-grid {
+        gap: 4rem 2rem;
+        margin: 4rem 1rem;
     }
 
     #card-contact {

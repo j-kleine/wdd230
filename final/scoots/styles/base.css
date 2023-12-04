@@ -246,7 +246,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 #footer-logo {
@@ -262,7 +261,6 @@ footer {
 #footer-branding h2 {
     display: flex;
     flex-direction: column;
-    justify-content: left;
 }
 
 #footer-animal {
@@ -280,7 +278,6 @@ footer {
 
 .footer-link {
     margin-right: 1rem;
-    margin-left: auto;
     border-right: .25rem solid transparent;
     padding: .875rem;
     color: var(--text-lightgrey);
@@ -373,14 +370,14 @@ main {
     grid-column: 1/2;
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
+    align-items: start;
 }
 
 #hero-actioncall span {
     margin: 0;
     padding: 0;
     color: var(--text-yellow);
-    text-align: left;
     font-family: var(--font-rentals);
     font-size: 8vw;
     font-weight: bold;
@@ -389,11 +386,19 @@ main {
     transition: var(--transition-time);
 }
 
+#hero-actioncall span:nth-child(1) {
+    letter-spacing: 2.5vw;
+}
+
+#hero-actioncall span:nth-child(2) {
+    font-size: 10vw;
+    letter-spacing: 2vw;
+}
+
 #hero-actioncall-link {
-    border-bottom: 0 solid transparent;
-    color: var(--text-black);
-    font-family: var(--font-rentals);
-    font-size: 15vw;
+    color: var(--text-lightgrey);
+    font-family: var(--font-text);
+    font-size: 13vw;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
@@ -408,27 +413,17 @@ main {
     transition: var(--transition-time) ease-in-out;
 }
 
-#hero-actioncall span:nth-child(1) {
-    letter-spacing: 2.5vw;
-}
-
-#hero-actioncall span:nth-child(2) {
-    font-size: 10vw;
-    letter-spacing: 2vw;
-}
-
 #hero-container:hover #hero-actioncall-link {
     background-size: 100% 1vw, 100% 1vw;
-    text-shadow:
-    -.5px -.5px 0 var(--text-black),
-    .5px -.5px 0 var(--text-black),
-    -.5px .5px 0 var(--text-black),
-    .5px .5px 0 var(--text-black);
 }
 
-#hero-actioncall-link:hover::after {
-	content: " \276F";
-    transition: var(--transition-time);
+#hero-actioncall-link:hover {
+	color: var(--text-yellow);
+    text-shadow:
+    -.5px -.5px 0 var(--text-yellow),
+    .5px -.5px 0 var(--text-yellow),
+    -.5px .5px 0 var(--text-yellow),
+    .5px .5px 0 var(--text-yellow);
 }
 
 #hero-image-container {
@@ -471,8 +466,9 @@ main {
 }
 
 .card:hover {
-    -webkit-backdrop-filter: blur(75px) saturate(150%)75}
+    -webkit-backdrop-filter: blur(75px) saturate(150%);
     backdrop-filter: blur(75px) saturate(150%);
+}
 
 .card-header {
     margin: 2rem 1rem;

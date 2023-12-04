@@ -130,7 +130,7 @@ header {
 }
 
 /* --- LOGO & NAME --- */
-#branding-header {
+#header-branding {
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -138,7 +138,7 @@ header {
     margin-bottom: 1rem;
 }
 
-#logo-header {
+#header-logo {
     border-radius: 50%;
     width: 5rem;
     height: auto;
@@ -148,7 +148,7 @@ header {
 }
 
 
-#branding-header h1 {
+#header-branding h1 {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -244,7 +244,7 @@ footer {
 }
 
 /* --- LOGO & NAME --- */
-#branding-footer {
+#footer-branding {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -252,17 +252,17 @@ footer {
     margin: 3rem 0;
 }
 
-#logo-footer {
+#footer-logo {
     border-radius: 50%;
     width: 9rem;
     height: auto;
-    box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
 }
 
 
-#branding-footer h2 {
+#footer-branding h2 {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -295,7 +295,7 @@ footer {
     height: 0;
 }
 
-#contact-footer-container {
+#footer-contact-container {
     display: flex;
     flex-direction: column;
 }
@@ -325,15 +325,15 @@ footer {
     .25px .25px 0 var(--text-white);
 }
 
-#social-media-footer-container {
+#footer-social-media-container {
     margin: 3rem 1rem 3rem auto;
 }
 
-#social-media-footer-container a {
+#footer-social-media-container a {
     margin: 0 1rem;
 }
 
-#social-media-footer-container a img {
+#footer-social-media-container a img {
     border: .2rem solid transparent;
     border-radius: 50%;
     width: 4rem;
@@ -345,11 +345,11 @@ footer {
     transition: var(--transition-time);
 }
 
-#social-media-footer-container a img:hover {
+#footer-social-media-container a img:hover {
     background-color: var(--background-lightgrey);
 }
 
-#site-info {
+#footer-site-info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -357,7 +357,7 @@ footer {
     margin-top: 3rem;
 }
 
-#site-info span {
+#footer-site-info span {
     margin: .5rem 0;
     color: var(--text-yellow);
     font-family: var(--font-text);

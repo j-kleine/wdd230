@@ -37,6 +37,7 @@ function toggleDark() {
         document.documentElement.style.setProperty('--text-secondary', '#161A1D');
         document.documentElement.style.setProperty('--text-accent1', '#F6B41E');
         document.documentElement.style.setProperty('--text-accent2', '#7337BA');
+        document.documentElement.style.setProperty('--text-logo-rentals', '#F6B41E');
 
 
 
@@ -89,8 +90,9 @@ function toggleDark() {
     // ------ Change TEXT COLORS ------
     document.documentElement.style.setProperty('--text-main', '#161A1D');
     document.documentElement.style.setProperty('--text-secondary', '#F5F5F5');
-    document.documentElement.style.setProperty('--text-accent1', '#ED7C14');
+    document.documentElement.style.setProperty('--text-accent1', '#161A1D');
     document.documentElement.style.setProperty('--text-accent2', '#74B561');
+    document.documentElement.style.setProperty('--text-logo-rentals', '#ED7C14');
 
 
 

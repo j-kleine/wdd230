@@ -21,6 +21,7 @@
     --text-secondary: #F5F5F5;
     --text-accent1: #ED7C14;
     --text-accent2: #74B561;
+    --text-logo-rentals: #ED7C14;
 
     /* --- COLORS Shadow --- */
     --shadow: drop-shadow(10px 10px 50px rgba(0,0,0,.75));
@@ -215,7 +216,7 @@ header {
 #header-logo {
     border-radius: 50%;
     width: 5rem;
-    height: auto;
+    height: 5rem;
     filter: var(--shadow);
 }
 
@@ -236,7 +237,7 @@ header {
 
 #title-rentals {
     padding-left: .625rem;
-    color: var(--text-accent1);
+    color: var(--text-logo-rentals);
     font-family: var(--font-header-sharp);
     font-size: 3rem;
     line-height: 2rem;

@@ -37,9 +37,18 @@
     /* --text-yellow: #F6B41E; */
 
     /* --- COLORS Shadow --- */
+    --shadow: drop-shadow(10px 10px 50px rgba(0,0,0,.75));
+
+    /* --- COLORS Backdrop Filter --- */
+    --backdrop-25-100: blur(25px) saturate(100%);
+    --backdrop-75-100: blur(75px) saturate(100%);
+    --backdrop-color-dark: rgba(17, 25, 40, 0.5);
+    --backdrop-color-light: rgba(255, 255, 255, 0.5);
+    --backdrop-border: 1px solid rgba(255, 255, 255, 0.5);
+
 
     /* --- BORDERS Radius --- */
-    --radius-corner: .4rem;
+    --radius-corner: 1rem;
     --radius-round: 50%;
     
     /* --- TRANSITIONS Time --- */
@@ -104,8 +113,8 @@ body {
     /* --- BACKGROUND SVG --- */
     /* background-image: url( '../../images/pattern3.svg' ); */
     background-image:
-        /* url( '../images/darkmode/dm-pattern.svg' ), */
-        /* url( '../images/darkmode/dm-gradient.svg' ); */;
+        url( '../images/lightmode/pattern.svg' ),
+        url( '../images/lightmode/gradient.svg' );
     background-attachment: fixed;
     background-position: right 0 bottom 0;
     background-size: cover;
@@ -140,11 +149,11 @@ header {
     gap: 1rem;
     padding: 1rem;
 
-    -webkit-backdrop-filter: blur(25px) saturate(200%);
-    -moz-backdrop-filter: blur(25px) saturate(200%);
-    backdrop-filter: blur(25px) saturate(200%);
-    background-color: rgba(17, 25, 40, 0.5);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+    -webkit-backdrop-filter: var(--backdrop-25-100);
+    -moz-backdrop-filter: var(--backdrop-25-100);
+    backdrop-filter: var(--backdrop-25-100);
+    background-color: var(--backdrop-color-light);
+    border-bottom: var(--backdrop-border);
 }
 
 /* --- LOGO & NAME --- */
@@ -162,9 +171,7 @@ header {
     border-radius: 50%;
     width: 5rem;
     height: auto;
-    -webkit-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
+    filter: var(--shadow);
 }
 
 #header-branding h1 {
@@ -244,11 +251,11 @@ footer {
     padding: 1rem;
     padding-top: 3rem;
 
-    -webkit-backdrop-filter: blur(50px) saturate(100%);
-    -moz-backdrop-filter: blur(25px) saturate(200%);
-    backdrop-filter: blur(50px) saturate(100%);
-    background-color: rgba(17, 25, 40, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.125);
+    -webkit-backdrop-filter: var(--backdrop-25-100);
+    -moz-backdrop-filter: var(--backdrop-25-100);
+    backdrop-filter: var(--backdrop-25-100);
+    background-color: var(--backdrop-color-light);
+    border-bottom: var(--backdrop-border);
 }
 
 /* --- LOGO & NAME --- */
@@ -264,9 +271,7 @@ footer {
     border-radius: 50%;
     width: 9rem;
     height: auto;
-    -webkit-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
+    filter: var(--shadow);
 }
 
 
@@ -279,6 +284,7 @@ footer {
     display: none;
     width: 0;
     height: 0;
+    filter: var(--shadow);
 }
 
 #footer-contact-container {
@@ -294,7 +300,8 @@ footer {
     padding: .875rem;
     color: var(--text-main);
     text-align: right;
-    font-family: var(--font-header);
+    font-family: var(--font-text);
+    font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     transition: var(--transition-time);
@@ -326,26 +333,26 @@ footer {
     width: 4rem;
     height: 4rem;
     background-color: var(--fill-main);
-    filter: saturate(1.25);
-    -webkit-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
+    filter: saturate(1.5) contrast(1) brightness(1) var(--shadow);
     transition: var(--transition-time);
 }
 
 #footer-social-media-container a img:hover {
-    background-color: var(--fill-main);
+    background-color: transparent;
+    filter: saturate(1) contrast(0) brightness(10) var(--shadow);
 }
 
 #footer-site-info {
     display: flex;
     flex-direction: column;
+    margin-top: 3rem;
 }
 
 #footer-site-info span {
     margin: .5rem 0;
-    color: var(--text-accent1);
+    color: var(--text-main);
     font-family: var(--font-text);
+    font-weight: bold;
 }
 
 
@@ -358,8 +365,8 @@ footer {
     padding: 1rem;
     width: 0;
 
-    backdrop-filter: blur(25px) saturate(200%);
     -webkit-backdrop-filter: blur(25px) saturate(200%);
+    backdrop-filter: blur(25px) saturate(200%);
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 12px;
     border: 1px solid rgba(255, 0, 0, 0.3)
@@ -372,9 +379,12 @@ main {
 #hero-container {
     display: grid;
     padding: 1rem;
-    -webkit-backdrop-filter: blur(25px) saturate(200%);
-    backdrop-filter: blur(25px) saturate(200%);
-    background-color: rgba(17, 25, 40, 0.5);
+    
+    -webkit-backdrop-filter: var(--backdrop-25-100);
+    -moz-backdrop-filter: var(--backdrop-25-100);
+    backdrop-filter: var(--backdrop-25-100);
+    background-color: var(--backdrop-color-light);
+    border-bottom: var(--backdrop-border);
 }
 
 #hero-actioncall {
@@ -430,12 +440,16 @@ main {
 }
 
 #hero-actioncall-link:hover {
-	color: var(--text-accent1);
+	color: var(--text-main);
     text-shadow:
-    -.5px -.5px 0 var(--text-accent1),
-    .5px -.5px 0 var(--text-accent1),
-    -.5px .5px 0 var(--text-accent1),
-    .5px .5px 0 var(--text-accent1);
+    -2px -2px 0 var(--text-main),
+    2px -2px 0 var(--text-main),
+    -2px 2px 0 var(--text-main),
+    2px 2px 0 var(--text-main);
+
+    background-image:
+    linear-gradient(var(--fill-accent2), var(--fill-accent2)),
+    linear-gradient(transparent, transparent);
 }
 
 #hero-image-container {
@@ -451,6 +465,7 @@ main {
     max-width: 16.5rem;
     height: 45vw;
     max-height: 16.5rem;
+    filter: var(--shadow);
 }
 
 #card-grid {
@@ -462,24 +477,18 @@ main {
 .card {
     padding: 1rem;
 
-    backdrop-filter: blur(75px) saturate(100%);
-    -webkit-backdrop-filter: blur(75px) saturate(100%);
-    background-color: rgba(17, 25, 40, 0.5);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
+    -webkit-backdrop-filter: var(--backdrop-75-100);
+    -moz-backdrop-filter: var(--backdrop-75-100);
+    backdrop-filter: var(--backdrop-75-100);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: var(--radius-corner);
+    border-bottom: var(--backdrop-border);
 
-    -webkit-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 83px -12px rgba(0,0,0,0.75);
+    filter: var(--shadow);
 
     transition:
         scale var(--transition-time) ease,
         saturate var(--transition-time) ease;
-}
-
-.card:hover {
-    -webkit-backdrop-filter: blur(75px) saturate(150%);
-    backdrop-filter: blur(75px) saturate(150%);
 }
 
 .card-header {

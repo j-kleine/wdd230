@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="300px" width="150px">
+  <defs>
+    <linearGradient id="0" x1="0.09" y1="0.22" x2="0.91" y2="0.78">
+      <stop offset="0%" stop-color="#8bcfac"/>
+      <stop offset="39%" stop-color="#87f401"/>
+      <stop offset="64%" stop-color="#faef01"/>
+      <stop offset="90%" stop-color="#ff9402"/>
+    </linearGradient>
+    <radialGradient id="1" gradientTransform="translate(-1 -0.29) scale(2, 2)">
+      <stop offset="24%" stop-color="#74b561"/>
+      <stop offset="83%" stop-color="rgba(177, 56, 94, 0)"/>
+    </radialGradient>
+  </defs>
+  <rect fill="url(#0)" height="100%" width="100%"/>
+  <rect fill="url(#1)" height="100%" width="100%"/>
+</svg>

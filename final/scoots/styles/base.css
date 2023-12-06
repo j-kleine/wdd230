@@ -400,6 +400,18 @@ footer {
     font-family: var(--font-text);
 }
 
+#footer-site-info span a {
+    border-bottom: .25rem solid transparent;
+    color: var(--text-main);
+    text-decoration: none;
+    transition: var(--transition-time);
+}
+
+#footer-site-info span a:hover {
+    border-bottom: .25rem solid var(--fill-accent1);
+    font-weight: bold;
+}
+
 
 
 /* ------ Page 1 - HOME ------ */

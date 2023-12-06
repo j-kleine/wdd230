@@ -23,4 +23,9 @@
         max-width: 50rem;
         max-height: 50rem;
     }
+
+    #card-grid {
+        gap: 6rem;
+        margin: 6rem 1rem;
+    }
 }

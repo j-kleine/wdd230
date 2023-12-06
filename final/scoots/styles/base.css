@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Gabarito:wght@400;800&family=Poiret+One&display=swap');
 
 :root {
+    /* --- BACKGROUND IMAGE --- */
+    --backgound-image: url('../images/lightmode/pattern.svg'), url('../images/lightmode/gradient.svg');
+
     /* --- FONTS --- */
     --font-header-soft: 'Comfortaa', sans-serif;
     --font-header-sharp: 'Poiret One', sans-serif;
@@ -19,31 +22,13 @@
     --text-accent1: #ED7C14;
     --text-accent2: #74B561;
 
-    /* ------ DARK MODE ------ */
-    /* --- COLORS Background--- */
-    /* --background-black: #161A1D; */
-    /* --background-darkgrey: #423D4E; */
-    /* --background-lightgrey: #F5F5F5; */
-    /* --background-white: #FFFFFF; */
-    /* --background-purple: #7337BA; */
-    /* --background-yellow: #F6B41E; */
-
-    /* --- COLORS Text--- */
-    /* --text-black: #161A1D; */
-    /* --text-darkgrey: #423D4E; */
-    /* --text-lightgrey: #F5F5F5; */
-    /* --text-white: #FFFFFF; */
-    /* --text-purple: #7337BA; */
-    /* --text-yellow: #F6B41E; */
-
     /* --- COLORS Shadow --- */
     --shadow: drop-shadow(10px 10px 50px rgba(0,0,0,.75));
 
     /* --- COLORS Backdrop Filter --- */
     --backdrop-25-100: blur(25px) saturate(100%);
     --backdrop-75-100: blur(75px) saturate(100%);
-    --backdrop-color-dark: rgba(17, 25, 40, 0.5);
-    --backdrop-color-light: rgba(255, 255, 255, 0.5);
+    --backdrop-color: rgba(255, 255, 255, 0.5);
     --backdrop-border: 1px solid rgba(255, 255, 255, 0.5);
 
 
@@ -112,9 +97,7 @@ body {
     
     /* --- BACKGROUND SVG --- */
     /* background-image: url( '../../images/pattern3.svg' ); */
-    background-image:
-        url( '../images/lightmode/pattern.svg' ),
-        url( '../images/lightmode/gradient.svg' );
+    background-image: var(--backgound-image);
     background-attachment: fixed;
     background-position: right 0 bottom 0;
     background-size: cover;
@@ -134,11 +117,73 @@ p, a {
 }
 
 #content {
+    display: block;
     min-height: 100vh;
     text-align: center;
     /* backdrop-filter: blur(10px) saturate(100%); */
     /* -webkit-backdrop-filter: blur(10px) saturate(100%); */
     /* background-color: rgba(255, 255, 255, 0.5); */
+}
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 5;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider-round {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--fill-main);
+    border-radius: 34px;
+    box-shadow: 0 0 0 2px var(--fill-accent2);
+    transition: .4s;
+}
+
+.slider-round:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--fill-accent1);
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider-round {
+    background-color: #252525;
+}
+
+input:checked + .slider-round::before {
+    background-color: var(--fill-accent1);
+}
+
+input:checked + .slider-round:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
 }
 
 
@@ -152,7 +197,7 @@ header {
     -webkit-backdrop-filter: var(--backdrop-25-100);
     -moz-backdrop-filter: var(--backdrop-25-100);
     backdrop-filter: var(--backdrop-25-100);
-    background-color: var(--backdrop-color-light);
+    background-color: var(--backdrop-color);
     border-bottom: var(--backdrop-border);
 }
 
@@ -254,8 +299,8 @@ footer {
     -webkit-backdrop-filter: var(--backdrop-25-100);
     -moz-backdrop-filter: var(--backdrop-25-100);
     backdrop-filter: var(--backdrop-25-100);
-    background-color: var(--backdrop-color-light);
-    border-bottom: var(--backdrop-border);
+    background-color: var(--backdrop-color);
+    border-top: var(--backdrop-border);
 }
 
 /* --- LOGO & NAME --- */
@@ -339,6 +384,7 @@ footer {
 
 #footer-social-media-container a img:hover {
     background-color: transparent;
+    box-shadow: 0 0 0 .25rem var(--fill-accent1);
     filter: saturate(1) contrast(0) brightness(10) var(--shadow);
 }
 
@@ -383,7 +429,7 @@ main {
     -webkit-backdrop-filter: var(--backdrop-25-100);
     -moz-backdrop-filter: var(--backdrop-25-100);
     backdrop-filter: var(--backdrop-25-100);
-    background-color: var(--backdrop-color-light);
+    background-color: var(--backdrop-color);
     border-bottom: var(--backdrop-border);
 }
 
@@ -477,12 +523,11 @@ main {
 .card {
     padding: 1rem;
 
-    -webkit-backdrop-filter: var(--backdrop-75-100);
-    -moz-backdrop-filter: var(--backdrop-75-100);
-    backdrop-filter: var(--backdrop-75-100);
-    background-color: rgba(255, 255, 255, 0.75);
+    -webkit-backdrop-filter: var(--backdrop-25-100);
+    -moz-backdrop-filter: var(--backdrop-25-100);
+    backdrop-filter: var(--backdrop-25-100);
+    background-color: var(--backdrop-color);
     border-radius: var(--radius-corner);
-    border-bottom: var(--backdrop-border);
 
     filter: var(--shadow);
 

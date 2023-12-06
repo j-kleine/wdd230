@@ -21,6 +21,10 @@
 </head>
 <body>
     <div id="content">
+        <label class="switch" for="toggledarkmode">
+            <input type="checkbox" name="toggledarkmode" aria-label="toggledarkmode" id="toggledarkmode" onclick="toggleDark()">
+            <span class="slider-round"></span>
+        </label>
         <header>
             <div id="header-branding">
                 <div id="header-logo-container">
@@ -53,7 +57,7 @@
                     <span><a id="hero-actioncall-link" href="#">Here</a></span>
                 </div>
                 <div id="hero-image-container">
-                    <picture >
+                    <picture id="hero-picture">
                         <source media="(max-width: 549px)" srcset="images/lightmode/hero-img275.webp"> <!-- image size: 275px -->
                         <source media="(max-width: 649px)" srcset="images/lightmode/hero-img325.webp"> <!-- image size: 325px -->
                         <source media="(max-width: 899px)" srcset="images/lightmode/hero-img450.webp"> <!-- image size: 450px -->
@@ -108,7 +112,7 @@
                 <h2><span id="title-scoots">Scoots</span> <span id="title-rentals">Rentals</span></h2>
             </div>
             <div id="footer-animal">
-                <img src="images/lightmode/footer-img.webp" alt="a capybara with goggles and helmet in a purple and yellow jeep">
+                <img id="footer-image" src="images/lightmode/footer-img.webp" alt="a capybara with goggles and helmet in a purple and yellow jeep">
             </div>
             <div id="footer-contact-container">
                 <a class="footer-link" href="https://maps.app.goo.gl/uHKcPqKEZNuExieK7" target="_blank">Boulevard Aeropuerto Cozumel s/n,<br>77600 Cozumel</a>
@@ -132,6 +136,6 @@
     </div>
 
 
-    <!-- <script src=""></script> -->
+    <script src="scripts/togglemode.js"></script>
 </body>
 </html>

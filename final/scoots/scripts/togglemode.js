@@ -81,7 +81,7 @@ function toggleDark() {
 
     // ------ Change BACKGROUND / FILL COLORS ------
     document.documentElement.style.setProperty('--fill-main', '#F5F5F5');
-    document.documentElement.style.setProperty('--fill-accent1', '#F6B41E');
+    document.documentElement.style.setProperty('--fill-accent1', '#ED7C14');
     document.documentElement.style.setProperty('--fill-accent2', '#74B561');
 
 
@@ -89,7 +89,7 @@ function toggleDark() {
     // ------ Change TEXT COLORS ------
     document.documentElement.style.setProperty('--text-main', '#161A1D');
     document.documentElement.style.setProperty('--text-secondary', '#F5F5F5');
-    document.documentElement.style.setProperty('--text-accent1', '#F6B41E');
+    document.documentElement.style.setProperty('--text-accent1', '#ED7C14');
     document.documentElement.style.setProperty('--text-accent2', '#74B561');
 
 

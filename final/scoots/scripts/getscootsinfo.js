@@ -1,0 +1,1 @@
+const getScootsInfoURL = "https://j-kleine.github.io/wdd230/final/scoots/data/scootsinfo.json";

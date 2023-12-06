@@ -364,6 +364,10 @@ footer {
     .25px .25px 0 var(--text-main);
 }
 
+.scoots-address1, .scoots-address2 {
+    white-space: pre;
+}
+
 #footer-social-media-container {
     margin-top: 1rem;
 }

@@ -13,17 +13,22 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/small-525px.css">
+    <link rel="stylesheet" href="styles/small-550px.css">
     <link rel="stylesheet" href="styles/medium-650px.css">
     <link rel="stylesheet" href="styles/large-900px.css">
     <link rel="stylesheet" href="styles/larger-1200px.css">
+    <link rel="stylesheet" href="styles/wide-1600px.css">
 </head>
 <body>
     <div id="content">
+        <label class="switch" for="toggledarkmode">
+            <input type="checkbox" name="toggledarkmode" aria-label="toggledarkmode" id="toggledarkmode" onclick="toggleDark()">
+            <span class="slider-round"></span>
+        </label>
         <header>
-            <div id="branding-header">
-                <div id="logo-header-container">
-                    <img id="logo-header" src="images/logo.webp" alt="Scoots Rental logo, a sloth with goggles and helmet on an orange scooter">
+            <div id="header-branding">
+                <div id="header-logo-container">
+                    <img id="header-logo" src="images/lightmode/logo.webp" loading="lazy" alt="Scoots Rental logo, a sloth with goggles and helmet on an orange scooter">
                 </div>
                 <h1><span id="title-scoots">Scoots</span> <span id="title-rentals">Rentals</span></h1>
             </div>
@@ -55,25 +60,25 @@
 
         
         <footer>
-            <div id="branding-footer">
-                <div id="logo-footer-container">
-                    <img id="logo-footer" src="images/logo.webp" alt="Scoots Rental logo, a sloth with goggles and helmet on an orange scooter">
+            <div id="footer-branding">
+                <div id="footer-logo-container">
+                    <img id="footer-logo" src="images/lightmode/logo.webp" loading="lazy" alt="Scoots Rental logo, a sloth with goggles and helmet on an orange scooter">
                 </div>
                 <h2><span id="title-scoots">Scoots</span> <span id="title-rentals">Rentals</span></h2>
             </div>
             <div id="footer-animal">
-                <img src="images/footer-capybara.webp" alt="a capybara with goggles and helmet in a purple and yellow jeep">
+                <img id="footer-image" src="images/lightmode/footer-img.webp" loading="lazy" alt="a capybara with goggles and helmet in a purple and yellow jeep">
             </div>
-            <div id="contact-footer-container">
+            <div id="footer-contact-container">
                 <a class="footer-link" href="https://maps.app.goo.gl/uHKcPqKEZNuExieK7" target="_blank">Boulevard Aeropuerto Cozumel s/n,<br>77600 Cozumel</a>
                 <a class="footer-link" href="mailto:">contact@scoots.com</a>
                 <a class="footer-link" href="tel:">+52 987 123 4567</a>
-                <div id="social-media-footer-container">
-                    <a href="https://www.instagram.com/" target="_blank"><img src="images/icon-ig.webp" alt="Facebook logo"></a>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="images/icon-fb.webp" alt="Instagram Logo"></a>
+                <div id="footer-social-media-container">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/icon-ig.webp" loading="lazy" alt="Facebook logo"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/icon-fb.webp" loading="lazy" alt="Instagram Logo"></a>
                 </div>
             </div>
-            <div id="site-info">
+            <div id="footer-site-info">
                 <span>@2023 Scoots GmbH</span>
                 <span>Joschua Kleine</span>
                 <span>WDD 230 Project</span>
@@ -83,6 +88,6 @@
     </div>
 
 
-    <!-- <script src=""></script> -->
+    <script src="scripts/togglemode.js"></script>
 </body>
 </html>

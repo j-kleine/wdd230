@@ -51,11 +51,14 @@ function toggleDark() {
         document.querySelector('#header-logo').src = 'images/darkmode/logo.webp';
 
         // HERO IMAGE
-        document.querySelector('#hero-img275').srcset = 'images/darkmode/hero-img275.webp';
-        document.querySelector('#hero-img325').srcset = 'images/darkmode/hero-img325.webp';
-        document.querySelector('#hero-img450').srcset = 'images/darkmode/hero-img450.webp';
-        document.querySelector('#hero-img600').srcset = 'images/darkmode/hero-img600.webp';
-        document.querySelector('#hero-image').src = 'images/darkmode/hero-img800.webp';
+        if (document.querySelector('#hero-image')) {
+            document.querySelector('#hero-img275').srcset = 'images/darkmode/hero-img275.webp';
+            document.querySelector('#hero-img325').srcset = 'images/darkmode/hero-img325.webp';
+            document.querySelector('#hero-img450').srcset = 'images/darkmode/hero-img450.webp';
+            document.querySelector('#hero-img600').srcset = 'images/darkmode/hero-img600.webp';
+            document.querySelector('#hero-image').src = 'images/darkmode/hero-img800.webp';
+        }
+        
 
         // FOOTER LOGO
         document.querySelector('#footer-logo').src = 'images/darkmode/logo.webp';
@@ -106,11 +109,13 @@ function toggleDark() {
     document.querySelector('#header-logo').src = 'images/lightmode/logo.webp';
 
     // HERO IMAGE
-    document.querySelector('#hero-img275').srcset = 'images/lightmode/hero-img275.webp';
-    document.querySelector('#hero-img325').srcset = 'images/lightmode/hero-img325.webp';
-    document.querySelector('#hero-img450').srcset = 'images/lightmode/hero-img450.webp';
-    document.querySelector('#hero-img600').srcset = 'images/lightmode/hero-img600.webp';
-    document.querySelector('#hero-image').src = 'images/lightmode/hero-img800.webp';
+    if (document.querySelector('#hero-image')) {
+        document.querySelector('#hero-img275').srcset = 'images/lightmode/hero-img275.webp';
+        document.querySelector('#hero-img325').srcset = 'images/lightmode/hero-img325.webp';
+        document.querySelector('#hero-img450').srcset = 'images/lightmode/hero-img450.webp';
+        document.querySelector('#hero-img600').srcset = 'images/lightmode/hero-img600.webp';
+        document.querySelector('#hero-image').src = 'images/lightmode/hero-img800.webp';
+    }
 
     // FOOTER LOGO
     document.querySelector('#footer-logo').src = 'images/lightmode/logo.webp';

@@ -53,11 +53,15 @@
         height: auto;
     }
 
+    #footer-site-info {
+        margin: 0 2rem 0 auto;
+    }
+
 
 
     /* ------ Page 1 - HOME ------ */
     #hero-container {
-        padding: 1rem 10vw;
+        padding: 1rem 5vw;
     }
 
     #hero-image {

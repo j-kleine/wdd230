@@ -192,7 +192,7 @@ input:checked + .slider-round:before {
 header {
     display: grid;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
 
     -webkit-backdrop-filter: var(--backdrop-25-100);
     -moz-backdrop-filter: var(--backdrop-25-100);
@@ -345,8 +345,7 @@ footer {
     padding: .875rem;
     color: var(--text-main);
     text-align: right;
-    font-family: var(--font-text);
-    font-weight: bold;
+    font-family: var(--font-header-soft);
     text-transform: uppercase;
     text-decoration: none;
     transition: var(--transition-time);
@@ -377,8 +376,8 @@ footer {
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
-    background-color: var(--fill-main);
-    filter: saturate(1.5) contrast(1) brightness(1) var(--shadow);
+    background-color: #F5F5F5;
+    filter: saturate(1) contrast(1) brightness(1) var(--shadow);
     transition: var(--transition-time);
 }
 
@@ -398,7 +397,6 @@ footer {
     margin: .5rem 0;
     color: var(--text-main);
     font-family: var(--font-text);
-    font-weight: bold;
 }
 
 
@@ -523,13 +521,15 @@ main {
 .card {
     padding: 1rem;
 
-    -webkit-backdrop-filter: var(--backdrop-25-100);
-    -moz-backdrop-filter: var(--backdrop-25-100);
-    backdrop-filter: var(--backdrop-25-100);
+    -webkit-backdrop-filter: var(--backdrop-75-100);
+    -moz-backdrop-filter: var(--backdrop-75-100);
+    backdrop-filter: var(--backdrop-75-100);
     background-color: var(--backdrop-color);
     border-radius: var(--radius-corner);
 
-    filter: var(--shadow);
+    box-shadow: 10px 10px 50px rgba(0,0,0,.75);
+
+    /* filter: var(--shadow); */
 
     transition:
         scale var(--transition-time) ease,

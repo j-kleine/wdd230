@@ -15,46 +15,109 @@ function toggleDark() {
     if (toggleSwitch.checked === true) {
         isDarkMode = 1;
 
-        document.documentElement.style.setProperty('--backgound-image', 'url("../images/darkmode/dm-pattern.svg"), url("../images/darkmode/dm-gradient.svg")');
+        // ------ Change FAVICON ------
+        document.querySelector('link[rel~="icon"]').href = 'dm-favicon.ico';
 
+
+
+        // ------ Change PAGE BACKGROUND IMAGE ------
+        document.documentElement.style.setProperty('--backgound-image', 'url("../images/darkmode/pattern.svg"), url("../images/darkmode/gradient.svg")');
+
+
+
+        // ------ Change BACKGROUND / FILL COLORS ------
         document.documentElement.style.setProperty('--fill-main', '#161A1D');
         document.documentElement.style.setProperty('--fill-accent1', '#F6B41E');
         document.documentElement.style.setProperty('--fill-accent2', '#7337BA');
 
+
+
+        // ------ Change TEXT COLORS ------
         document.documentElement.style.setProperty('--text-main', '#F5F5F5');
         document.documentElement.style.setProperty('--text-secondary', '#161A1D');
         document.documentElement.style.setProperty('--text-accent1', '#F6B41E');
         document.documentElement.style.setProperty('--text-accent2', '#7337BA');
 
+
+
+        // ------ Change BACKDROP COLOR ------
         document.documentElement.style.setProperty('--backdrop-color', 'rgba(17, 25, 40, 0.5)');
 
-        document.querySelector('#header-logo').src = 'images/darkmode/dm-logo.webp';
-        document.querySelector('#footer-logo').src = 'images/darkmode/dm-logo.webp';
-        document.querySelector('#footer-image').src = 'images/darkmode/dm-footer-img.webp';
+
+
+        // ------ Change IMAGES ------
+        // HEADER LOGO
+        document.querySelector('#header-logo').src = 'images/darkmode/logo.webp';
+
+        // HERO IMAGE
+        document.querySelector('#hero-img275').srcset = 'images/darkmode/hero-img275.webp';
+        document.querySelector('#hero-img325').srcset = 'images/darkmode/hero-img325.webp';
+        document.querySelector('#hero-img450').srcset = 'images/darkmode/hero-img450.webp';
+        document.querySelector('#hero-img600').srcset = 'images/darkmode/hero-img600.webp';
+        document.querySelector('#hero-image').src = 'images/darkmode/hero-img800.webp';
+
+        // FOOTER LOGO
+        document.querySelector('#footer-logo').src = 'images/darkmode/logo.webp';
+
+        // FOOTER IMAGE
+        document.querySelector('#footer-image').src = 'images/darkmode/footer-img.webp';
         
-        localStorage.setItem('isDarkMode', isDarkMode);
-    } else {
-    // if toggle switch gets unchecked, save state to localStorage and switch color variable values to Light Mode
-        isDarkMode = 0;
-
-        document.documentElement.style.setProperty('--backgound-image', 'url("../images/lightmode/pattern.svg"), url("../images/lightmode/gradient.svg")');
-
-        document.documentElement.style.setProperty('--fill-main', '#F5F5F5');
-        document.documentElement.style.setProperty('--fill-accent1', '#ED7C14');
-        document.documentElement.style.setProperty('--fill-accent2', '#74B561');
-
-        document.documentElement.style.setProperty('--text-main', '#161A1D');
-        document.documentElement.style.setProperty('--text-secondary', '#F5F5F5');
-        document.documentElement.style.setProperty('--text-accent1', '#ED7C14');
-        document.documentElement.style.setProperty('--text-accent2', '#74B561');
-
-        document.documentElement.style.setProperty('--backdrop-color', 'rgba(255, 255, 255, 0.5)');
-        
-        document.querySelector('#header-logo').src = 'images/lightmode/logo.webp';
-        document.querySelector('#footer-logo').src = 'images/lightmode/logo.webp';
-        document.querySelector('#footer-image').src = 'images/lightmode/footer-img.webp';
 
 
         localStorage.setItem('isDarkMode', isDarkMode);
+    } else {
+    // if toggle switch gets unchecked, save state to localStorage and restore color variable values back to Light Mode
+    isDarkMode = 0;
+
+    // ------ Change FAVICON ------
+    document.querySelector('link[rel~="icon"]').href = 'favicon.ico';
+
+
+
+    // ------ Change PAGE BACKGROUND IMAGE ------
+    document.documentElement.style.setProperty('--backgound-image', 'url("../images/lightmode/pattern.svg"), url("../images/lightmode/gradient.svg")');
+
+
+
+    // ------ Change BACKGROUND / FILL COLORS ------
+    document.documentElement.style.setProperty('--fill-main', '#F5F5F5');
+    document.documentElement.style.setProperty('--fill-accent1', '#F6B41E');
+    document.documentElement.style.setProperty('--fill-accent2', '#74B561');
+
+
+
+    // ------ Change TEXT COLORS ------
+    document.documentElement.style.setProperty('--text-main', '#161A1D');
+    document.documentElement.style.setProperty('--text-secondary', '#F5F5F5');
+    document.documentElement.style.setProperty('--text-accent1', '#F6B41E');
+    document.documentElement.style.setProperty('--text-accent2', '#74B561');
+
+
+
+    // ------ Change BACKDROP COLOR ------
+    document.documentElement.style.setProperty('--backdrop-color', 'rgba(255, 255, 255, 0.5)');
+
+
+
+    // ------ Change IMAGES ------
+    // HEADER LOGO
+    document.querySelector('#header-logo').src = 'images/lightmode/logo.webp';
+
+    // HERO IMAGE
+    document.querySelector('#hero-img275').srcset = 'images/lightmode/hero-img275.webp';
+    document.querySelector('#hero-img325').srcset = 'images/lightmode/hero-img325.webp';
+    document.querySelector('#hero-img450').srcset = 'images/lightmode/hero-img450.webp';
+    document.querySelector('#hero-img600').srcset = 'images/lightmode/hero-img600.webp';
+    document.querySelector('#hero-image').src = 'images/lightmode/hero-img800.webp';
+
+    // FOOTER LOGO
+    document.querySelector('#footer-logo').src = 'images/lightmode/logo.webp';
+
+    // FOOTER IMAGE
+    document.querySelector('#footer-image').src = 'images/lightmode/footer-img.webp';
+    
+
+
+    localStorage.setItem('isDarkMode', isDarkMode);
     }
 }

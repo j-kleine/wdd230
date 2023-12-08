@@ -632,7 +632,7 @@ main {
 }
 
 #current-icon {
-    width: 6.25rem;
+    width: 12.5rem;
     height: auto;
 }
 
@@ -665,4 +665,27 @@ main {
 
 .card:hover .break-line {
     background-size: 100% 0.1em, 100% 0.1em;
+}
+
+#weather-forecast h3 {
+    margin: 0;
+}
+
+#weather-forecast span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 3.25rem;
+}
+
+#forecast-icon {
+    margin: 0 -.75rem;
+    width: 4rem;
+    height: auto;
+}
+
+#forecast-temp {
+    margin-left: .25rem;
+    font-family: var(--font-text);
+    font-weight: bold;
 }

@@ -30,12 +30,12 @@ function displayCurrentWeather(data) {
     }
     currentTemp.innerHTML = `${roundedTemp}&deg;C`;
     data.weather.forEach((event) => {
-        const iconsrc = `https://openweathermap.org/img/wn/${event.icon}@2x.png`;
+        const iconsrc = `https://openweathermap.org/img/wn/${event.icon}@4x.png`;
         let main = event.main;
         let desc = event.description;
 
         currentIcon.setAttribute('src', iconsrc);
-        currentIcon.setAttribute('alt', `weather icon ${event.description}`);
+        currentIcon.setAttribute('alt', `weather icon ${event.main} - ${event.description}`);
         
         currentMain.textContent = `${main}`;
         currentMain.style.textTransform = 'capitalize';

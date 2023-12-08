@@ -1,5 +1,6 @@
 const currentTemp = document.querySelector('#current-temp');
 const currentIcon = document.querySelector('#current-icon');
+const currentMain = document.querySelector('#current-main');
 const currentDesc = document.querySelector('#current-desc');
 const currentHumid = document.querySelector('#current-humid');
 
@@ -13,7 +14,7 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             // console.log(data);
-            displayWeather(data);
+            displayCurrentWeather(data);
         } else {
             throw Error(await response.text());
         }
@@ -22,9 +23,7 @@ async function apiFetch() {
     }
 }
 
-apiFetch();
-
-function displayWeather(data) {
+function displayCurrentWeather(data) {
     let roundedTemp = data.main.temp.toFixed(0);
     if (roundedTemp == -0) {
         roundedTemp = 0;
@@ -32,10 +31,15 @@ function displayWeather(data) {
     currentTemp.innerHTML = `${roundedTemp}&deg;C`;
     data.weather.forEach((event) => {
         const iconsrc = `https://openweathermap.org/img/wn/${event.icon}@2x.png`;
+        let main = event.main;
         let desc = event.description;
 
         currentIcon.setAttribute('src', iconsrc);
         currentIcon.setAttribute('alt', `weather icon ${event.description}`);
+        
+        currentMain.textContent = `${main}`;
+        currentMain.style.textTransform = 'capitalize';
+
         currentDesc.textContent = `${desc}`;
         currentDesc.style.textTransform = 'capitalize';
         
@@ -43,3 +47,5 @@ function displayWeather(data) {
     let humid = data.main.humidity;
     currentHumid.textContent = `${humid}%`;
 }
+
+apiFetch();

@@ -640,11 +640,29 @@ main {
     font-size: 5rem;
 }
 
-#current-desc {
+#current-main {
     font-family: var(--font-text);
 }
 
 #current-humid {
     margin: .5rem;
     font-family: var(--font-text);
+}
+
+.break-line {
+    margin: 2rem auto;
+    width: 50%;
+    height: 1rem;
+    background-image:
+    linear-gradient(var(--fill-accent1), var(--fill-accent1)),
+    linear-gradient(var(--fill-accent2), var(--fill-accent2));
+    background-size: 0% 0.1em, 100% 0.1em;
+    background-position-x: 0%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    transition: var(--transition-time) ease-in-out;
+}
+
+.card:hover .break-line {
+    background-size: 100% 0.1em, 100% 0.1em;
 }

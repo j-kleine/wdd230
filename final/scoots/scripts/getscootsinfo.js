@@ -4,7 +4,7 @@ async function getScootsInfo() {
     const response = await fetch(getScootsInfoURL);
     const data = await response.json();
     
-    console.log(data.scootsinformation);
+    // console.log(data.scootsinformation);
 
     displayScootsInfo(data.scootsinformation);
 }

@@ -86,10 +86,12 @@
 
                 <section id="card-weather" class="card">
                     <h2 class="card-header">Weather</h2>
-                    <span>[Current Weather]</span>
-                    <span>[Current Temperature]</span>
-                    <span>[Current Condition Description]</span>
-                    <span>[Humidity]</span>
+                    <div id="weather">
+                        <img id="current-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="icon for current weather on Cozumel">
+                        <span id="current-temp">999°C</span>
+                        <span id="current-desc">[Description]</span>
+                        <span id="current-humid">[Humidity]</span>
+                    </div>
                     <span>[One Day Forecast]</span>
                 </section>
 
@@ -148,6 +150,7 @@
 
     <script src="scripts/togglemode.js"></script>
     <script src="scripts/getscootsinfo.js"></script>
+    <script src="scripts/weather.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>
 </html>

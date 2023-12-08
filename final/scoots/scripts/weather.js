@@ -5,11 +5,11 @@ const currentHumid = document.querySelector('#current-humid');
 
 // 20.5042668593973, -86.94208686973866
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=20.50&lon=-86.94&units=metric&appid=6973a4b17cded0bc4a99143605f5a7e7';
+const currentURL = 'https://api.openweathermap.org/data/2.5/weather?lat=20.50&lon=-86.94&units=metric&appid=6973a4b17cded0bc4a99143605f5a7e7';
 
 async function apiFetch() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(currentURL);
         if (response.ok) {
             const data = await response.json();
             // console.log(data);

@@ -618,3 +618,33 @@ main {
 #social-media-container {
     display: block;
 }
+
+#weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weather * {
+    font-family: var(--font-header-sharp);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#current-icon {
+    width: 6.25rem;
+    height: auto;
+}
+
+#current-temp {
+    font-size: 5rem;
+}
+
+#current-desc {
+    font-family: var(--font-text);
+}
+
+#current-humid {
+    margin: .5rem;
+    font-family: var(--font-text);
+}

@@ -549,7 +549,7 @@ main {
 
 .slides img {
     width: 100%;
-    max-height: 40vw;
+    max-height: 50vw;
     object-fit: cover;
     object-position: bottom;
 }
@@ -567,7 +567,7 @@ main {
     font-weight: bold;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    transition: 0.6s ease;
+    transition: var(--transition-time) ease;
     user-select: none;
 }
 

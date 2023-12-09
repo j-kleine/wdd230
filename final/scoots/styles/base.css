@@ -535,7 +535,6 @@ main {
 #slideshow-container {
     position: relative;
     margin-top: 3rem;
-    max-height: 40vh;
 
     -webkit-backdrop-filter: var(--backdrop-25-100);
     -moz-backdrop-filter: var(--backdrop-25-100);
@@ -550,16 +549,20 @@ main {
 
 .slides img {
     width: 100%;
+    max-height: 40vw;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 var(--radius-corner) var(--radius-corner) 0;
     padding: 1rem;
     width: auto;
-    color: white;
+    background-color: rgba(0,0,0,0.3);
+    color: #FFFFFF;
     font-size: 3rem;
     font-weight: bold;
     -webkit-transform: translateY(-50%);
@@ -574,7 +577,7 @@ main {
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: var(--radius-corner) 0 0 var(--radius-corner);
 }
 
 .prev:hover, .next:hover {
@@ -582,7 +585,9 @@ main {
 }
 
 .numbertext {
-    color: #f2f2f2;
+    border-radius: 0 0 var(--radius-corner) 0;
+    background-color: rgba(0,0,0,0.4);
+    color: #FFFFFF;
     font-family: var(--font-text);
     font-size: 1.5rem;
     padding: 8px 12px;

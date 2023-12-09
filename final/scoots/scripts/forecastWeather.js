@@ -30,7 +30,7 @@ function displayForecastWeather(data) {
                 roundedTemp = 0;
             }
             forecastTemp.innerHTML = `${roundedTemp}&deg;C`;
-            console.log(roundedTemp);
+            // console.log(roundedTemp);
 
             timestamp.weather.forEach((event) => {
                 let iconsrc = `https://openweathermap.org/img/wn/${event.icon}@2x.png`;

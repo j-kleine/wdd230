@@ -19,5 +19,12 @@
 
     #card-grid {
         gap: 4rem;
+    }    
+
+    #card-fleet-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
     }
 }

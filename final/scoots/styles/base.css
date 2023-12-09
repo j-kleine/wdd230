@@ -689,3 +689,16 @@ main {
     font-family: var(--font-text);
     font-weight: bold;
 }
+
+#card-fleet-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scooters, #atvs, #jeeps {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 200px;
+}

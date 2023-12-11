@@ -24,7 +24,7 @@ async function apiFetch() {
 }
 
 function displayCurrentWeather(data) {
-    let roundedTemp = data.main.temp.toFixed(0);
+    let roundedTemp = data.main.temp.toFixed(1);
     if (roundedTemp == -0) {
         roundedTemp = 0;
     }

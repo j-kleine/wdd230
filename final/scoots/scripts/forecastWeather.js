@@ -25,7 +25,7 @@ async function apiFetch() {
 function displayForecastWeather(data) {
     data.list.forEach((timestamp) => {
         if (timestamp.dt_txt.includes("15:00:00") && counter < 1) {
-            let roundedTemp = timestamp.main.temp.toFixed(0);
+            let roundedTemp = timestamp.main.temp.toFixed(1);
             if (roundedTemp == -0) {
                 roundedTemp = 0;
             }

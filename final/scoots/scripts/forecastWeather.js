@@ -1,7 +1,7 @@
+const dailyMaxTemp = document.querySelector('#max-temp');
+
 const forecastTemp = document.querySelector('#forecast-temp');
 const forecastIcon = document.querySelector('#forecast-icon');
-
-let counter = 0;
 
 // 20.5042668593973, -86.94208686973866
 
@@ -13,6 +13,7 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             // console.log(data);
+            displayMaxTemp(data)
             displayForecastWeather(data);
         } else {
             throw Error(await response.text());
@@ -22,7 +23,21 @@ async function apiFetch() {
     }
 }
 
+function displayMaxTemp(data) {
+    let maxTemp = 0;
+    i = 0;
+    data.list.forEach((timestamp) => {
+        if ((timestamp.main.temp > maxTemp) && (i < 8)) {
+            maxTemp = timestamp.main.temp;
+            console.log(timestamp.dt + ' - ' + maxTemp);
+            dailyMaxTemp.innerHTML = `${maxTemp}&deg;C`
+        }
+        i++;
+    })
+}
+
 function displayForecastWeather(data) {
+    let counter = 0;
     data.list.forEach((timestamp) => {
         if (timestamp.dt_txt.includes("15:00:00") && counter < 1) {
             let roundedTemp = timestamp.main.temp.toFixed(1);

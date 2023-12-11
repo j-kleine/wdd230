@@ -422,6 +422,47 @@ footer {
 
 
 /* ------ Page 1 - HOME ------ */
+#max-temp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: var(--fill-accent1);
+}
+
+#max-temp-container * {
+    color: #161A1D;
+    font-family: var(--font-header-sharp);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#max-temp {
+    font-family: var(--font-text);
+}
+
+#max-temp-close {
+    margin: 0;
+    border: none;
+    padding: 0;
+    width: 2.75rem;
+    height: 2.75rem;
+    text-align: center;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    background-color: transparent;
+    transition: var(--transition-time);
+}
+
+#max-temp-close:hover {
+    color: #FFFFFF;
+    transform: scale(.9) rotate(270deg);
+}
+
+
+
 main {
     min-height: 100vh;
 }

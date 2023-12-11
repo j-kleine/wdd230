@@ -30,4 +30,8 @@
     #hero-actioncall-link {
         font-size: 13rem;
     }
+
+    .slides img {
+        max-height: 30vw;
+    }
 }

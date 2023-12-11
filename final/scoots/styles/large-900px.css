@@ -17,6 +17,10 @@
         max-height: 37.5rem;
     }
 
+    .slides img {
+        max-height: 50vw;
+    }
+
     #card-grid {
         gap: 4rem;
     }    

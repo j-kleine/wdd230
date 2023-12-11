@@ -739,6 +739,10 @@ main {
 #current-icon {
     width: 12.5rem;
     height: auto;
+    filter: drop-shadow(5px 0 0 var(--fill-accent2)) 
+        drop-shadow(0 5px 0 var(--fill-accent2))
+        drop-shadow(-5px 0 0 var(--fill-accent2)) 
+        drop-shadow(0 -5px 0 var(--fill-accent2));
 }
 
 #current-temp {
@@ -787,10 +791,14 @@ main {
     margin: 0 -.75rem;
     width: 4rem;
     height: auto;
+    filter: drop-shadow(2px 0 0 var(--fill-accent2)) 
+        drop-shadow(0 2px 0 var(--fill-accent2))
+        drop-shadow(-2px 0 0 var(--fill-accent2)) 
+        drop-shadow(0 -2px 0 var(--fill-accent2));
 }
 
 #forecast-temp {
-    margin-left: .25rem;
+    margin-left: .5rem;
     font-family: var(--font-text);
     font-weight: bold;
 }

@@ -29,8 +29,8 @@ function displayMaxTemp(data) {
     data.list.forEach((timestamp) => {
         if ((timestamp.main.temp > maxTemp) && (i < 8)) {
             maxTemp = timestamp.main.temp;
-            console.log(timestamp.dt + ' - ' + maxTemp);
-            dailyMaxTemp.innerHTML = `${maxTemp}&deg;C`
+            // console.log(timestamp.dt + ' - ' + maxTemp);
+            dailyMaxTemp.innerHTML = `${maxTemp.toFixed(0)}&deg;C`
         }
         i++;
     })
@@ -40,7 +40,7 @@ function displayForecastWeather(data) {
     let counter = 0;
     data.list.forEach((timestamp) => {
         if (timestamp.dt_txt.includes("15:00:00") && counter < 1) {
-            let roundedTemp = timestamp.main.temp.toFixed(1);
+            let roundedTemp = timestamp.main.temp.toFixed(0);
             if (roundedTemp == -0) {
                 roundedTemp = 0;
             }

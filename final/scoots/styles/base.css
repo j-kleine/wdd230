@@ -457,6 +457,7 @@ footer {
 }
 
 #max-temp-close:hover {
+    cursor: pointer;
     color: #FFFFFF;
     transform: scale(.9) rotate(270deg);
 }

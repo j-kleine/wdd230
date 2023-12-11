@@ -40,6 +40,7 @@ function displayForecastWeather(data) {
 
         counter++;
         }
-})}
+    })
+}
 
 apiFetch();

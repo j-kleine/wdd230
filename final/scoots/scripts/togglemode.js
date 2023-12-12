@@ -69,8 +69,10 @@ function toggleDark() {
 
 
         // CONTACT MAP
-        document.querySelector('.map').style.webkitFilter = 'brightness(.8) saturate(.8)';
-        document.querySelector('.map').style.filter = 'brightness(.8) saturate(.8)';
+        if (document.querySelector('.map')) {
+            document.querySelector('.map').style.webkitFilter = 'brightness(.8) saturate(.8)';
+            document.querySelector('.map').style.filter = 'brightness(.8) saturate(.8)';
+        }
         
 
 
@@ -132,8 +134,10 @@ function toggleDark() {
 
 
     // CONTACT MAP
-    document.querySelector('.map').style.webkitFilter = 'brightness(1) saturate(1)';
-    document.querySelector('.map').style.filter = 'brightness(1) saturate(1)';
+    if (document.querySelector('.map')) {
+        document.querySelector('.map').style.webkitFilter = 'brightness(1) saturate(1)';
+        document.querySelector('.map').style.filter = 'brightness(1) saturate(1)';
+    }
     
 
 

@@ -880,7 +880,21 @@ main {
 
 /* ------ Page 4 - CONTACT ------ */
 #card-map {
-    padding: 0;
+    padding: .25rem;
+    background-color: var(--fill-accent2);
+
+    background-image:
+    linear-gradient(var(--fill-accent1), var(--fill-accent2)),
+    linear-gradient(var(--fill-accent2), var(--fill-accent1));
+    background-size: 100% 0, 100% 0;
+    background-position-x: 0%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    transition: var(--transition-time) ease-in-out;
+}
+
+#card-map:hover {
+    background-size: 100% 100%, 100% 100%;
 }
 
 .map {
@@ -926,7 +940,6 @@ main {
     font-family: var(--font-header-sharp);
     font-size: 1.25rem;
     font-weight: bold;
-    text-transform: uppercase;
 }
 
 .label-input {

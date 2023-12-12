@@ -247,10 +247,52 @@ header {
 }
 
 /* --- NAVIGATION --- */
+#menubutton {
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    margin: 1rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 2rem;
+	border: none;
+	background-color: transparent;
+	color: var(--text-main);
+    transition: var(--transition-time);
+}
+
+#menubutton::before {
+	content: "☰";
+}
+
+#menubutton:hover {
+    color: var(--fill-accent1);
+    cursor: pointer;
+}
+
 nav {
+    display: none;
     grid-row: 2/3;
     grid-column: 1/2;
 }
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+#menubutton.openbutton {
+    transform: rotate(270deg);
+    transition: var(--transition-time);
+}
+
+#menubutton.openbutton::before {
+	content: "\276F";
+    /* alternative: ✕ */
+}
+
+.opennav {
+    display: block;
+}
+/* ------ */
 
 nav ul {
     display: flex;

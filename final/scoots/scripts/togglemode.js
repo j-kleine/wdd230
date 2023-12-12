@@ -65,6 +65,12 @@ function toggleDark() {
 
         // FOOTER IMAGE
         document.querySelector('#footer-image').src = 'images/darkmode/footer-img.webp';
+
+
+
+        // CONTACT MAP
+        document.querySelector('.map').style.webkitFilter = 'brightness(.8) saturate(.8)';
+        document.querySelector('.map').style.filter = 'brightness(.8) saturate(.8)';
         
 
 
@@ -122,6 +128,12 @@ function toggleDark() {
 
     // FOOTER IMAGE
     document.querySelector('#footer-image').src = 'images/lightmode/footer-img.webp';
+
+
+
+    // CONTACT MAP
+    document.querySelector('.map').style.webkitFilter = 'brightness(1) saturate(1)';
+    document.querySelector('.map').style.filter = 'brightness(1) saturate(1)';
     
 
 

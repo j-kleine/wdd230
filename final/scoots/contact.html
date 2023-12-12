@@ -67,7 +67,31 @@
                     <iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=11u36KiqCIHREajWyOv0Z_h6FxEM4skk&ehbc=2E312F&noprof=1" loading="lazy"></iframe>
                 </section>
 
-                <section id="card-contact-form" class="card"></section>
+                <section id="card-contact-form" class="card">
+                    <h2 class="card-header">Let Us Know</h2>
+                    <form method="get">
+                    <!-- <form method="get" action="thankyou.html"> -->
+                        <fieldset class="feedback">
+                            <legend>Feedback & Questions</legend>
+                            <label>Name:
+                                <input class="label-input" type="text" name="name" id="name" pattern="\w{2,}" title="(min. 2 characters) Please enter your name" placeholder="Enter name" required>
+                            </label>
+        
+                            <label>Email:
+                                <input class="label-input" type="email" name="email" id="email" title="Please enter your email address" placeholder="example@email.com" required>
+                            </label>
+        
+                            <label>Comment:
+                                <textarea class="label-input" name="description" id="boDescription" cols="20" rows="3"></textarea>
+                            </label>
+        
+                            <label>
+                                <input type="hidden" name="timestamp" id="timestamp" value="0">
+                            </label>
+                        </fieldset>
+                        <input class="submitButton" type="submit" value="Send My Comment">
+                    </form>
+                </section>
             </div>
         </main>
 

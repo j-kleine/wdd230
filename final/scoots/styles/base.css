@@ -859,6 +859,22 @@ main {
 
 
 /* ------ Page 3 - RESERVATIONS ------ */
+.submitButton {
+    cursor: pointer;
+    margin: 1rem;
+    border: none;
+    border-radius: var(--radius-corner);
+    padding: 1rem 1.5rem;
+    background-color: var(--fill-accent1);
+    color: var(--text-secondary);
+    font-family: var(--font-text);
+    font-size: 1.25rem;
+    transition: var(--transition-time);
+}
+
+.submitButton:hover {
+    background-color: var(--fill-accent2);
+}
 
 
 
@@ -873,4 +889,58 @@ main {
     width: 100%;
     min-height: 480px;
     height: 100%;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    border: none;
+    border-top: .25rem solid var(--fill-accent2);
+    border-bottom: .25rem solid var(--fill-accent2);
+    border-radius: var(--radius-corner);
+    padding: 1rem;
+    /* width: 30%; */
+    /* min-width: 300px; */
+    color: var(--text-main);
+    transition: var(--transition-time);
+}
+
+#card-contact-form:hover .feedback {
+    border-color: var(--fill-accent1);
+}
+
+.feedback legend {
+    padding: 0 1rem;
+    font-family: var(--font-text);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.feedback label {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .25rem;
+    margin: 1rem;
+    font-family: var(--font-header-sharp);
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.label-input {
+    border: none;
+    border-radius: var(--radius-corner);
+    padding: 1rem 1.5rem;
+    background-color: var(--fill-main);
+    color: var(--text-main);
+    font-family: var(--font-text);
+    transition: var(--transition-time);
+}
+
+.label-input:focus {
+    box-shadow: inset 0 0 10px rgba(0,0,0,.75);
+    outline-color: var(--fill-accent1);
 }

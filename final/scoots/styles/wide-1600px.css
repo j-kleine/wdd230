@@ -43,4 +43,12 @@
     .numbertext {
         border-radius: var(--radius-corner) 0 var(--radius-corner) 0;
     }
+
+
+
+    /* ------ Page 4 - CONTACT ------ */
+    #card-contact-form {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
 }

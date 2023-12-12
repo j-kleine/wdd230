@@ -36,4 +36,20 @@
         gap: 6rem;
         margin: 6rem 1rem;
     }
+
+
+
+    /* ------ Page 2 - RENTALS ------ */
+
+
+
+    /* ------ Page 3 - RESERVATIONS ------ */
+
+
+
+    /* ------ Page 4 - CONTACT ------ */
+    #card-map {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
 }

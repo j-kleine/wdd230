@@ -31,7 +31,16 @@
         font-size: 13rem;
     }
 
+    #slideshow-container {
+        max-width: 2000px;
+    }
+
     .slides img {
+        border-radius: var(--radius-corner);
         max-height: 30vw;
+    }
+
+    .numbertext {
+        border-radius: var(--radius-corner) 0 var(--radius-corner) 0;
     }
 }

@@ -120,7 +120,6 @@ p, a {
 
 #content {
     display: block;
-    min-height: 100vh;
     text-align: center;
     /* backdrop-filter: blur(10px) saturate(100%); */
     /* -webkit-backdrop-filter: blur(10px) saturate(100%); */
@@ -508,7 +507,7 @@ footer {
 
 
 main {
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 #hero-container {
@@ -607,12 +606,6 @@ main {
     position: relative;
     margin: 0 auto;
     margin-top: 3rem;
-    max-width: 2000px;
-
-    -webkit-backdrop-filter: var(--backdrop-25-100);
-    -moz-backdrop-filter: var(--backdrop-25-100);
-    backdrop-filter: var(--backdrop-25-100);
-    background-color: var(--backdrop-color);
 }
 
 .slides {
@@ -857,4 +850,28 @@ main {
     flex-direction: column;
     margin: 1rem;
     width: 200px;
+}
+
+
+
+/* ------ Page 2 - RENTALS ------ */
+
+
+
+/* ------ Page 3 - RESERVATIONS ------ */
+
+
+
+/* ------ Page 4 - CONTACT ------ */
+#card-map {
+    padding: 0;
+    background-color: var(--fill-main);
+}
+
+.map {
+    border: none;
+    border-radius: var(--radius-corner);
+    width: 100%;
+    min-height: 480px;
+    height: 100%;
 }

@@ -31,4 +31,25 @@
         justify-content: space-around;
         align-items: start;
     }
+
+
+
+    /* ------ Page 2 - RENTALS ------ */
+
+
+
+    /* ------ Page 3 - RESERVATIONS ------ */
+
+
+
+    /* ------ Page 4 - CONTACT ------ */
+    #card-map {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #card-contact-form {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
 }

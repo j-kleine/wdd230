@@ -865,7 +865,6 @@ main {
 /* ------ Page 4 - CONTACT ------ */
 #card-map {
     padding: 0;
-    background-color: var(--fill-main);
 }
 
 .map {

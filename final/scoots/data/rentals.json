@@ -5,7 +5,7 @@
             "type": "Motor Scooter",
             "brand": "Honda",
             "model": "Metropolitan",
-            "max-person": 1,
+            "maxPerson": 1,
             "info": "49cc",
             "prices": [
                 {
@@ -18,14 +18,15 @@
                         "full-day": 35
                     }
                 }
-            ]
+            ],
+            "vehicleImgURL": "https://j-kleine.github.io/wdd230/final/scoots/images/vehicleIMGs/01metropolitan.webp"
         },
         {
             "class": "Scooter",
             "type": "Motor Scooter",
             "brand": "Honda",
             "model": "Dio",
-            "max-person": 2,
+            "maxPerson": 2,
             "info": "110cc",
             "prices": [
                 {
@@ -38,14 +39,15 @@
                         "full-day": 45
                     }
                 }
-            ]
+            ],
+            "vehicleImgURL": "https://j-kleine.github.io/wdd230/final/scoots/images/vehicleIMGs/02dio.webp"
         },
         {
             "class": "Scooter",
             "type": "Motor Scooter",
             "brand": "Honda",
             "model": "PCX150",
-            "max-person": 2,
+            "maxPerson": 2,
             "info": "149cc",
             "prices": [
                 {
@@ -58,14 +60,15 @@
                         "full-day": 55
                     }
                 }
-            ]
+            ],
+            "vehicleImgURL": "https://j-kleine.github.io/wdd230/final/scoots/images/vehicleIMGs/03pcx150.webp"
         },
         {
             "class": "ATV",
             "type": "Side-by-Side ATV",
             "brand": "Honda",
             "model": "Pioneer 1000",
-            "max-person": 4,
+            "maxPerson": 4,
             "info": "",
             "prices": [
                 {
@@ -78,14 +81,15 @@
                         "full-day": 80
                     }
                 }
-            ]
+            ],
+            "vehicleImgURL": "https://j-kleine.github.io/wdd230/final/scoots/images/vehicleIMGs/04pioneer.webp"
         },
         {
             "class": "Car",
             "type": "SUV",
             "brand": "Jeep",
             "model": "Wrangler",
-            "max-person": 4,
+            "maxPerson": 4,
             "info": "2 door - manuel - open-air",
             "prices": [
                 {
@@ -98,14 +102,15 @@
                         "full-day": 90
                     }
                 }
-            ]
+            ],
+            "vehicleImgURL": "https://j-kleine.github.io/wdd230/final/scoots/images/vehicleIMGs/05wrangler2.webp"
         },
         {
             "class": "Car",
             "type": "SUV",
             "brand": "Jeep",
             "model": "Wrangler",
-            "max-person": 5,
+            "maxPerson": 5,
             "info": "4 door - manuel - A/C",
             "prices": [
                 {
@@ -118,7 +123,8 @@
                         "full-day": 125
                     }
                 }
-            ]
+            ],
+            "vehicleImgURL": "https://j-kleine.github.io/wdd230/final/scoots/images/vehicleIMGs/06wrangler4.webp"
         }
     ]
 }

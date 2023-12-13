@@ -1,0 +1,124 @@
+{
+    "rentals": [
+        {
+            "class": "Scooter",
+            "type": "Motor Scooter",
+            "brand": "Honda",
+            "model": "Metropolitan",
+            "max-person": 1,
+            "info": "49cc",
+            "prices": [
+                {
+                    "reservation": {
+                        "half-day": 20,
+                        "full-day": 30
+                    },
+                    "walk-in": {
+                        "half-day": 25,
+                        "full-day": 35
+                    }
+                }
+            ]
+        },
+        {
+            "class": "Scooter",
+            "type": "Motor Scooter",
+            "brand": "Honda",
+            "model": "Dio",
+            "max-person": 2,
+            "info": "110cc",
+            "prices": [
+                {
+                    "reservation": {
+                        "half-day": 30,
+                        "full-day": 40
+                    },
+                    "walk-in": {
+                        "half-day": 35,
+                        "full-day": 45
+                    }
+                }
+            ]
+        },
+        {
+            "class": "Scooter",
+            "type": "Motor Scooter",
+            "brand": "Honda",
+            "model": "PCX150",
+            "max-person": 2,
+            "info": "149cc",
+            "prices": [
+                {
+                    "reservation": {
+                        "half-day": 40,
+                        "full-day": 50
+                    },
+                    "walk-in": {
+                        "half-day": 45,
+                        "full-day": 55
+                    }
+                }
+            ]
+        },
+        {
+            "class": "ATV",
+            "type": "Side-by-Side ATV",
+            "brand": "Honda",
+            "model": "Pioneer 1000",
+            "max-person": 4,
+            "info": "",
+            "prices": [
+                {
+                    "reservation": {
+                        "half-day": 50,
+                        "full-day": 70
+                    },
+                    "walk-in": {
+                        "half-day": 60,
+                        "full-day": 80
+                    }
+                }
+            ]
+        },
+        {
+            "class": "Car",
+            "type": "SUV",
+            "brand": "Jeep",
+            "model": "Wrangler",
+            "max-person": 4,
+            "info": "2 door - manuel - open-air",
+            "prices": [
+                {
+                    "reservation": {
+                        "half-day": 60,
+                        "full-day": 85
+                    },
+                    "walk-in": {
+                        "half-day": 70,
+                        "full-day": 90
+                    }
+                }
+            ]
+        },
+        {
+            "class": "Car",
+            "type": "SUV",
+            "brand": "Jeep",
+            "model": "Wrangler",
+            "max-person": 5,
+            "info": "4 door - manuel - A/C",
+            "prices": [
+                {
+                    "reservation": {
+                        "half-day": 70,
+                        "full-day": 100
+                    },
+                    "walk-in": {
+                        "half-day": 85,
+                        "full-day": 125
+                    }
+                }
+            ]
+        }
+    ]
+}

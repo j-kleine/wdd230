@@ -1,5 +1,6 @@
 const vehicleCards = document.querySelector('#vehicle-cards');
 const pricingTable = document.querySelector('#pricing-table');
+const rentalSelect = document.querySelector('#rental-type');
 
 const rentalsURL = 'https://j-kleine.github.io/wdd230/final/scoots/data/rentals.json';
 
@@ -8,8 +9,12 @@ async function getVehicleData() {
     const data = await response.json();
 
     // console.table(data.rentals);
-    displayVehicles(data.rentals);
-    displayPricingTable(data.rentals);
+    if (vehicleCards) {
+        displayVehicles(data.rentals);
+        displayPricingTable(data.rentals);
+    } else if (rentalSelect) {
+        getRentalSelect(data.rentals);
+    }
 }
 
 const displayVehicles = (rentals) => {
@@ -67,6 +72,15 @@ const displayPricingTable = (rentals) => {
         tableRow.appendChild(tableCellWalkFull);
 
         tableBody.appendChild(tableRow);
+    });
+}
+
+const getRentalSelect = (rentals) => {
+    rentals.forEach((vehicle) => {
+        let selectOption = document.createElement('option')
+        selectOption.setAttribute('value', `${vehicle.brand} ${vehicle.model} ${vehicle.extra}`);
+        selectOption.innerHTML = `${vehicle.brand} ${vehicle.model} ${vehicle.extra}`;
+        rentalSelect.appendChild(selectOption);
     });
 }
 

@@ -962,6 +962,57 @@ tbody tr td:nth-child(odd) {
 
 
 /* ------ Page 3 - RESERVATIONS ------ */
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    border: none;
+    padding: 0;
+    width: 80%;
+    min-width: 270px;
+    max-width: 400px;
+    color: var(--text-main);
+    transition: var(--transition-time);
+}
+
+.feedback legend {
+    padding: 0 1rem;
+    font-family: var(--font-text);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.feedback label {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .25rem;
+    margin: 1rem 0 2rem 0;
+    width: 100%;
+    font-family: var(--font-header-sharp);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.label-input {
+    box-sizing: border-box;
+    margin-top: .5rem;
+    border: none;
+    border-bottom: .25rem solid var(--fill-accent1);
+    padding: .5rem 1.5rem;
+    width: 100%;
+    background-color: transparent;
+    color: var(--text-main);
+    font-family: var(--font-text);
+    transition: var(--transition-time);
+}
+
+.label-input:focus {
+    outline: none;
+    border-bottom: .25rem solid var(--fill-accent2);
+}
+
 .submitButton {
     box-sizing: border-box;
     cursor: pointer;

@@ -5,6 +5,7 @@
             "type": "Motor Scooter",
             "brand": "Honda",
             "model": "Metropolitan",
+            "extra": "",
             "maxPerson": 1,
             "info": "49cc",
             "prices": [
@@ -26,6 +27,7 @@
             "type": "Motor Scooter",
             "brand": "Honda",
             "model": "Dio",
+            "extra": "",
             "maxPerson": 2,
             "info": "110cc",
             "prices": [
@@ -47,6 +49,7 @@
             "type": "Motor Scooter",
             "brand": "Honda",
             "model": "PCX150",
+            "extra": "",
             "maxPerson": 2,
             "info": "149cc",
             "prices": [
@@ -68,6 +71,7 @@
             "type": "Side-by-Side ATV",
             "brand": "Honda",
             "model": "Pioneer 1000",
+            "extra": "",
             "maxPerson": 4,
             "info": "",
             "prices": [
@@ -89,6 +93,7 @@
             "type": "SUV",
             "brand": "Jeep",
             "model": "Wrangler",
+            "extra": "2 door",
             "maxPerson": 4,
             "info": "2 door - manuel - open-air",
             "prices": [
@@ -110,6 +115,7 @@
             "type": "SUV",
             "brand": "Jeep",
             "model": "Wrangler",
+            "extra": "4 door",
             "maxPerson": 5,
             "info": "4 door - manuel - A/C",
             "prices": [

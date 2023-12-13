@@ -34,6 +34,7 @@
     #card-rentals {
         grid-column: 1/2;
         grid-row: 1/2;
+        min-width: 500px;
     }
 
     #card-fleet-content {

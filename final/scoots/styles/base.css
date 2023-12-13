@@ -891,21 +891,71 @@ main {
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
 } */
 
-table {
-    margin: 1rem;
-    padding: 1rem;
+#vehicle-cards section span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#pricing-table {
+    margin: 0 auto;
     color: var(--text-main);
     font-family: var(--font-text);
     font-size: 1.25rem;
 }
+
+caption {
+    margin: .25rem 0 0 1rem;
+    caption-side: bottom;
+    text-align: left;
+    font-size: 1rem;
+}
+
 table, th, td {
-    border: .25rem solid var(--fill-accent1);
     border-collapse: collapse;
 }
 
-caption {
-    caption-side: bottom;
-    text-align: left;
+thead {
+    background-color: var(--backdrop-color);
+}
+
+.table-header {
+    height: 4rem;
+    background-color: var(--backdrop-color);
+    text-transform: uppercase;
+}
+
+.table-sub-header {
+    height: 6rem;
+}
+
+.table-sub-header:nth-child(odd) {
+    background-color: var(--backdrop-color);
+}
+
+tbody tr {
+    border: var(--backdrop-border);
+    border-right: none;
+    border-left: none;
+    font-size: 1rem;
+    transition: var(--transition-time);
+}
+
+tbody tr:hover {
+    transform: scale(1.0125);
+}
+
+.cell-rental-type {
+    font-family: var(--font-header-sharp);
+    font-weight: bold;
+    white-space: pre-line;
+}
+
+td {
+    padding: 1rem 0;
+}
+
+tbody tr td:nth-child(odd) {
+    background-color: var(--backdrop-color);
 }
 
 

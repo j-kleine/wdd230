@@ -46,4 +46,11 @@
         max-width: 20.5rem;
         max-height: 20.5rem;
     }
+
+
+
+    /* ------ Page 2 - RENTALS ------ */
+    #pricing-table {
+        width: 90%;
+    }
 }

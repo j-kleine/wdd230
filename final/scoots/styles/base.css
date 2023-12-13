@@ -160,7 +160,7 @@ p, a {
     transition: .4s;
 }
 
-.slider-round:before {
+.slider-round::before {
     position: absolute;
     content: "";
     height: 16px;
@@ -171,6 +171,10 @@ p, a {
     border-radius: 50%;
     -webkit-transition: .4s;
     transition: .4s;
+}
+
+.switch:hover .slider-round::before {
+    background-color: var(--fill-accent2);
 }
 
 input:checked + .slider-round {

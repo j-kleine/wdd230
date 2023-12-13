@@ -34,7 +34,7 @@
     #card-rentals {
         grid-column: 1/2;
         grid-row: 1/2;
-        min-width: 500px;
+        min-width: 450px;
     }
 
     #card-fleet-content {
@@ -51,6 +51,7 @@
     #card-weather {
         grid-column: 3/4;
         grid-row: 1/2;
+        min-width: 300px;
     }
 
     #slideshow-container {

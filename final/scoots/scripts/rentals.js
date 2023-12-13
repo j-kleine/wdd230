@@ -23,7 +23,7 @@ const displayVehicles = (rentals) => {
         vehiclePicture.setAttribute('src', vehicle.vehicleImgURL);
         vehiclePicture.setAttribute('alt', `Picture of ${vehicle.brand} ${vehicle.model}`);
         vehiclePicture.setAttribute('loading', 'lazy');
-        vehiclePicture.setAttribute('width', '500px');
+        vehiclePicture.setAttribute('width', 'auto');
         vehiclePicture.setAttribute('height', 'auto');
 
         title.textContent = `${vehicle.brand} ${vehicle.model}`

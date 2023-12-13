@@ -641,7 +641,7 @@ main {
     color: var(--text-accent1);
     text-align: left;
     font-family: var(--font-header-sharp);
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: lowercase;
 
     text-shadow:
@@ -918,6 +918,10 @@ table, th, td {
     height: 4rem;
     background-color: var(--fill-main);
     text-transform: uppercase;
+}
+
+.table-header:nth-child(1) {
+    background-color: transparent;
 }
 
 .table-sub-header {

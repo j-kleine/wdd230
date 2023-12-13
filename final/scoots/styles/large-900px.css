@@ -17,10 +17,6 @@
         max-height: 37.5rem;
     }
 
-    .slides img {
-        max-height: 50vw;
-    }
-
     #card-grid {
         gap: 4rem;
     }    
@@ -32,6 +28,9 @@
         align-items: start;
     }
 
+    .slides img {
+        max-height: 50vw;
+    }
 
 
     /* ------ Page 2 - RENTALS ------ */
@@ -43,13 +42,13 @@
 
 
     /* ------ Page 4 - CONTACT ------ */
-    #card-map {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
     #card-contact-form {
         grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    
+    #card-map {
+        grid-column: 2/3;
         grid-row: 2/3;
     }
 }

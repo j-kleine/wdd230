@@ -28,12 +28,12 @@
         max-height: 50rem;
     }
 
-    .slides img {
-        max-height: 40vw;
-    }
-
     #card-grid {
         gap: 6rem;
         margin: 6rem 1rem;
+    }
+
+    .slides img {
+        max-height: 40vw;
     }
 }

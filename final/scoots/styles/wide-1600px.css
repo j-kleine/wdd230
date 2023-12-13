@@ -31,6 +31,27 @@
         font-size: 13rem;
     }
 
+    #card-rentals {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #card-fleet-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #card-contact {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #card-weather {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
     #slideshow-container {
         max-width: 2000px;
     }
@@ -48,6 +69,11 @@
 
     /* ------ Page 4 - CONTACT ------ */
     #card-contact-form {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #card-map {
         grid-column: 3/4;
         grid-row: 1/2;
     }

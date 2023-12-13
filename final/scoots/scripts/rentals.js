@@ -1,4 +1,5 @@
 const vehicleCards = document.querySelector('#vehicle-cards');
+const pricingTable = document.querySelector('#pricing-table');
 
 const rentalsURL = 'https://j-kleine.github.io/wdd230/final/scoots/data/rentals.json';
 
@@ -8,7 +9,7 @@ async function getVehicleData() {
 
     // console.table(data.rentals);
     displayVehicles(data.rentals);
-    // displayPricingTable(data.rentals);
+    displayPricingTable(data.rentals);
 }
 
 const displayVehicles = (rentals) => {
@@ -26,11 +27,11 @@ const displayVehicles = (rentals) => {
         vehiclePicture.setAttribute('width', 'auto');
         vehiclePicture.setAttribute('height', 'auto');
 
-        title.textContent = `${vehicle.brand} ${vehicle.model}`
+        title.textContent = `${vehicle.brand} ${vehicle.model}`;
 
-        maxPersons.textContent = `max. Persons: ${vehicle.maxPerson}`
+        maxPersons.textContent = `max. Persons: ${vehicle.maxPerson}`;
 
-        info.textContent = `${vehicle.info}`
+        info.textContent = `${vehicle.info}`;
 
 
         card.appendChild(vehiclePicture);
@@ -42,8 +43,30 @@ const displayVehicles = (rentals) => {
     });
 }
 
-// const displayPricingTable = (rentals) => {
+const displayPricingTable = (rentals) => {
+    const tableBody = document.createElement('tbody');
+    pricingTable.appendChild(tableBody);
+    rentals.forEach((vehicle) => {
+        let tableRow = document.createElement('tr');
+        let tableCellType = document.createElement('td');
+        let tableCellReservHalf = document.createElement('td');
+        let tableCellReservFull = document.createElement('td');
+        let tableCellWalkHalf = document.createElement('td');
+        let tableCellWalkFull = document.createElement('td');
 
-// }
+        tableCellType.textContent = `${vehicle.brand} ${vehicle.model} ${vehicle.info}`;
+        tableRow.appendChild(tableCellType);
+        tableCellReservHalf.textContent = `${vehicle.prices[0].reservation.halfDay}`;
+        tableRow.appendChild(tableCellReservHalf);
+        tableCellReservFull.textContent = `${vehicle.prices[0].reservation.fullDay}`;
+        tableRow.appendChild(tableCellReservFull);
+        tableCellWalkHalf.textContent = `${vehicle.prices[0].walkIn.halfDay}`;
+        tableRow.appendChild(tableCellWalkHalf);
+        tableCellWalkFull.textContent = `${vehicle.prices[0].walkIn.fullDay}`;
+        tableRow.appendChild(tableCellWalkFull);
+
+        tableBody.appendChild(tableRow);
+    });
+}
 
 getVehicleData();

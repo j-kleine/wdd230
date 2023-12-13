@@ -878,7 +878,7 @@ main {
 }
 
 #vehicle-cards section img {
-    border: .25rem solid transparent;
+    /* border: .25rem solid transparent; */
     border-radius: var(--radius-corner);
     width: 100%;
     max-width: 500px;

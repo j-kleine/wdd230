@@ -53,4 +53,12 @@
     #pricing-table {
         width: 90%;
     }
+
+    tbody tr {
+        font-size: 1.25rem;
+    }
+
+    td {
+        padding: 1rem .5rem;
+    }
 }

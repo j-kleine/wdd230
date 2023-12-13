@@ -914,13 +914,9 @@ table, th, td {
     border-collapse: collapse;
 }
 
-thead {
-    background-color: var(--backdrop-color);
-}
-
 .table-header {
     height: 4rem;
-    background-color: var(--backdrop-color);
+    background-color: var(--fill-main);
     text-transform: uppercase;
 }
 
@@ -933,7 +929,7 @@ thead {
 }
 
 tbody tr {
-    border: var(--backdrop-border);
+    border: 1px solid var(--fill-main);
     border-right: none;
     border-left: none;
     font-size: 1rem;
@@ -941,6 +937,7 @@ tbody tr {
 }
 
 tbody tr:hover {
+    color: var(--text-logo-rentals);
     transform: scale(1.0125);
 }
 
@@ -951,7 +948,7 @@ tbody tr:hover {
 }
 
 td {
-    padding: 1rem 0;
+    padding: 1rem .25rem;
 }
 
 tbody tr td:nth-child(odd) {

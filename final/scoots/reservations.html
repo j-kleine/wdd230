@@ -47,9 +47,94 @@
 
         <main>
             <div id="card-grid">
-                <section class="card"></section>
+                <section class="card">
+                    <h2 class="card-header">Rental Agreement</h2>
+                    <ul id="rental-agreement">
+                        <li>A $50 security deposit is required to confirm reservations.</li>
+                        <li>A valid drivers license is required in hand at the time of rental.</li>
+                        <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                        <li>Fuel charge is not included.</li>
+                        <li>Unlimited mileage.</li>
+                        <li>Liability insurance is included.</li>
+                        <li>Damage insurance is available for purchase.</li>
+                        <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                        <li>Free pickup from the airport for 2+ day rentals.</li>
+                        <li>Rentals may be returned to either physical location.</li>
+                        <li>Payment via <a href="https://pay.google.com/about/" target="_blank">Google Pay</a>, <a href="https://www.apple.com/apple-pay/" target="_blank">Apple Pay</a>, <a href="https://venmo.com/"  target="_blank">venmo</a>, credit card, debit card, or cash.</li>
+                    </ul>
+                </section>
+
                 <section class="card">
                     <h2 class="card-header">Reservation</h2>
+                    <form method="get">
+                            <fieldset class="customer-details">
+                                <legend>Your Details</legend>
+                                <label>First Name:*
+                                    <input class="label-input" type="text" name="fname" id="first-name" pattern="[A-Za-z]{2,20}" title="(min. 2 characters) Please enter your first name" placeholder="Slumber" required>
+                                </label>
+
+                                <label>Last Name:*
+                                    <input class="label-input" type="text" name="lname" id="last-name" pattern="[A-Za-z]{2,20}" title="(min. 2 characters) Please enter your last name" placeholder="Slothy" required>
+                                </label>
+            
+                                <label>Email:*
+                                    <input class="label-input" type="email" name="email" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Please enter your email address" placeholder="example@email.com" required>
+                                </label>
+
+                                <label>Mobile Phone:*
+                                    <input class="label-input" type="phone" name="phone" id="phone" pattern="\+[0-9+\s]{6,15}" title="Please enter your phone number" placeholder="+52 987 123 4567" required>
+                                </label>
+
+                                <label>Home State/Country:*
+                                    <input class="label-input" type="country" name="country" id="country" pattern="[A-Za-z]{2,20}" title="Please enter your home state/country" placeholder="Mexico" required>
+                                </label>
+
+                                <label>Cruise Line (if applicable):
+                                    <input class="label-input" type="cruise" name="cruise" id="cruise" pattern="[A-Za-z]{2,20}" title="Please enter your cruise line (if applicable)" placeholder="Aida">
+                                </label>
+                            </fieldset>
+
+
+
+                            <fieldset class="rental-details">
+                                <legend>Rental Information</legend>
+                                <label>Rental Start Date:*
+                                    <input class="label-input" type="date" name="startdate" id="start-date" title="Please enter/select your rental start date" required>
+                                </label>
+
+                                <label>Rental Return Date:*
+                                    <input class="label-input" type="date" name="enddate" id="end-date" title="Please enter/select your rental end date" required>
+                                </label>
+            
+                                <label>Rental Type:*
+                                    <select class="label-input" type="rentaltype" name="rentaltype" id="rental-type" title="Please select your rental" required>
+                                        <option disabled selected>Please select your rental...</option>
+                                    </select>
+                                </label>
+
+                                <label>Pick-Up Location:*
+                                    <select class="label-input" type="picklocation" name="picklocation" id="pick-location" title="Please select your pick-up location" required>
+                                        <option disabled selected>Please select your pick-up location...</option>
+                                        <option value="main">Main: Playa del Carmen - Centro</option>
+                                        <option value="branch">Branch: Cruise Terminal Puerta Maya</option>
+                                        <option value="special">Special Request (enter details in the comment area below)</option>
+                                    </select>
+                                </label>
+                                <label>Drop-Off Location:*
+                                    <select class="label-input" type="droplocation" name="droplocation" id="drop-location" title="Please select your drop-off location" required>
+                                        <option disabled selected>Please select your drop-off location...</option>
+                                        <option value="main">Main: Playa del Carmen - Centro</option>
+                                        <option value="branch">Branch: Cruise Terminal Puerta Maya</option>
+                                        <option value="special">Special Request (enter details in the comment area below)</option>
+                                    </select>
+                                </label>
+            
+                                <label>Special Accommodations/Comments:
+                                    <textarea class="label-input" name="description" id="boDescription" cols="20" rows="2" placeholder="e.g. the need and location of a drop-off request"></textarea>
+                                </label>
+                            </fieldset>
+                            <input class="submitButton" type="submit" value="Book Your Rental">
+                        </form>
                 </section>
             </div>
         </main>
@@ -91,6 +176,7 @@
 
     <script src="scripts/togglemode.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/rentals.js"></script>
     <script src="scripts/getscootsinfo.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>

@@ -54,15 +54,16 @@ const displayPricingTable = (rentals) => {
         let tableCellWalkHalf = document.createElement('td');
         let tableCellWalkFull = document.createElement('td');
 
-        tableCellType.textContent = `${vehicle.brand} ${vehicle.model} ${vehicle.info}`;
+        tableCellType.textContent = `${vehicle.brand} ${vehicle.model}\r\n${vehicle.extra}`;
+        tableCellType.setAttribute('class', 'cell-rental-type')
         tableRow.appendChild(tableCellType);
-        tableCellReservHalf.textContent = `${vehicle.prices[0].reservation.halfDay}`;
+        tableCellReservHalf.textContent = `${vehicle.prices[0].reservation.halfDay}$`;
         tableRow.appendChild(tableCellReservHalf);
-        tableCellReservFull.textContent = `${vehicle.prices[0].reservation.fullDay}`;
+        tableCellReservFull.textContent = `${vehicle.prices[0].reservation.fullDay}$`;
         tableRow.appendChild(tableCellReservFull);
-        tableCellWalkHalf.textContent = `${vehicle.prices[0].walkIn.halfDay}`;
+        tableCellWalkHalf.textContent = `${vehicle.prices[0].walkIn.halfDay}$`;
         tableRow.appendChild(tableCellWalkHalf);
-        tableCellWalkFull.textContent = `${vehicle.prices[0].walkIn.fullDay}`;
+        tableCellWalkFull.textContent = `${vehicle.prices[0].walkIn.fullDay}$`;
         tableRow.appendChild(tableCellWalkFull);
 
         tableBody.appendChild(tableRow);

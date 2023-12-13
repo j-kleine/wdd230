@@ -45,15 +45,34 @@
 
 
 
-        <main class="">MAIN
-            <div class="">HERO
-                <div class="">HERO IMAGE
-                    <button>"Rent Your Adventure Here"</button>
-                </div>
-            </div>
-            <div class="">OUR RENTALS
-                <p>[Vehicle Image]</p>
-                <p>[Vehicle Price]</p>
+        <main class="">
+            <div id="card-grid">
+                <section class="card">
+                    <h2 class="card-header">our fleet</h2>
+                    <div id="vehicle-cards"></div>
+                </section>
+
+                <section class="card">
+                    <h2 class="card-header">rental prices</h2>
+                    <table>
+                        <caption>Table 1: Scoots Rentals Pricing</caption>
+                        <thead>
+                            <tr>
+                                <th colspan="2"></th>
+                                <th colspan="2">Reservation</th>
+                                <th colspan="2">Walk-In</th>
+                            </tr>
+                            <tr>
+                                <th>Rental Type</th>
+                                <th>Max. <br> Persons</th>
+                                <th>Half Day <br> (3 hours)</th>
+                                <th>Full Day</th>
+                                <th>Half Day <br> (3 hours)</th>
+                                <th>Full Day</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </section>
             </div>
             
         </main>
@@ -95,6 +114,7 @@
 
     <script src="scripts/togglemode.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/rentals.js"></script>
     <script src="scripts/getscootsinfo.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>

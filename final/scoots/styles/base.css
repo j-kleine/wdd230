@@ -513,11 +513,6 @@ footer {
 }
 
 
-main {
-    min-height: 50vh;
-}
-
-
 #hero-container {
     display: grid;
     padding: 1rem;

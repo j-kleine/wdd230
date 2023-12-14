@@ -230,7 +230,7 @@ header {
     justify-content: left;
 }
 
-#title-scoots {
+.title-scoots {
     color: var(--text-main);
     font-family: var(--font-header-soft);
     font-size: 3rem;
@@ -239,7 +239,7 @@ header {
     text-transform: uppercase;
 }
 
-#title-rentals {
+.title-rentals {
     padding-left: .625rem;
     color: var(--text-logo-rentals);
     font-family: var(--font-header-sharp);

@@ -59,6 +59,10 @@
 
 
     /* ------ Page 2 - RENTALS ------ */
+    #card-prices {
+        min-height: 47.6rem;
+    }
+
     #pricing-table {
         width: 90%;
         min-height: 38.4rem;

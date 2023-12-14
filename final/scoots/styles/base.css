@@ -920,6 +920,11 @@ footer {
 }
 
 
+#card-prices {
+    box-sizing: border-box;
+    min-height: 48.75rem;
+}
+
 #pricing-table {
     margin: 0 auto;
     min-height: 40.1rem;

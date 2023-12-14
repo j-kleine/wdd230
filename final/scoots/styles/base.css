@@ -342,6 +342,7 @@ footer {
     gap: 2rem;
     padding: 1rem;
     padding-top: 3rem;
+    min-height: 77.9rem;
 
     -webkit-backdrop-filter: var(--backdrop-25-100);
     -moz-backdrop-filter: var(--backdrop-25-100);

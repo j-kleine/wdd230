@@ -20,6 +20,11 @@
 
 
     /* --- FOOTER --- */
+    footer {
+        min-height: 49.3rem;
+    }
+
+
     /* --- LOGO & NAME --- */
     #footer-contact-container {
         align-items: end;

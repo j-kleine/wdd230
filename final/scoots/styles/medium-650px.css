@@ -37,6 +37,10 @@
 
 
     /* --- FOOTER --- */
+    footer {
+        min-height: 46.3rem;
+    }
+    
     #footer-animal {
         position: absolute;
         bottom: 3rem;

@@ -893,14 +893,21 @@ main {
 }
 
 
+#link-button {
+    display: inline;
+    margin: 0 auto;
+    width: 80dvw;
+    max-width: 400px;
+}
+
 #button {
     box-sizing: border-box;
     cursor: pointer;
-    margin: 1rem auto;
+    margin: 2rem auto 3rem auto;
     border: .5rem solid var(--fill-accent1);
     border-radius: calc(4 * var(--radius-corner));
     padding: 1rem 1.5rem;
-    width: 80%;
+    width: 80dvw;
     max-width: 400px;
     background-color: var(--backdrop-color);
     color: var(--text-main);
@@ -1101,53 +1108,18 @@ INPUT[type=checkbox]:checked
 
 /* ------ Page 4 - CONTACT ------ */
 .feedback {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    border: none;
-    padding: 0;
-    width: 80%;
-    min-width: 270px;
     max-width: 400px;
-    color: var(--text-main);
-    transition: var(--transition-time);
 }
 
-.feedback legend {
-    padding: 0 1rem;
-    font-family: var(--font-text);
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.feedback label {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: .25rem;
-    margin: 1rem 0 2rem 0;
-    width: 100%;
+#card-contact-find-us span {
+    margin: 1rem;
     font-family: var(--font-header-sharp);
-    font-size: 1.25rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
-.feedback .label-input {
-    box-sizing: border-box;
-    border: none;
-    border-bottom: .25rem solid var(--fill-accent1);
-    padding: 1rem 1.5rem;
-    width: 100%;
-    background-color: var(--backdrop-color);;
-    color: var(--text-main);
-    font-family: var(--font-text);
-    transition: var(--transition-time);
-}
-
-.feedback .label-input:focus {
-    outline: none;
-    border-bottom: .25rem solid var(--fill-accent2);
+#card-contact-find-us span a:hover {
+    border-bottom: .1rem solid var(--fill-accent1);
 }
 
 #card-map {

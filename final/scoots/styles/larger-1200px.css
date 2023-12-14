@@ -51,4 +51,20 @@
         grid-column: 1/2;
         grid-row: 1/3;
     }
+
+    /* ------ Page 4 - CONTACT ------ */
+    #card-contact-form {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #card-contact-find-us {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #card-map {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
 }

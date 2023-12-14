@@ -803,7 +803,7 @@ main {
     width: 100%;
 }
 
-.slides img {
+.slides-img {
     width: 100%;
     max-height: 60vw;
     object-fit: cover;

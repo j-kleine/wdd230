@@ -107,14 +107,14 @@
                                 </label>
             
                                 <label>Rental Type:*
-                                    <select class="label-input" type="rentaltype" name="rentaltype" id="rental-type" title="Please select your rental" required>
-                                        <option disabled selected>Please select your rental...</option>
+                                    <select class="label-input drop-down" type="rentaltype" name="rentaltype" id="rental-type" title="Please select your rental" required>
+                                        <option class="option-disabled" value disabled selected>Please select your rental...</option>
                                     </select>
                                 </label>
 
                                 <label>Pick-Up Location:*
-                                    <select class="label-input" type="picklocation" name="picklocation" id="pick-location" title="Please select your pick-up location" required>
-                                        <option disabled selected>Please select your pick-up location...</option>
+                                    <select class="label-input drop-down" type="picklocation" name="picklocation" id="pick-location" title="Please select your pick-up location" required>
+                                        <option class="option-disabled" value disabled selected>Please select your pick-up location...</option>
                                         <option value="main">Main: Playa del Carmen - Centro</option>
                                         <option value="branch">Branch: Cruise Terminal Puerta Maya</option>
                                         <option value="special">Special Request (enter details in the comment area below)</option>
@@ -122,8 +122,8 @@
                                 </label>
 
                                 <label>Drop-Off Location:*
-                                    <select class="label-input" type="droplocation" name="droplocation" id="drop-location" title="Please select your drop-off location" required>
-                                        <option disabled selected>Please select your drop-off location...</option>
+                                    <select class="label-input drop-down" type="droplocation" name="droplocation" id="drop-location" title="Please select your drop-off location" required>
+                                        <option class="option-disabled" value disabled selected>Please select your drop-off location...</option>
                                         <option value="main">Main: Playa del Carmen - Centro</option>
                                         <option value="branch">Branch: Cruise Terminal Puerta Maya</option>
                                         <option value="special">Special Request (enter details in the comment area below)</option>
@@ -131,7 +131,11 @@
                                 </label>
             
                                 <label>Special Accommodations/Comments:
-                                    <textarea class="label-input" name="description" id="boDescription" cols="20" rows="1" title="Please enter any special request in detail, we will contact you about it" placeholder="e.g. the need and location of a drop-off request"></textarea>
+                                    <textarea class="label-input" name="description" id="boDescription" cols="20" rows="2" title="Please enter any special request in detail, we will contact you about it" placeholder="e.g. the need and location of a drop-off request"></textarea>
+                                </label>
+
+                                <label class="accept-agreement">
+                                    <input class="accept-agreement-box" type="checkbox" title="I accept the Rental Agreement" required><span>I accept the Rental Agreement.</span>
                                 </label>
                             </fieldset>
                             <input id="button" type="submit" value="Book Your Rental">

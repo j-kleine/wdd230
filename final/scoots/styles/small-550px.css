@@ -65,4 +65,11 @@
     td {
         padding: 1rem .5rem;
     }
+
+
+
+    /* ------ Page 3 - RESERVATIONS ------ */
+    form {
+        margin: 0 4rem;
+    }
 }

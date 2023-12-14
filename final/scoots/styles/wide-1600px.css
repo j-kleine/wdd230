@@ -19,7 +19,7 @@
     }
 
     #hero-actioncall span:nth-child(1) {
-        letter-spacing: 2.5rem;
+        font-size: 13rem;
     }
 
     #hero-actioncall span:nth-child(2) {
@@ -28,7 +28,7 @@
     }
     
     #hero-actioncall-link {
-        font-size: 13rem;
+        font-size: 13rem !important;
     }
 
     #card-rentals {

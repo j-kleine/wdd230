@@ -546,7 +546,9 @@ footer {
 }
 
 #hero-actioncall span:nth-child(1) {
-    letter-spacing: 2.5vw;
+    color: var(--text-main);
+    font-family: var(--font-text);
+    font-size: 13vw;
 }
 
 #hero-actioncall span:nth-child(2) {
@@ -555,9 +557,9 @@ footer {
 }
 
 #hero-actioncall-link {
-    color: var(--text-main);
-    font-family: var(--font-text);
-    font-size: 13vw;
+    color: var(--text-main) !important;
+    font-family: var(--font-text) !important;
+    font-size: 13vw !important;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;

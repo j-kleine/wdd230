@@ -879,10 +879,11 @@ main {
 }
 
 #vehicle-cards section img {
+    margin: 0 auto;
     /* border: .25rem solid transparent; */
     border-radius: var(--radius-corner);
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
     background-color: var(--fill-main);
     transition: var(--transition-time);
 }

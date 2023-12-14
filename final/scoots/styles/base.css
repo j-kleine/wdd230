@@ -455,7 +455,10 @@ footer {
 }
 
 #footer-site-info span a {
+    display: block;
+    margin: 0 auto;
     border-bottom: .25rem solid transparent;
+    width: 5.4rem;
     color: var(--text-main);
     text-decoration: none;
     transition: var(--transition-time);

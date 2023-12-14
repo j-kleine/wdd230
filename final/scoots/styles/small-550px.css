@@ -56,6 +56,7 @@
     /* ------ Page 2 - RENTALS ------ */
     #pricing-table {
         width: 90%;
+        min-height: 38.4rem;
     }
 
     tbody tr {

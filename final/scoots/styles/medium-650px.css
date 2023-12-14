@@ -91,6 +91,13 @@
 
 
 
+    /* ------ Page 2 - RENTALS ------ */
+    #pricing-table {
+        min-height: 35.5rem;
+    }
+    
+    
+    
     /* ------ Page 4 - CONTACT ------ */
     #card-contact-form {
         grid-column: 1/2;

@@ -926,6 +926,7 @@ main {
 
 #pricing-table {
     margin: 0 auto;
+    min-height: 40.1rem;
     color: var(--text-main);
     font-family: var(--font-text);
     font-size: 1.25rem;

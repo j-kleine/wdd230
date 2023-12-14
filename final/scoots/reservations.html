@@ -82,15 +82,15 @@
                                 </label>
 
                                 <label>Mobile Phone:*
-                                    <input class="label-input" type="phone" name="phone" id="phone" pattern="\+[0-9+\s]{6,15}" title="Please enter your phone number" placeholder="+52 987 123 4567" required>
+                                    <input class="label-input" type="tel" name="phone" id="phone" pattern="\+[0-9+\s]{6,15}" title="Please enter your phone number" placeholder="+52 987 123 4567" required>
                                 </label>
 
                                 <label>Home State/Country:*
-                                    <input class="label-input" type="country" name="country" id="country" pattern="[A-Za-z]{2,20}" title="Please enter your home state/country" placeholder="Mexico" required>
+                                    <input class="label-input" type="text" name="country" id="country" pattern="[A-Za-z]{2,20}" title="Please enter your home state/country" placeholder="Mexico" required>
                                 </label>
 
                                 <label>Cruise Line (if applicable):
-                                    <input class="label-input" type="cruise" name="cruise" id="cruise" pattern="[A-Za-z]{2,20}" title="Please enter your cruise line (if applicable)" placeholder="Aida">
+                                    <input class="label-input" type="text" name="cruise" id="cruise" pattern="[A-Za-z]{2,20}" title="Please enter your cruise line (if applicable)" placeholder="Aida">
                                 </label>
                             </fieldset>
 
@@ -107,13 +107,13 @@
                                 </label>
             
                                 <label>Rental Type:*
-                                    <select class="label-input drop-down" type="rentaltype" name="rentaltype" id="rental-type" title="Please select your rental" required>
+                                    <select class="label-input drop-down" name="rentaltype" id="rental-type" title="Please select your rental" required>
                                         <option class="option-disabled" value disabled selected>Please select your rental...</option>
                                     </select>
                                 </label>
 
                                 <label>Pick-Up Location:*
-                                    <select class="label-input drop-down" type="picklocation" name="picklocation" id="pick-location" title="Please select your pick-up location" required>
+                                    <select class="label-input drop-down" name="picklocation" id="pick-location" title="Please select your pick-up location" required>
                                         <option class="option-disabled" value disabled selected>Please select your pick-up location...</option>
                                         <option value="main">Main: Playa del Carmen - Centro</option>
                                         <option value="branch">Branch: Cruise Terminal Puerta Maya</option>
@@ -122,7 +122,7 @@
                                 </label>
 
                                 <label>Drop-Off Location:*
-                                    <select class="label-input drop-down" type="droplocation" name="droplocation" id="drop-location" title="Please select your drop-off location" required>
+                                    <select class="label-input drop-down" name="droplocation" id="drop-location" title="Please select your drop-off location" required>
                                         <option class="option-disabled" value disabled selected>Please select your drop-off location...</option>
                                         <option value="main">Main: Playa del Carmen - Centro</option>
                                         <option value="branch">Branch: Cruise Terminal Puerta Maya</option>

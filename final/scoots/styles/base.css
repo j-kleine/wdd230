@@ -469,6 +469,9 @@ footer {
 
 /* ------ Page 1 - HOME ------ */
 #max-temp-container {
+    position: sticky;
+    top: 0;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -977,6 +980,34 @@ tbody tr td:nth-child(odd) {
 
 
 /* ------ Page 3 - RESERVATIONS ------ */
+#rental-agreement {
+    list-style-type: "\2023";
+}
+
+#rental-agreement li {
+    margin: 1.5rem 1rem 1.5rem -1rem;
+    padding-left: 1rem;
+    text-align: left;
+    color: var(--text-main);
+    font-family: var(--font-text);
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: var(--transition-time);
+}
+
+#rental-agreement li:hover {
+    transform: translateX(.25rem);
+}
+
+#rental-agreement li a {
+    color: var(--text-logo-rentals);
+    transition: var(--transition-time);
+}
+
+#rental-agreement li a:hover {
+    color: var(--text-accent2);
+}
+
 .feedback {
     display: flex;
     flex-direction: column;

@@ -938,14 +938,14 @@ footer {
     font-size: 1.25rem;
 }
 
-caption {
+#pricing-table caption {
     margin: .25rem 0 0 1rem;
     caption-side: bottom;
     text-align: left;
     font-size: 1rem;
 }
 
-table, th, td {
+#pricing-table, th, td {
     border-collapse: collapse;
 }
 
@@ -967,7 +967,7 @@ table, th, td {
     background-color: var(--backdrop-color);
 }
 
-tbody tr {
+#pricing-table tbody tr {
     border: 1px solid var(--fill-main);
     border-right: none;
     border-left: none;
@@ -975,7 +975,7 @@ tbody tr {
     transition: var(--transition-time);
 }
 
-tbody tr:hover {
+#pricing-table tbody tr:hover {
     color: var(--text-logo-rentals);
     transform: scale(1.0125);
 }
@@ -986,11 +986,11 @@ tbody tr:hover {
     white-space: pre-line;
 }
 
-td {
+#pricing-table td {
     padding: 1rem .25rem;
 }
 
-tbody tr td:nth-child(odd) {
+#pricing-table tbody tr td:nth-child(odd) {
     background-color: var(--backdrop-color);
 }
 
@@ -1154,4 +1154,45 @@ INPUT[type=checkbox]:checked
     width: 100%;
     min-height: 480px;
     height: 100%;
+}
+
+
+
+/* ------ Page 5 - ATTRIBUTIONS ------ */
+#attributions-table {
+    margin: 0 auto;
+    text-align: left;
+    color: var(--text-main);
+    font-family: var(--font-text);
+    font-size: 1.25rem;
+}
+
+#attributions-table caption {
+    margin-left: 1rem;
+    caption-side: bottom;
+    text-align: left;
+    font-size: 1rem;
+}
+
+#attributions-table, th, td {
+    border: 1px solid #161A1D;
+    border-collapse: collapse;
+}
+
+#attributions-table thead {
+    height: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#attributions-table tbody tr {
+    font-size: 1rem;
+}
+
+#attributions-table td {
+    padding: 1rem .5rem;
+}
+
+#pricing-table tbody tr td:nth-child(odd) {
+    background-color: var(--backdrop-color);
 }

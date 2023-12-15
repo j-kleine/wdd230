@@ -1215,7 +1215,7 @@ INPUT[type=checkbox]:checked
 .table-h1 {
     border: 1px solid var(--text-main);
     padding: 2rem 0 !important;
-    background-color: var(--backdrop-color);
+    background-color: var(--fill-main);
     text-align: center;
     font-family: var(--font-header-sharp);
     font-size: 1.25rem;

@@ -1175,7 +1175,7 @@ INPUT[type=checkbox]:checked
 }
 
 #attributions-table, th, td {
-    border: 1px solid #161A1D;
+    border: 1px solid var(--text-main);
     border-collapse: collapse;
 }
 
@@ -1193,6 +1193,22 @@ INPUT[type=checkbox]:checked
     padding: 1rem .5rem;
 }
 
-#pricing-table tbody tr td:nth-child(odd) {
-    background-color: var(--backdrop-color);
+#attributions-table ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#attributions-slideshow {
+    margin-left: .5rem !important;
+    padding-left: .5rem !important;
+    list-style: decimal !important;
+}
+
+#attributions-slideshow li {
+    padding: .5rem 0 .5rem .5rem !important;
+}
+
+#attributions-table p {
+    margin: 0;
 }

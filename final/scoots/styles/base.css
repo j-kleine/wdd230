@@ -1161,6 +1161,8 @@ INPUT[type=checkbox]:checked
 /* ------ Page 5 - ATTRIBUTIONS ------ */
 #attributions-table {
     margin: 0 auto;
+    border: 1px solid var(--text-main);
+    
     text-align: left;
     color: var(--text-main);
     font-family: var(--font-text);
@@ -1175,18 +1177,29 @@ INPUT[type=checkbox]:checked
 }
 
 #attributions-table, th, td {
-    border: 1px solid var(--text-main);
     border-collapse: collapse;
 }
 
 #attributions-table thead {
+    position: sticky;
+    top: 0;
+    border: 1px solid var(--text-main);
     height: 4rem;
-    text-align: center;
+    background-color: var(--fill-main);
+    text-align: left;
     text-transform: uppercase;
+}
+
+#attributions-table th {
+    padding: 2rem 1rem;
 }
 
 #attributions-table tbody tr {
     font-size: 1rem;
+}
+
+#attributions-table tbody tr:nth-child(even) {
+    background-color: var(--backdrop-color);
 }
 
 #attributions-table td {
@@ -1199,6 +1212,21 @@ INPUT[type=checkbox]:checked
     list-style: none;
 }
 
+.table-h1 {
+    border: 1px solid var(--text-main);
+    padding: 2rem 0 !important;
+    background-color: var(--backdrop-color);
+    text-align: center;
+    font-family: var(--font-header-sharp);
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.table-h2 {
+    font-weight: bold;
+}
+
 #attributions-slideshow {
     margin-left: .5rem !important;
     padding-left: .5rem !important;
@@ -1207,6 +1235,11 @@ INPUT[type=checkbox]:checked
 
 #attributions-slideshow li {
     padding: .5rem 0 .5rem .5rem !important;
+}
+
+#attributions-table a {
+    color: var(--text-logo-rentals);
+    text-decoration: underline;
 }
 
 #attributions-table p {
